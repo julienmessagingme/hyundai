@@ -175,15 +175,26 @@ du vehicule. N'invente aucun nom : s'il n'est pas ecrit sur la page, il n'existe
  * "finition", avec une marge. Cela evite d'envoyer la page entiere au modele, ce qui
  * faisait tomber une requete sur trois.
  */
-function zoneFinitions(texte, marge = 12) {
+function zoneFinitions(texte, marge = 14) {
   const lignes = String(texte || "").split("\n");
   const reperes = lignes
     .map((l, i) => (/finition/i.test(l) ? i : -1))
     .filter((i) => i >= 0);
   if (!reperes.length) return "";
-  const debut = Math.max(0, reperes[0] - marge);
-  const fin = Math.min(lignes.length, reperes[reperes.length - 1] + marge);
-  return lignes.slice(debut, fin).join("\n");
+  // Une plage continue de la premiere a la derniere mention peut couvrir la page
+  // entiere (30 000 caracteres sur l'INSTER et le TUCSON), donc etre tronquee et
+  // perdre justement les finitions. On prend une FENETRE autour de chaque mention,
+  // et on ne garde chaque ligne qu'une fois.
+  const gardees = new Set();
+  for (const i of reperes) {
+    for (let j = Math.max(0, i - marge); j < Math.min(lignes.length, i + marge); j++) {
+      gardees.add(j);
+    }
+  }
+  return [...gardees]
+    .sort((a, b) => a - b)
+    .map((i) => lignes[i])
+    .join("\n");
 }
 
 async function extraireFinitions(fiche) {

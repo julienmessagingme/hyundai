@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-08-21T21:50:38.471Z",
+  "genere_le": "2026-08-21T22:30:33.184Z",
   "modele_extraction": "google/gemini-3-flash",
   "total": 17,
   "vehicules": [
@@ -99,12 +99,12 @@
       "finitions": [
         {
           "nom": "Initia",
-          "apports": "Finition d'entrée de gamme incluant une caméra de recul, un écran tactile 10,25'' avec navigation et les services connectés Bluelink.",
+          "apports": "Finition d'entrée de gamme incluant un écran tactile 10,25'', la navigation Europe et une caméra de recul.",
           "prix": 25350
         },
         {
           "nom": "Intuitive",
-          "apports": "Elle ajoute des compteurs numériques 10,25'', des jantes alliage 16'', des feux de jour à LED et des rétroviseurs rabattables électriquement.",
+          "apports": "Elle ajoute des compteurs numériques 10,25'', des jantes alliage 16'' et des rétroviseurs rabattables électriquement.",
           "prix": null
         },
         {
@@ -260,17 +260,17 @@
       "finitions": [
         {
           "nom": "Intuitive",
-          "apports": "Cette version d'entrée de gamme dispose de l'accès mains-libres, d'une caméra de recul, de la climatisation bi-zone et d'un système de navigation de 12,3 pouces.",
+          "apports": "Elle dispose de la navigation sur écran tactile 12,3 pouces, de la caméra de recul, de la climatisation automatique bi-zone et de l'accès mains-libres.",
           "prix": null
         },
         {
           "nom": "Creative",
-          "apports": "Elle ajoute le chargeur sans fil, l'éclairage d'ambiance à LED, les sièges avant et le volant chauffants ainsi que la surveillance active des angles morts.",
+          "apports": "Elle ajoute le chargeur sans fil, l'éclairage d'ambiance à LED, les sièges et le volant chauffants ainsi que la surveillance active des angles morts.",
           "prix": null
         },
         {
           "nom": "N Line",
-          "apports": "Elle se distingue par un design sportif incluant des boucliers et jantes spécifiques, un ciel de toit noir et une atmosphère intérieure avec surpiqûres rouges.",
+          "apports": "Elle se distingue par des boucliers et jantes spécifiques N Line, un ciel de toit noir et une atmosphère intérieure avec surpiqûres rouges.",
           "prix": null
         }
       ],
@@ -339,28 +339,6 @@
       "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs urbains et périurbains recherchant un SUV électrique polyvalent, technologique et éligible au dispositif de leasing social.",
       "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous recherchez les vitesses de recharge ultra-rapides du segment supérieur (technologie 800V) pour des arrêts autoroutiers de moins de 20 minutes.",
       "motorisation": "100% electrique",
-      "finitions": [
-        {
-          "nom": "Intuitive",
-          "apports": "Dispose de l'accès mains-libres, d'une caméra de recul, de la climatisation automatique bi-zone et d'un système de navigation sur écran tactile 12,3 pouces.",
-          "prix": null
-        },
-        {
-          "nom": "Creative",
-          "apports": "Ajoute le chargeur sans fil, l'éclairage d'ambiance à LED, les feux Seamless Horizon, les sièges avant et le volant chauffants.",
-          "prix": null
-        },
-        {
-          "nom": "N Line",
-          "apports": "Ajoute un design sportif avec des boucliers et jantes spécifiques, un ciel de toit noir et une atmosphère intérieure à surpiqûres rouges.",
-          "prix": null
-        },
-        {
-          "nom": "Premium",
-          "apports": "Ajoute l'affichage tête-haute, la caméra 360°, les sièges avant réglables électriquement et la surveillance active des angles morts.",
-          "prix": null
-        }
-      ],
       "conseillable": true
     },
     {
@@ -562,6 +540,23 @@
       "profil_ideal": "Ce véhicule convient parfaitement aux familles et aux conducteurs effectuant de longs trajets qui recherchent un habitacle spacieux et une technologie de recharge parmi les plus rapides du marché.",
       "a_eviter_si": "Ce modèle n'est pas recommandé si vous recherchez un véhicule de petit gabarit pour stationner facilement dans des espaces urbains très restreints.",
       "motorisation": "100% electrique",
+      "finitions": [
+        {
+          "nom": "Intuitive",
+          "apports": "Elle dispose de l'accès mains-libres, de l'aide au stationnement avec caméra de recul, de compteurs numériques 12,3 pouces et de jantes alliage 19 pouces.",
+          "prix": null
+        },
+        {
+          "nom": "Creative",
+          "apports": "Elle ajoute l'assistance à la conduite sur autoroute (Niveau 2), des feux Matrix LED intelligents, un hayon électrique mains-libres et des sièges en cuir réglables électriquement.",
+          "prix": null
+        },
+        {
+          "nom": "N Line",
+          "apports": "Elle se dote d'un design sportif exclusif, de l'affichage tête-haute, d'une caméra 360°, d'un système audio premium Bose et d'un toit vitré panoramique.",
+          "prix": null
+        }
+      ],
       "conseillable": true
     },
     {
@@ -627,6 +622,18 @@
       "profil_ideal": "Ce véhicule convient parfaitement aux familles nombreuses recherchant un SUV spacieux, technologique et polyvalent pour alterner entre ville et grands espaces.",
       "a_eviter_si": "À éviter si vous circulez exclusivement dans des zones urbaines très denses aux stationnements étroits ou si vous n'avez pas l'utilité des 7 places.",
       "motorisation": "hybride",
+      "finitions": [
+        {
+          "nom": "Intuitive",
+          "apports": "Cette version de base propose 7 places, l'accès mains-libres, l'aide au stationnement avec caméra de recul et des sièges avant chauffants.",
+          "prix": null
+        },
+        {
+          "nom": "Creative",
+          "apports": "Elle ajoute le chargeur sans fil, les compteurs numériques 12 pouces, les jantes alliage 20 pouces et la sellerie cuir avec réglages électriques.",
+          "prix": null
+        }
+      ],
       "conseillable": true
     },
     {
@@ -692,12 +699,12 @@
       "finitions": [
         {
           "nom": "Intuitive",
-          "apports": "Cette version d'entrée de gamme propose 7 places, l'accès mains-libres, l'aide au stationnement avec caméra de recul et des sièges avant chauffants.",
+          "apports": "Cette version de base inclut 7 places, l'accès mains-libres, l'aide au stationnement avec caméra de recul et des sièges avant chauffants.",
           "prix": null
         },
         {
           "nom": "Creative",
-          "apports": "Elle ajoute le chargeur sans fil, les compteurs numériques 12 pouces, des jantes alliage 20 pouces et une sellerie en cuir réglable électriquement.",
+          "apports": "Elle ajoute le chargeur sans fil, les compteurs numériques 12 pouces, les jantes alliage 20 pouces et la sellerie cuir réglable électriquement.",
           "prix": null
         },
         {
@@ -707,7 +714,7 @@
         },
         {
           "nom": "Calligraphy",
-          "apports": "Elle se distingue par une sellerie en cuir Nappa, des sièges avant multi-confort, une boîte à gants avec désinfection UV-C et des finitions extérieures noires.",
+          "apports": "Elle se distingue par sa sellerie en cuir Nappa, sa boîte à gants à désinfection UV-C et ses éléments de design extérieurs noirs.",
           "prix": null
         }
       ],
@@ -776,17 +783,17 @@
       "finitions": [
         {
           "nom": "Creative",
-          "apports": "Elle propose de série l'assistance à la conduite de niveau 2, le cockpit numérique incurvé et des sièges chauffants en cuir et laine.",
-          "prix": 70450
+          "apports": "Elle intègre de série le cockpit numérique incurvé, la climatisation tri-zones, l'assistance à la conduite de niveau 2 et des sièges en cuir et laine chauffants.",
+          "prix": null
         },
         {
           "nom": "Executive",
-          "apports": "Elle ajoute notamment la caméra 360°, le système audio Bose, le toit ouvrant panoramique et les sièges avant relaxation à mémoire.",
+          "apports": "Elle ajoute la caméra 360°, le stationnement automatique à distance, le système audio Bose et le toit ouvrant panoramique.",
           "prix": null
         },
         {
           "nom": "Calligraphy",
-          "apports": "Cette version haut de gamme intègre la sellerie cuir Nappa, des rétroviseurs extérieurs numériques et une boîte à gants avec désinfection UV-C.",
+          "apports": "Elle se distingue par sa sellerie en cuir Nappa, ses rétroviseurs extérieurs caméra, son ciel de toit en Alcantara et son style spécifique.",
           "prix": null
         }
       ],
@@ -956,12 +963,12 @@
       "offre_loa": null,
       "points_forts": [
         "Volume de coffre de 466 litres constant sur toutes les motorisations",
-        "Modularité optimisée avec dossiers rabattables 40:20:40 et plancher ajustable",
-        "Technologies de connectivité avec clé numérique et mises à jour à distance (OTA)",
-        "Système Apple CarPlay et Android Auto sans fil de série"
+        "Modularité avec dossiers rabattables 40:20:40 et plancher ajustable",
+        "Mises à jour à distance OTA (Over The Air) pour les fonctionnalités",
+        "Clé numérique compatible smartphone et Apple Watch"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux familles et aux conducteurs urbains recherchant un SUV compact polyvalent avec un espace de chargement généreux et des équipements technologiques modernes.",
-      "a_eviter_si": "Ce choix n'est pas idéal si vous privilégiez la réduction de consommation de carburant d'un hybride ou l'absence totale d'émissions à l'échappement de la version électrique.",
+      "profil_ideal": "Conducteurs urbains et petites familles recherchant un SUV compact au design futuriste avec une connectivité moderne et un coffre généreux.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous avez besoin de plus de 5 places ou si vous recherchez une motorisation thermique de haute performance.",
       "motorisation": "essence",
       "finitions": [],
       "conseillable": false
@@ -1039,56 +1046,6 @@
       "conseillable": true
     },
     {
-      "slug": "staria-electric",
-      "nom": "STARIA Electric",
-      "url": "https://www.hyundai.com/fr/fr/modeles/staria-electric.html",
-      "description": "Découvrez le nouveau monospace électrique Hyundai STARIA, équipé d’un système de batterie 800 volts permettant une recharge rapide en courant continu (DC) de 10 à 80 % en environ 20 minutes.",
-      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_MY25_2024",
-      "photos_exterieur": [
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Exterior-Front",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Exterior_3QREAR_V01",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_closeup_wheel_V01",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Exterior-Close-up_Charging_Details_04",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Crop_Sound_System"
-      ],
-      "photos_interieur": [
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_dashboard_V01",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_Seats_1_V01",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_navigation_1_V01",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Interior-Close-up_USB-C-Charging-Ports_Details_10",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_02"
-      ],
-      "videos": [],
-      "faq": [],
-      "categorie": "monospace",
-      "places": 9,
-      "prix_a_partir_de": null,
-      "autonomie_km": 400,
-      "batterie_kwh": 84,
-      "puissance_ch": null,
-      "coffre_l": 435,
-      "recharge_10_80_min": 20,
-      "longueur_mm": null,
-      "offre_loa": null,
-      "points_forts": [
-        "Recharge ultra-rapide de 10 à 80 % en environ 20 minutes sur chargeur 350 kW",
-        "Grande modularité avec des configurations disponibles en 7 ou 9 places",
-        "Autonomie électrique WLTP atteignant 400 km avec batterie 84 kWh",
-        "Habitacle spacieux à plancher plat avec ports USB-C sur les trois rangées"
-      ],
-      "profil_ideal": "Familles très nombreuses ou professionnels du transport de passagers recherchant un volume intérieur maximal et une motorisation zéro émission.",
-      "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous avez besoin d'un volume de coffre très important en configuration 7 places (limité à 435 L) ou si vos trajets ne permettent pas l'accès à des bornes de recharge rapide.",
-      "motorisation": "100% electrique",
-      "finitions": [
-        {
-          "nom": "Executive",
-          "apports": "Elle propose une configuration 7 places Luxury dotée d'équipements haut de gamme et d'un habitacle spacieux.",
-          "prix": null
-        }
-      ],
-      "conseillable": true
-    },
-    {
       "slug": "ultime-edition",
       "nom": "ultime-edition",
       "url": "https://www.hyundai.com/fr/fr/modeles/ultime-edition.html",
@@ -1141,6 +1098,49 @@
       "motorisation": "essence",
       "finitions": [],
       "conseillable": false
+    },
+    {
+      "slug": "staria-electric",
+      "nom": "STARIA Electric",
+      "url": "https://www.hyundai.com/fr/fr/modeles/staria-electric.html",
+      "description": "Découvrez le nouveau monospace électrique Hyundai STARIA, équipé d’un système de batterie 800 volts permettant une recharge rapide en courant continu (DC) de 10 à 80 % en environ 20 minutes.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_MY25_2024",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Exterior-Front",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Exterior_3QREAR_V01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_closeup_wheel_V01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Exterior-Close-up_Charging_Details_04",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Crop_Sound_System"
+      ],
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_dashboard_V01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_Seats_1_V01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_navigation_1_V01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Interior-Close-up_USB-C-Charging-Ports_Details_10",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_02"
+      ],
+      "videos": [],
+      "faq": [],
+      "categorie": "monospace",
+      "places": 9,
+      "prix_a_partir_de": null,
+      "autonomie_km": 400,
+      "batterie_kwh": 84,
+      "puissance_ch": null,
+      "coffre_l": 435,
+      "recharge_10_80_min": 20,
+      "longueur_mm": null,
+      "offre_loa": null,
+      "points_forts": [
+        "Recharge ultra-rapide de 10 à 80 % en environ 20 minutes sur chargeur 350 kW",
+        "Grande modularité avec des configurations disponibles en 7 ou 9 places",
+        "Autonomie électrique WLTP atteignant 400 km avec batterie 84 kWh",
+        "Habitacle spacieux à plancher plat avec ports USB-C sur les trois rangées"
+      ],
+      "profil_ideal": "Familles très nombreuses ou professionnels du transport de passagers recherchant un volume intérieur maximal et une motorisation zéro émission.",
+      "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous avez besoin d'un volume de coffre très important en configuration 7 places (limité à 435 L) ou si vos trajets ne permettent pas l'accès à des bornes de recharge rapide.",
+      "motorisation": "100% electrique",
+      "conseillable": true
     }
   ]
 }
