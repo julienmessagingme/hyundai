@@ -26,14 +26,28 @@ const CATALOGUE = catalogueCondense();
 
 // Messages d'entree envoyes par le flow quand le client clique un bouton du menu.
 // Ils ne sont pas des questions : ils DEMARRENT le parcours.
+//
+// Le motif est teste sur une forme SANS ACCENTS : c'est le declenchement de tout le
+// parcours, il ne doit dependre ni de la casse, ni des accents, ni d'un encodage
+// approximatif en amont. Un "e" accentue mal encode devient un caractere de
+// remplacement, d'ou le "." tolerant plutot qu'une classe [ee].
 const ENTREES = [
-  { motif: /v[ée]hicule\s+neuf|neuve?\b/i, type: "neuf" },
-  { motif: /\bLOA\b|location\s+avec\s+option/i, type: "LOA" },
-  { motif: /occasion/i, type: "occasion" },
+  { motif: /v.hicule\s+neuf|\bneuve?\b/, type: "neuf" },
+  { motif: /\bloa\b|location\s+avec\s+option/, type: "LOA" },
+  { motif: /occasion/, type: "occasion" },
 ];
 
+/** Minuscules, accents retires, caracteres de remplacement compris. */
+function normaliser(texte) {
+  return String(texte)
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase();
+}
+
 export function detecterEntree(message) {
-  return ENTREES.find((e) => e.motif.test(message))?.type || null;
+  const t = normaliser(message);
+  return ENTREES.find((e) => e.motif.test(t))?.type || null;
 }
 
 function promptSysteme(s) {
@@ -51,6 +65,13 @@ TON ET FORME
   mais TOI tu ecris un francais parfaitement accentue et ponctue. Exemple attendu :
   "J'ai sélectionné deux modèles très spacieux, idéaux pour votre famille."
   Cela vaut AUSSI pour le contenu que tu passes aux outils, qui s'affiche a l'ecran.
+
+CE QUE TU NE DEMANDES JAMAIS
+- Tu es sur WhatsApp : le numero de telephone du client, tu l'as DEJA. Ne le demande
+  jamais, sous aucun pretexte, pas meme pour le faire rappeler par la concession.
+- Ne demande ni son nom, ni son adresse e-mail, ni son adresse postale. Le code
+  postal est la SEULE donnee que tu lui demandes, et uniquement pour trouver la
+  concession la plus proche.
 
 HONNETETE
 - Tu recommandes le MEILLEUR vehicule pour le besoin exprime, pas le plus cher.
