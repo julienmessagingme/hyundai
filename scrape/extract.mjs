@@ -1,0 +1,228 @@
+// Structure les caracteristiques de chaque modele a partir du texte scrape.
+//
+// Pourquoi le LLM et pas des expressions regulieres : les specs sont presentees en
+// tableau MULTI VERSIONS ("42 kWh" et "49 kWh" en colonnes, "327 km" / "370 km") et
+// la structure change d'une page a l'autre. Un parseur par page serait fragile et
+// silencieusement faux. Ici l'extraction se fait UNE FOIS, le resultat est fige dans
+// data/vehicules.json et versionne : aucun cout ni aucune latence a chaud.
+//
+// Sortie : data/vehicules.json (versionne).
+import fs from "node:fs/promises";
+import path from "node:path";
+import OpenAI from "openai";
+
+const RAW = "data/raw";
+const OUT = "data/vehicules.json";
+const CONCURRENCE = 3; // 17 pages, on reste poli avec le gateway
+
+// Presents dans le catalogue mais a ne PAS recommander a un client :
+// une serie speciale et une page teaser d'un modele a venir, sans prix ni fiche
+// technique exploitable. Ils restent dans le fichier (le bot doit savoir repondre
+// si on lui en parle) mais sont exclus des propositions.
+const NON_CONSEILLABLES = new Set(["ultime-edition", "kona-nouvelle-generation"]);
+
+const env = Object.fromEntries(
+  (await fs.readFile(".env", "utf8"))
+    .split("\n")
+    .filter((l) => l.trim() && !l.trim().startsWith("#"))
+    .map((l) => {
+      const i = l.indexOf("=");
+      return [l.slice(0, i).trim(), l.slice(i + 1).trim()];
+    })
+);
+
+const client = new OpenAI({
+  apiKey: env.AI_GATEWAY_API_KEY,
+  baseURL: env.LLM_BASE_URL || "https://ai-gateway.vercel.sh/v1",
+});
+const MODEL = env.LLM_MODEL || "google/gemini-3-flash";
+
+const CONSIGNE = `Tu extrais les caracteristiques d'un vehicule depuis le texte de sa page officielle Hyundai France.
+
+Rends UNIQUEMENT un objet JSON, sans commentaire ni bloc de code, avec ces cles :
+
+- "categorie": une seule valeur parmi "citadine", "SUV urbain", "SUV compact", "SUV familial", "monospace", "berline", "utilitaire"
+- "places": nombre de places (entier)
+- "prix_a_partir_de": prix d'entree de gamme en euros (entier), ou null si absent
+- "autonomie_km": autonomie WLTP MAXIMALE annoncee (entier), ou null si non electrifie
+- "batterie_kwh": capacite de la plus GRANDE batterie (nombre), ou null
+- "puissance_ch": puissance MAXIMALE en chevaux (entier), ou null
+- "coffre_l": volume de coffre minimal en litres, sieges en place (entier), ou null
+- "recharge_10_80_min": duree de charge rapide 10 a 80% en minutes (entier), ou null
+- "longueur_mm": longueur du vehicule en mm (entier), ou null
+- "points_forts": 3 a 5 arguments courts et CONCRETS, chiffres quand c'est possible
+- "profil_ideal": une phrase disant a QUI ce vehicule convient le mieux et pourquoi
+- "a_eviter_si": une phrase disant dans quel cas ce vehicule N'EST PAS le bon choix
+
+Regles imperatives :
+- N'invente RIEN. Toute valeur absente du texte vaut null.
+- Le texte peut citer d'AUTRES modeles Hyundai (comparatifs, encarts pedagogiques,
+  navigation). N'utilise QUE ce qui concerne le vehicule nomme ci-dessus. Dans le
+  doute, mets null.
+- Une autonomie electrique ne concerne QUE les vehicules electriques ou hybrides
+  rechargeables. Pour un hybride simple ou un thermique, "autonomie_km" vaut null.
+- Quand plusieurs versions coexistent, prends la valeur MAXIMALE et ignore les autres.
+- "points_forts", "profil_ideal" et "a_eviter_si" doivent servir un conseiller qui
+  doit recommander honnetement : sois factuel, pas promotionnel.`;
+
+// Le texte d'une page porte le menu, le pied de page et des encarts pedagogiques
+// communs a TOUT le site ("9 idees recues sur l'hybride", la liste des autres
+// modeles...). Le LLM prenait ce bruit pour des specs : le SANTA FE Hybrid heritait
+// des 65 km et 13,8 kWh du PLUG-IN. On retire donc les lignes presentes dans la
+// plupart des pages : ce qui est partout n'appartient a aucun vehicule en propre.
+function retirerBoilerplate(fiches, seuil = 0.6) {
+  const min = Math.ceil(fiches.length * seuil);
+  const freq = new Map();
+  for (const f of fiches) {
+    for (const l of new Set(f.texte.split("\n"))) freq.set(l, (freq.get(l) || 0) + 1);
+  }
+  let avant = 0;
+  let apres = 0;
+  for (const f of fiches) {
+    const lignes = f.texte.split("\n");
+    avant += lignes.length;
+    const gardees = lignes.filter((l) => (freq.get(l) || 0) < min);
+    apres += gardees.length;
+    f.texte = gardees.join("\n");
+  }
+  console.log(`Boilerplate retire : ${avant - apres} lignes sur ${avant}`);
+  return fiches;
+}
+
+// La motorisation est certaine des lors qu'on lit le nom commercial : on ne la
+// DEMANDE donc pas au LLM, on la DEDUIT. Regle d'or : ne jamais confier a un modele
+// ce qu'un test deterministe tranche sans risque.
+function motorisationDepuisNom(nom, slug) {
+  const t = `${nom} ${slug}`.toLowerCase();
+  if (/plug-?in|phev/.test(t)) return "hybride rechargeable";
+  if (/hybrid/.test(t)) return "hybride";
+  if (/nexo|hydrog/.test(t)) return "hydrogene";
+  if (/electric|ioniq|inster/.test(t)) return "100% electrique";
+  return "essence";
+}
+
+async function extraire(fiche) {
+  const completion = await client.chat.completions.create({
+    model: MODEL,
+    temperature: 0,
+    response_format: { type: "json_object" },
+    messages: [
+      { role: "system", content: CONSIGNE },
+      {
+        role: "user",
+        content:
+          `Vehicule : ${fiche.nom}\n` +
+          `Motorisation (certaine) : ${motorisationDepuisNom(fiche.nom, fiche.slug)}\n` +
+          `Description officielle : ${fiche.description}\n` +
+          `Prix annonce dans les donnees structurees : ${fiche.prix_a_partir_de ?? "absent"}\n\n` +
+          `--- TEXTE DE LA PAGE ---\n${fiche.texte.slice(0, 20000)}\n--- FIN ---`,
+      },
+    ],
+  });
+  const brut = completion.choices[0].message.content || "{}";
+  const json = JSON.parse(brut.replace(/^```json\s*|\s*```$/g, ""));
+  return { json, usage: completion.usage };
+}
+
+async function main() {
+  const fichiers = (await fs.readdir(RAW)).filter((f) => f.endsWith(".json"));
+  const fiches = await Promise.all(
+    fichiers.map(async (f) => JSON.parse(await fs.readFile(path.join(RAW, f), "utf8")))
+  );
+  retirerBoilerplate(fiches);
+  console.log(`${fiches.length} fiches a structurer (modele ${MODEL})\n`);
+
+  const vehicules = [];
+  let tokensIn = 0;
+  let tokensOut = 0;
+
+  // Traitement par vagues : simple et suffisant pour 17 elements.
+  for (let i = 0; i < fiches.length; i += CONCURRENCE) {
+    const vague = fiches.slice(i, i + CONCURRENCE);
+    const resultats = await Promise.all(
+      vague.map(async (fiche) => {
+        try {
+          const { json, usage } = await extraire(fiche);
+          tokensIn += usage?.prompt_tokens || 0;
+          tokensOut += usage?.completion_tokens || 0;
+          const motorisation = motorisationDepuisNom(fiche.nom, fiche.slug);
+          // Photo a pousser sur WhatsApp : l'image officielle du Product, sinon la
+          // premiere vue exterieure (2 modeles n'ont pas d'image dans le Product).
+          const photo =
+            fiche.image_principale ||
+            fiche.photos.find((p) => p.vue === "exterieur")?.url ||
+            fiche.photos[0]?.url ||
+            null;
+          // Une autonomie "batterie" n'a aucun sens sur un hybride simple ou un
+          // thermique : on la neutralise plutot que de laisser passer une valeur
+          // ramassee sur un encart voisin. L'hydrogene, lui, a bien une autonomie
+          // annoncee (le NEXO depasse les 700 km) mais pas de batterie de traction.
+          const aUneAutonomie = /electrique|rechargeable|hydrogene/.test(motorisation);
+          const aUneBatterie = /electrique|rechargeable/.test(motorisation);
+          return {
+            slug: fiche.slug,
+            nom: fiche.nom,
+            url: fiche.url,
+            description: fiche.description,
+            photo,
+            photos_interieur: fiche.photos
+              .filter((p) => p.vue === "interieur")
+              .slice(0, 4)
+              .map((p) => p.url),
+            videos: fiche.videos.filter((v) => v.type === "mp4").map((v) => v.url),
+            faq: fiche.faq,
+            ...json,
+            // valeurs sures : elles ecrasent toute sortie du LLM
+            motorisation,
+            conseillable: !NON_CONSEILLABLES.has(fiche.slug),
+            prix_a_partir_de: fiche.prix_a_partir_de ?? json.prix_a_partir_de ?? null,
+            autonomie_km: aUneAutonomie ? json.autonomie_km ?? null : null,
+            batterie_kwh: aUneBatterie ? json.batterie_kwh ?? null : null,
+            // Toute la gamme est a 5 places sauf les grands SUV et le monospace, que
+            // l'extraction identifie deja (SANTA FE et IONIQ 9 a 7, STARIA a 9).
+            // Un defaut a 5 est donc exact ici, la ou null bloquerait le conseil famille.
+            places: json.places ?? 5,
+          };
+        } catch (e) {
+          console.error(`  KO  ${fiche.slug} : ${e.message}`);
+          return null;
+        }
+      })
+    );
+    for (const r of resultats) {
+      if (!r) continue;
+      vehicules.push(r);
+      console.log(
+        `  ok  ${r.slug.padEnd(26)} ${String(r.categorie || "?").padEnd(14)} ` +
+          `${r.motorisation.padEnd(20)} ${String(r.places ?? "?").padStart(2)}pl  ` +
+          `${r.prix_a_partir_de ? String(r.prix_a_partir_de).padStart(5) + " EUR" : "  prix ?"}` +
+          `${r.autonomie_km ? "  " + r.autonomie_km + " km" : ""}`
+      );
+    }
+  }
+
+  vehicules.sort((a, b) => (a.prix_a_partir_de ?? 1e9) - (b.prix_a_partir_de ?? 1e9));
+  await fs.writeFile(
+    OUT,
+    JSON.stringify(
+      {
+        genere_le: new Date().toISOString(),
+        modele_extraction: MODEL,
+        total: vehicules.length,
+        vehicules,
+      },
+      null,
+      2
+    ),
+    "utf8"
+  );
+
+  const cout = (tokensIn * 0.5 + tokensOut * 3) / 1e6;
+  console.log(`\n${vehicules.length}/${fiches.length} vehicules ecrits dans ${OUT}`);
+  console.log(`tokens : ${tokensIn} entree / ${tokensOut} sortie  ->  ~$${cout.toFixed(4)}`);
+}
+
+main().catch((e) => {
+  console.error("Echec :", e);
+  process.exit(1);
+});

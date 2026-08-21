@@ -1,0 +1,792 @@
+{
+  "genere_le": "2026-08-21T17:30:45.823Z",
+  "modele_extraction": "google/gemini-3-flash",
+  "total": 17,
+  "vehicules": [
+    {
+      "slug": "i20",
+      "nom": "i20",
+      "url": "https://www.hyundai.com/fr/fr/modeles/i20.html",
+      "description": "Explorez Hyundai Nouvelle i20, un design élégant et sportif avec des options de connectivité avancées. Profitez d'une motorisation hybride légère pour une consommation optimisée. Découvrez-en plus maintenant.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_MY25_2024",
+      "photos_interieur": [],
+      "videos": [],
+      "faq": [],
+      "categorie": "citadine",
+      "places": 5,
+      "prix_a_partir_de": 22250,
+      "autonomie_km": null,
+      "batterie_kwh": null,
+      "puissance_ch": null,
+      "coffre_l": null,
+      "recharge_10_80_min": null,
+      "longueur_mm": null,
+      "points_forts": [
+        "Double écran numérique de 10,25 pouces",
+        "Technologies de sécurité SmartSense avec régulateur adaptatif",
+        "Connectivité complète Apple CarPlay et Android Auto",
+        "Garantie 5 ans kilométrage illimité",
+        "Système audio premium Bose à 7 haut-parleurs"
+      ],
+      "profil_ideal": "Conducteurs urbains recherchant une voiture compacte, technologique et sécurisante pour les trajets quotidiens.",
+      "a_eviter_si": "Vous avez besoin d'un grand volume de chargement ou d'une motorisation 100% électrique.",
+      "motorisation": "essence",
+      "conseillable": true
+    },
+    {
+      "slug": "bayon",
+      "nom": "BAYON",
+      "url": "https://www.hyundai.com/fr/fr/modeles/bayon.html",
+      "description": "Explorez le nouveau Hyundai BAYON, un SUV crossover élégant avec un intérieur spacieux, un design affirmé et des équipements de sécurité avancés.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_MY25_2024",
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_SHOT07_Full_Dashboard_Straight_Angle_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_AVN_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_Human_Ready_2304",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_SHOT09_Side_Roominess_No_B_Pillar_edit"
+      ],
+      "videos": [],
+      "faq": [],
+      "categorie": "SUV urbain",
+      "places": 5,
+      "prix_a_partir_de": 23900,
+      "autonomie_km": null,
+      "batterie_kwh": null,
+      "puissance_ch": null,
+      "coffre_l": null,
+      "recharge_10_80_min": null,
+      "longueur_mm": null,
+      "points_forts": [
+        "Double écran de 10,25 pouces pour l'instrumentation et l'infodivertissement",
+        "Espace aux jambes généreux de 1 072 mm à l'avant et 882 mm à l'arrière",
+        "Sécurité avancée avec freinage d'urgence autonome et surveillance des angles morts",
+        "Garantie 5 ans avec kilométrage illimité"
+      ],
+      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs urbains recherchant un SUV compact facile à manœuvrer tout en offrant une habitabilité intérieure optimisée et des technologies de connectivité modernes.",
+      "a_eviter_si": "Ce modèle n'est pas le bon choix si vous recherchez une motorisation 100% électrique ou hybride rechargeable, ou si vous avez besoin d'un volume de coffre chiffré pour des besoins de chargement spécifiques.",
+      "motorisation": "essence",
+      "conseillable": true
+    },
+    {
+      "slug": "inster-electric",
+      "nom": "INSTER",
+      "url": "https://www.hyundai.com/fr/fr/modeles/inster-electric.html",
+      "description": "Prêt à découvrir Nouveau Hyundai INSTER ? Ce SUV 100% électrique redéfinit style, habitabilité et prestations avec dynamisme sur son segment.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_MY25_2024",
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_Evo_Backseatdriver_30s_ProRes_16x9_clean_TVC_Thumbnail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_2024_Interior_KV_Revealing_04",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_Cross_2024_interior",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTEROID_Interior_No-1"
+      ],
+      "videos": [
+        "https://www.hyundai.com/content/dam/hyundai/sites/fr/pip/inster/2026/03-mars/HYUNDAI_INSTER_JAN26_14-6_169_mixV1_TVC_LOM1.mp4"
+      ],
+      "faq": [
+        {
+          "question": "Qu'est-ce que Hyundai INSTER ?",
+          "reponse": "Hyundai INSTER est un SUV citadin 100 % électrique, idéal pour la ville. Appartenant au segment A, il s'agit du plus petit véhicule électrique de Hyundai, alliant la robustesse d'un SUV à la compacité d'une citadine."
+        },
+        {
+          "question": "Quelle est l'autonomie de Hyundai INSTER ?",
+          "reponse": "Avec la batterie 49 kWh disponible en option, INSTER offre une autonomie de pointe dans sa catégorie, jusqu'à 370 km selon le cycle WLTP."
+        },
+        {
+          "question": "Est-ce que INSTER est une citadine ?",
+          "reponse": "Absolument, INSTER est idéal pour la vie citadine : facile à garer et très maniable, il offre jusqu’à 370 km d’autonomie et une recharge rapide. Grâce à son plancher plat, ses sièges arrière ultra-modulables et sa silhouette de SUV surélevée, INSTER offre un espace intérieur étonnamment généreux pour une citadine segment A."
+        },
+        {
+          "question": "Combien de places possède Hyundai INSTER ?",
+          "reponse": "Hyundai INSTER est un monospace disponible en configurations 4 et 5 places. Il est équipé d'appuie-tête réglables et d'un réglage manuel de la hauteur du siège conducteur. Les sièges de INSTER se rabattent complètement pour faciliter le chargement d'objets encombrants ou tout simplement pour se détendre."
+        },
+        {
+          "question": "Hyundai INSTER a-t-il remporté des prix ?",
+          "reponse": "Oui, INSTER a reçu plusieurs prix prestigieux en Europe. En voici quelques exemples :\r\n\r\nLa citadine de l'année 2026 selon TopGear.com\r\nGolden Steering Wheel 2025 as the best car under €25,000\r\nWorld Electric Car of the Year 2025"
+        },
+        {
+          "question": "Quelle est la différence entre INSTER et INSTER Cross ?",
+          "reponse": "INSTER Cross est une version plus aventurière de la citadine INSTER.\r\nINSTER transpose l’esprit d’un SUV dans une citadine électrique compacte. Ses passages de roues et leurs protections distinctives lui confèrent une allure affirmée, tandis que ses feux arrière à LED paramétriques lui donnent un aspect futuriste.\r\nINSTER Cross est conçu pour l’aventure, avec ses pare-chocs spécialement conçus et une plaque de protection robuste."
+        },
+        {
+          "question": "À quelle vitesse se recharge Hyundai INSTER sur une borne de recharge ?",
+          "reponse": "INSTER peut se recharger de 10 à 80 % en 30 minutes en utilisant une borne de recharge CC haute puissance d'une puissance minimale de 120 kW."
+        },
+        {
+          "question": "Quelle est la capacité de la batterie de Hyundai INSTER ?",
+          "reponse": "Hyundai INSTER est disponible avec deux batteries au choix : une version de 42 kWh et une version de 49 kWh offrant une autonomie de pointe allant jusqu'à 370 km."
+        }
+      ],
+      "categorie": "SUV urbain",
+      "places": 5,
+      "prix_a_partir_de": 25350,
+      "autonomie_km": 370,
+      "batterie_kwh": 49,
+      "puissance_ch": 115,
+      "coffre_l": 238,
+      "recharge_10_80_min": 30,
+      "longueur_mm": null,
+      "points_forts": [
+        "Autonomie jusqu'à 370 km WLTP",
+        "Recharge rapide 10 à 80 % en 30 minutes sur borne 120 kW",
+        "Sièges arrière coulissants sur 16 cm et rabattables à plat",
+        "Volume de coffre modulable de 238 à 351 litres",
+        "Garantie batterie 8 ans ou 160 000 km"
+      ],
+      "profil_ideal": "Citadins recherchant un véhicule électrique compact et très maniable, offrant une modularité intérieure exceptionnelle pour sa catégorie.",
+      "a_eviter_si": "Vous effectuez principalement de longs trajets autoroutiers nécessitant une vitesse de pointe élevée ou un volume de coffre important sans rabattre les sièges.",
+      "motorisation": "100% electrique",
+      "conseillable": true
+    },
+    {
+      "slug": "kona-hybrid",
+      "nom": "KONA Hybrid",
+      "url": "https://www.hyundai.com/fr/fr/modeles/kona-hybrid.html",
+      "description": "Découvrez KONA Hybrid. Un SUV urbain hybride audacieux, au design futuriste, à la technologie de pointe et à la motorisations électrifiée efficiente.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_Hybrid_MY25_2024-2",
+      "photos_interieur": [],
+      "videos": [],
+      "faq": [
+        {
+          "question": "Comment choisir un SUV hybride urbain adapté à mes besoins ?",
+          "reponse": "Pour choisir le SUV hybride urbain qui vous convient le mieux, commencez par évaluer vos habitudes de conduite. Si vous passez beaucoup de temps en ville, un SUV hybride (HEV) ou hybride rechargeable (PHEV) sont d’excellentes options pour réduire votre consommation de carburant et profiter d'une conduite plus silencieuse. Considérez également le type de boîte de vitesses : automatique pour plus de confort ou manuelle pour une conduite dynamique et sportive. Ensuite, pensez à l'espace dont vous avez besoin : les petits SUV hybrides offrent souvent un bon compromis entre habitabilité et maniabilité en ville. Enfin, examinez les équipements technologiques et les aides à la conduite disponibles, car ils peuvent vraiment améliorer votre sécurité et votre confort au quotidien."
+        },
+        {
+          "question": "Quels sont les avantages d'un SUV urbain hybride par rapport à un SUV classique ?",
+          "reponse": "Un SUV urbain hybride offre plusieurs avantages par rapport à un modèle classique. Tout d'abord, sa consommation réduite en ville permet de réduire les coûts de carburant et les émissions de CO2. Les SUV hybrides offrent également un confort de conduite supérieur grâce au silence du mode électrique et leur accélération instantanée. Les versions PHEV, elles, offrent une autonomie encore plus grande en mode tout électrique. De plus, les SUV urbains hybrides bénéficient souvent d'avantages fiscaux et peuvent circuler plus facilement dans les zones à faibles émissions. Enfin, la technologie hybride permet une flexibilité supplémentaire en passant facilement entre les modes électrique et essence."
+        },
+        {
+          "question": "Quelle est la puissance d'un SUV urbain hybride ?",
+          "reponse": "La puissance d'un SUV urbain hybride varie selon le modèle, mais elle est obtenue par la combinaison d'un moteur thermique et d'un ou plusieurs moteurs électriques. Cette configuration offre des performances équilibrées, avec des accélérations vives grâce au couple instantané du moteur électrique, tout en maintenant une consommation optimisée. Certains modèles proposent des versions sport avec une puissance élevée, idéales pour ceux qui recherchent des sensations plus intenses au volant."
+        },
+        {
+          "question": "Pourquoi choisir Hyundai KONA Hybrid ?",
+          "reponse": "Choisir Hyundai KONA Hybrid présente de nombreux avantages. Ce véhicule combine efficacement un moteur à essence et électrique, vous offrant ainsi des économies de carburant, une réduction des émissions, et une conduite silencieuse. Les avancées technologiques et les aides à la conduite améliorent aussi votre sécurité et votre confort."
+        },
+        {
+          "question": "Qu'est-ce qui rend KONA Hybrid différent des modèles précédents ?",
+          "reponse": "Hyundai KONA Hybrid bénéficie du meilleur de la technologie Hyundai, ce qui lui permet de proposer une expérience de conduite moderne et connectée, tout comme nos SUV :\r\n \r\n- Il peut être verrouillé, déverrouillé et démarré grâce à la clé numérique Hyundai, qui utilise la communication en champ proche (NFC) des smartphones ou des montres connectées, assurant ainsi un niveau élevé de sécurité ;\r\n- Les compteurs et le système de navigation sont dotés d'écrans de 12,3 pouces pour une expérience entièrement numérique ;\r\n- Le nouveau système de navigation (ccNC) se caractérise par des graphismes modernes et une interface homogène pour tous les affichages du véhicule ;\r\n- La caméra 360° (SVM) fournit une vue vidéo de l'environnement du véhicule pour un stationnement en toute sécurité ;\r\n- Les mises à jour à distance (OTA) permettent aux clients de maintenir leur véhicule à jour avec les dernières versions logicielles, pour une utilisation pratique et à jour ;\r\n- La technologie de connectivité de Hyundai et les services de streaming Bluelink® en haute définition pour la musique et les vidéos seront fournis via la fonction de mise à jour à distance ;\r\n- Le système audio Bose premium à sept haut-parleurs est associé à un subwoofer pour une expérience d'écoute riche et immersive ;\r\n- Il offre deux ports USB-C à l'avant (dont un avec support de données) et deux autres à l'arrière, ainsi qu'une prise 12V à l'avant."
+        }
+      ],
+      "categorie": "SUV urbain",
+      "places": 5,
+      "prix_a_partir_de": 35150,
+      "autonomie_km": null,
+      "batterie_kwh": null,
+      "puissance_ch": 129,
+      "coffre_l": 466,
+      "recharge_10_80_min": null,
+      "longueur_mm": null,
+      "points_forts": [
+        "Volume de coffre de 466 L (VDA) avec banquette en place",
+        "Double écran de 12,3 pouces pour l'instrumentation et la navigation",
+        "Consommation de carburant réduite jusqu'à 25 % par rapport au thermique",
+        "Garantie 5 ans kilométrage illimité et 8 ans pour la batterie haute tension",
+        "Technologies de sécurité SmartSense incluant caméra 360° et régulateur adaptatif"
+      ],
+      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs urbains et périurbains qui souhaitent réduire leur consommation sans avoir à se soucier de la recharge électrique.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous recherchez une autonomie significative en mode 100 % électrique pour vos trajets quotidiens.",
+      "motorisation": "hybride",
+      "conseillable": true
+    },
+    {
+      "slug": "kona-electric",
+      "nom": "KONA Electric",
+      "url": "https://www.hyundai.com/fr/fr/modeles/kona-electric.html",
+      "description": "Découvrez KONA Electric, le SUV électrique audacieux avec un espace agrandi et une technologie avancée. Réservez un essai aujourd'hui !",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_Electric_MY25_2024",
+      "photos_interieur": [],
+      "videos": [],
+      "faq": [
+        {
+          "question": "Quels sont les avantages des SUV électriques ?",
+          "reponse": "Les SUV électriques offrent de nombreux avantages par rapport à leurs homologues thermiques :\r\n \r\n- Plus respectueux de l'environnement : Zéro émission directe de CO2 et de particules fines, contribuant à améliorer la qualité de l'air en milieu urbain.\r\n \r\n- Coûts d'utilisation réduits : L'électricité étant généralement moins chère que les carburants fossiles, les frais de &quot;carburant&quot; sont nettement inférieurs. De plus, l'entretien est simplifié, ce qui réduit les coûts de maintenance.\r\n \r\n- Performances : Les SUV électriques offrent souvent des accélérations dynamiques, rivalisant avec leurs équivalents thermiques haut de gamme.\r\n \r\n- Aides financières : En France comme dans de nombreux autres pays, les SUV électriques bénéficient d’aides comme le bonus écologique réduisant leur coût d'acquisition.\r\n \r\n- Design innovant : Les SUV électriques se distinguent souvent par un design moderne et des éléments stylistiques innovants, reflétant leur technologie avancée.\r\n \r\nPour découvrir toute la gamme de nos véhicules électriques, y compris les SUV, n'hésitez pas à visiter notre site web."
+        },
+        {
+          "question": "Comment choisir le SUV électrique qui me convient ?",
+          "reponse": "Le choix d’un SUV électrique dépend de plusieurs critères essentiels. L’autonomie est un élément clé : selon votre utilisation quotidienne, vous pouvez opter pour une batterie offrant un cycle d’autonomie plus ou moins élevé. Les versions disponibles dans notre gamme KONA proposent différentes capacités en kWh, adaptées aux besoins de chaque conducteur.\r\n&nbsp;\r\nLa puissance du moteur, la vitesse de recharge et les équipements de confort jouent également un rôle. Un véhicule dédié aux longs trajets nécessitera un bon équilibre entre consommation énergétique, capacité de recharge rapide en minutes et efficacité du moteur. Si votre priorité est le design ou l’aspect écologique, vous trouverez des voitures électriques offrant un excellent compromis entre performance et efficacité au sein de notre gamme électrique.\r\n&nbsp;\r\nEnfin, le prix et les aides gouvernementales comme le bonus écologique sont à considérer. Hyundai propose des offres attractives sur ses SUV électriques, alliant performance et accessibilité."
+        },
+        {
+          "question": "Quel est le coût de recharge d'un SUV électrique ?",
+          "reponse": "Le coût de recharge d’un SUV électrique dépend de plusieurs facteurs : le prix de l’électricité, la capacité de la batterie en kWh et le mode de recharge choisi. À domicile, le tarif est plus avantageux, notamment avec un abonnement spécifique aux véhicules électriques. En station de recharge rapide, le coût peut être plus élevé, mais le gain en durée est appréciable.\r\n \r\nLe cycle de consommation d’un SUV électrique joue aussi un rôle. Par exemple, une voiture consommant 15 kWh/100 km engendrera une dépense plus faible qu’un modèle à 20 kWh/100 km. Avec les offres d’abonnement aux bornes publiques, il est possible d’optimiser ces dépenses.\r\n \r\nOpter pour un modèle bien calibré à son utilisation, comme nos suv, permet de maîtriser son budget tout en profitant d’une expérience de conduite performante et écologique."
+        },
+        {
+          "question": "Quelle est l'autonomie moyenne d'un SUV électrique ?",
+          "reponse": "L'autonomie des SUV électriques varie considérablement selon les modèles, mais elle ne cesse de s'améliorer. La plupart des SUV électriques modernes proposent une autonomie comprise entre 300 et 500 km en cycle WLTP. Certains modèles haut de gamme peuvent même dépasser les 600 km d'autonomie.\r\n \r\nCependant, l'autonomie réelle dépend de plusieurs facteurs comme le style de conduite, la température extérieure, l'utilisation de la climatisation ou du chauffage, et le type de route emprunté. La technologie des batteries s'améliore constamment, offrant des densités énergétiques plus élevées et donc des autonomies croissantes.\r\n \r\nDe plus, la recharge rapide permet de récupérer une autonomie significative en peu de temps, généralement de 100 à 200 km en 15 à 30 minutes sur une borne de recharge rapide. Ces avancées rendent les SUV électriques de plus en plus pratiques pour un usage quotidien et pour les longs trajets."
+        },
+        {
+          "question": "Peut-on installer une borne de recharge à domicile pour un SUV électrique ?",
+          "reponse": "Oui, il est tout à fait possible et même recommandé d'installer une borne de recharge à domicile pour votre SUV électrique :\r\n \r\n- Une borne domestique permet de recharger votre véhicule plus rapidement qu'une simple prise domestique, offrant plus de flexibilité et de confort au quotidien.\r\n \r\n- La plupart des SUV électriques sont compatibles avec des bornes de recharge domestiques d'une puissance de 7 à 22 kW, permettant une recharge complète en quelques heures.\r\n \r\n- L'installation d'une borne à domicile nécessite généralement l'intervention d'un électricien qualifié pour s'assurer de la compatibilité de votre installation électrique.\r\n \r\n- Des aides financières peuvent être disponibles pour l'installation d'une borne de recharge à domicile, il est conseillé de se renseigner auprès des autorités locales ou des distributeurs automobiles.\r\n \r\n- Si l'installation d'une borne à domicile n'est pas possible, de nombreuses solutions de recharge publiques existent, notamment sur les lieux de travail, dans les parkings publics ou les centres commerciaux."
+        }
+      ],
+      "categorie": "SUV urbain",
+      "places": 5,
+      "prix_a_partir_de": 36850,
+      "autonomie_km": 514,
+      "batterie_kwh": 65,
+      "puissance_ch": null,
+      "coffre_l": 466,
+      "recharge_10_80_min": 41,
+      "longueur_mm": null,
+      "points_forts": [
+        "Autonomie WLTP maximale de 514 km",
+        "Volume de coffre de 466 litres",
+        "Assistance à la conduite sur autoroute de niveau 2",
+        "Garantie batterie haute tension de 8 ans ou 160 000 km",
+        "Planificateur de trajet intelligent intégré"
+      ],
+      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs urbains et aux familles cherchant un SUV électrique polyvalent, doté d'une autonomie importante et de technologies de sécurité modernes.",
+      "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous recherchez les vitesses de recharge les plus rapides du marché, certains modèles de la gamme supérieure étant deux fois plus rapides.",
+      "motorisation": "100% electrique",
+      "conseillable": true
+    },
+    {
+      "slug": "tucson-hybrid",
+      "nom": "TUCSON Hybrid",
+      "url": "https://www.hyundai.com/fr/fr/modeles/tucson-hybrid.html",
+      "description": "Découvrez le nouveau SUV hybride, TUCSON Hybrid, avec son design affiné, son intérieur spacieux totalement repensé et sa technologie de pointe.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Hybrid_MY25_2024",
+      "photos_interieur": [],
+      "videos": [
+        "https://www.hyundai.com/content/dam/hyundai/sites/global/models/nx4-phev/full-pip/videos/Hyundai_TUCSON_2024_PHEV_NLINE_8s_FULLHD_16x9_CLEAN_1_komp.mp4"
+      ],
+      "faq": [
+        {
+          "question": "Quels sont les critères à considérer lors de l'achat d'un SUV hybride ?",
+          "reponse": "Lorsque vous choisissez un SUV hybride, plusieurs critères sont à prendre en compte pour garantir un bon compromis entre autonomie, puissance et confort de conduite. Le type de motorisation est essentiel : un SUV hybride combine un moteur thermique et un moteur électrique, permettant de réduire la consommation de carburant et les émissions tout en offrant une conduite fluide et agréable. Si vous souhaitez davantage d’autonomie électrique, vous pouvez également opter pour un modèle hybride rechargeable, disponible dans notre notre gamme hybride rechargeable.\r\n \r\nIl est aussi important de considérer la taille du SUV et son confort. Un modèle plus compact est particulièrement adapté en milieu urbain, tout en offrant un intérieur spacieux et modulable. Du côté de la technologie, nos SUV hybrides Hyundai intègrent des fonctionnalités avancées telles que le double écran incurvé et des aides à la conduite, pour améliorer la sécurité et le confort de conduite.\r\n \r\nN'oubliez pas de vérifier la garantie et l'entretien. Nos SUV hybrides bénéficient généralement d'une garantie de 5 ans avec kilométrage illimité, pour une tranquillité d'esprit optimale."
+        },
+        {
+          "question": "Quelle est la différence entre un SUV hybride et un SUV hybride rechargeable ?",
+          "reponse": "La principale différence entre un SUV hybride et un SUV hybride rechargeable se situe dans la motorisation et la gestion de l'énergie. Un SUV hybride utilise un moteur thermique qui recharge la batterie en roulant, grâce à la récupération d'énergie au freinage, sans nécessiter de prise pour recharger la batterie.\r\n&nbsp;\r\nEn revanche, un SUV hybride rechargeable permet de recharger la batterie via une prise électrique, et offre ainsi la possibilité de parcourir une plus grande distance en mode tout électrique avant que le moteur thermique ne se mette en marche. Cette option est idéale pour les trajets urbains ou quotidiens, car elle réduit encore davantage la consommation de carburant et les émissions.\r\n&nbsp;\r\nSi vous hésitez entre ces technologies, vous pouvez découvrir notre gamme hybride qui comprend des modèles alliant puissance, efficience énergétique et innovation pour répondre à vos besoins."
+        },
+        {
+          "question": "Quelles sont les aides financières disponibles pour l'achat d'un SUV hybride ?",
+          "reponse": "L'achat d’un SUV hybride peut être facilité par plusieurs aides financières. En France, plusieurs régions, métropoles ou agglomérations proposent des dispositifs incitatifs à destination des particuliers comme des professionnels.\r\n \r\nCes aides varient selon les zones géographiques et les périodes, il est donc essentiel de se renseigner auprès de votre collectivité ou sur les plateformes officielles pour connaître les dispositifs en vigueur au moment de votre achat."
+        },
+        {
+          "question": "Comment vieillissent les SUV hybrides ?",
+          "reponse": "Les SUV hybrides sont conçus pour être durables et nécessitent généralement moins d’entretien qu’un modèle purement thermique. Le moteur électrique réduit la sollicitation du moteur essence, limitant ainsi l’usure des pièces mécaniques. De plus, Hyundai propose des garanties prolongées pour ses véhicules, vous offrant une couverture pendant de nombreuses années.\r\n \r\nL’entretien des SUV hybrides est simplifié grâce à la gestion optimisée de la consommation de carburant grâce au moteur électrique. En choisissant un modèle hybride, vous profitez d'une voiture plus économe et de moins d'émissions. De plus, la garantie de 5 ans avec kilométrage illimité vous offre une tranquillité d'esprit totale, pour une utilisation à long terme de votre véhicule."
+        }
+      ],
+      "categorie": "SUV compact",
+      "places": 5,
+      "prix_a_partir_de": 38800,
+      "autonomie_km": null,
+      "batterie_kwh": null,
+      "puissance_ch": 288,
+      "coffre_l": 616,
+      "recharge_10_80_min": null,
+      "longueur_mm": 4535,
+      "points_forts": [
+        "Volume de coffre généreux jusqu'à 616 litres",
+        "Puissance maximale de 288 ch en version rechargeable",
+        "Autonomie électrique urbaine atteignant 92 km",
+        "Garantie 5 ans avec kilométrage illimité",
+        "Double écran incurvé de 12,3 pouces et aides à la conduite avancées"
+      ],
+      "profil_ideal": "Ce véhicule convient parfaitement aux familles et aux conducteurs technophiles recherchant un SUV polyvalent, spacieux et performant pour tous types de trajets.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous recherchez un gabarit très réduit pour le stationnement urbain ou si vous n'avez pas l'utilité d'un grand volume de chargement.",
+      "motorisation": "hybride",
+      "conseillable": true
+    },
+    {
+      "slug": "tucson-plug-in",
+      "nom": "TUCSON Plug-in",
+      "url": "https://www.hyundai.com/fr/fr/modeles/tucson-plug-in.html",
+      "description": "Découvrez le nouveau SUV hybride rechargeable, TUCSON PHEV, avec son design affiné, son intérieur spacieux totalement repensé et sa technologie de pointe.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Plug-in_Hybrid_MY25_2024",
+      "photos_interieur": [],
+      "videos": [],
+      "faq": [
+        {
+          "question": "Quelles sont les différences entre un SUV hybride rechargeable et non rechargeable ?",
+          "reponse": "Un SUV hybride rechargeable se distingue principalement par la possibilité de recharger sa batterie via une source externe (prise domestique, borne publique ou wallbox). Cela permet de parcourir plusieurs dizaines de kilomètres en mode 100 % électrique, sans solliciter le moteur thermique, ce qui est particulièrement avantageux pour les trajets du quotidien ou les déplacements urbains. À l’inverse, un SUV hybride non rechargeable (ou full hybrid) produit seul l’électricité nécessaire à son fonctionnement grâce au moteur thermique et au freinage régénératif. Il bascule automatiquement entre les deux sources d’énergie sans intervention du conducteur, mais ne peut rouler que quelques kilomètres en tout électrique. L’hybride rechargeable demande une certaine discipline dans les habitudes de recharge, mais il offre en retour une consommation de carburant nettement réduite et un vrai confort de conduite silencieuse au quotidien. Le SUV hybride non rechargeable, de son côté, reste plus simple à appréhender pour ceux qui\r\nne souhaitent pas s’occuper de la recharge. Pour explorer l’ensemble des modèles disponibles, vous pouvez également consulter nos SUV, adaptés à tous les profils de conduite."
+        },
+        {
+          "question": "Quels sont les coûts d'entretien d'un SUV hybride rechargeable ?",
+          "reponse": "L’entretien d’un SUV hybride rechargeable est globalement comparable à celui d’un SUV thermique ou hybride non rechargeable, avec quelques spécificités. Grâce à l'utilisation fréquente du moteur électrique, certaines pièces mécaniques s'usent plus lentement. Les freins, par exemple, bénéficient du système de récupération d’énergie, ce qui limite leur sollicitation. La vidange, le filtre à huile et les contrôles classiques restent nécessaires selon les préconisations constructeur, mais l’ensemble est souvent espacé dans le temps. Il faut également vérifier périodiquement l’état du système haute tension, les câbles de recharge et la batterie. Les éléments liés à la chaîne électrique sont généralement garantis sur de longues périodes (jusqu’à 8 ans chez Hyundai). À l’usage, un SUV hybride rechargeable peut engendrer des économies, notamment si vous rechargez régulièrement et roulez majoritairement en électrique. Moins de carburant, moins d’entretien mécanique et un coût global maîtrisé, surtout si vous avez accès à une recharge à domicile."
+        },
+        {
+          "question": "Comment choisir le meilleur SUV hybride rechargeable selon ses besoins",
+          "reponse": "Le choix du bon SUV hybride rechargeable dépend avant tout de votre usage personnel, de votre rythme de conduite et des infrastructures de recharge disponibles autour de vous. Si vous réalisez de nombreux trajets courts en semaine (domicile-travail, école, commerces), l’autonomie électrique d’un modèle rechargeable sera parfaitement adaptée, avec la possibilité de rouler sans émettre de CO₂ sur la majorité de vos déplacements. En revanche, si vous partez régulièrement en week-end ou que vous effectuez souvent de longs trajets, il faudra veiller à ce que le modèle choisi propose une motorisation thermique suffisamment confortable, et une recharge rapide ou simple à domicile. Il est également important de prendre en compte la taille du véhicule, l’espace à bord, les équipements de connectivité, la gestion intelligente de l’énergie ou encore l’expérience de conduite. En consultant notre gamme hybride rechargeable, vous pourrez comparer les différentes alternatives selon vos critères, et si vous préférez une solution sans recharge, notre gamme hybride classique reste une option pertinente et accessible."
+        },
+        {
+          "question": "Quelle autonomie pour un SUV hybride rechargeable ?",
+          "reponse": "L’autonomie d’un SUV hybride rechargeable dépend de nombreux facteurs, comme la capacité de sa batterie, le profil du conducteur, le type de parcours ou encore la température extérieure. En moyenne, elle varie entre 40 et 70 kilomètres en mode 100 % électrique, ce qui suffit largement pour couvrir la majorité des trajets urbains ou périurbains. Hyundai TUCSON Plug-in, par exemple, offre une autonomie électrique performante, permettant à de nombreux conducteurs de rouler sans consommer une goutte de carburant en semaine. Une fois la batterie vide, le moteur thermique prend le relais de manière fluide pour offrir une autonomie globale comparable à celle d’un SUV classique, sans contrainte. Cette double motorisation garantit une polyvalence appréciable au quotidien : vous profitez d’un confort silencieux en ville, tout en conservant la liberté de vous évader sans stress lors de longs trajets. La présence d’un mode hybride automatique permet aussi d’optimiser intelligemment l’énergie selon votre itinéraire, sans intervention de votre part."
+        }
+      ],
+      "categorie": "SUV compact",
+      "places": 5,
+      "prix_a_partir_de": 43600,
+      "autonomie_km": 92,
+      "batterie_kwh": 13.8,
+      "puissance_ch": 288,
+      "coffre_l": 558,
+      "recharge_10_80_min": null,
+      "longueur_mm": 4535,
+      "points_forts": [
+        "Autonomie électrique jusqu'à 92 km en cycle urbain",
+        "Puissance cumulée performante de 288 ch",
+        "Volume de coffre de 558 litres avec banquette en place",
+        "Double écran panoramique incurvé de 12,3 pouces",
+        "Garantie 5 ans kilométrage illimité"
+      ],
+      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs pouvant recharger quotidiennement à domicile ou au travail pour effectuer leurs trajets urbains en mode 100% électrique.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous n'avez pas de solution de recharge régulière, car vous transporteriez le poids de la batterie sans bénéficier de l'économie de carburant.",
+      "motorisation": "hybride rechargeable",
+      "conseillable": true
+    },
+    {
+      "slug": "ioniq5",
+      "nom": "IONIQ 5",
+      "url": "https://www.hyundai.com/fr/fr/modeles/ioniq5.html",
+      "description": "Hyundai IONIQ 5, notre SUV compact 100 % électrique, avec batterie 800 V et recharge ultra-rapide, offre jusqu’à 570 km d’autonomie.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_MY25_2024",
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-5_5-Seats",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_2024_Interior_6-Enhanced-IONIQ-5",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_Interior_2024_Inside_the_digital_side_mirrors",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_2024_Interior_Surround_view"
+      ],
+      "videos": [],
+      "faq": [
+        {
+          "question": "Quels sont les critères de sélection d'un SUV compact ?",
+          "reponse": "Choisir un SUV compact repose sur plusieurs éléments clés : l’espace intérieur, l’ergonomie et les performances. Un bon modèle doit offrir un habitacle spacieux et modulable, un coffre généreux et une technologie adaptée aux trajets du quotidien comme aux voyages.\r\n \r\nLa motorisation est un critère essentiel. Certains préfèrent une version essence pour son autonomie et son prix plus accessible à l’achat, tandis que les modèles rechargeables ou hybrides séduisent par leur sobriété en carburant. La motorisation 100 % électrique représente quant à elle une solution idéale pour celles et ceux qui souhaitent rouler sans émissions, avec un confort de conduite optimal, une accélération instantanée et des coûts d’entretien réduits. Pour les amateurs de conduite dynamique, la question de la transmission est aussi importante : choisir entre une boîte manuelle pour plus de contrôle ou une boîte automatique pour un confort accru dépend du style de conduite recherché. Pour les modèles rechargeables, l’autonomie et la rapidité de recharge sont déterminantes.\r\n \r\nEnfin, la fiabilité du véhicule, les équipements embarqués et les aides à la conduite influencent le choix final. Les nouvelles générations de SUV compacts intègrent des technologies avancées pour renforcer la sécurité et l’agrément de conduite. Pour explorer les différentes options, découvrez nos SUV et trouvez le modèle qui correspond à vos attentes."
+        },
+        {
+          "question": "Comment choisir entre un SUV compact électrique et un hybride ?",
+          "reponse": "L’électrique et l’hybride répondent à des usages différents. Un SUV 100 % électrique comme IONIQ 5 garantit une conduite sans émissions, un coût d’usage réduit et une maintenance simplifiée grâce à l’absence de moteur thermique. Son prix d’achat peut être plus élevé qu’un modèle essence, mais il est rapidement rentabilisé grâce aux économies sur le carburant et l’entretien.\r\n&nbsp;\r\nUn SUV hybride, qu’il soit hybride simple ou hybride rechargeable, combine un moteur thermique et un moteur électrique. Ce choix offre plus de flexibilité pour ceux qui parcourent de très longues distances sans accès fréquent aux bornes de recharge. Selon le modèle et l’année de fabrication, les performances et la consommation de carburant varient. Pour trouver la motorisation qui vous convient, explorez notre gamme électrique."
+        },
+        {
+          "question": "Quels sont les avantages des SUV compacts électriques ?",
+          "reponse": "Les SUV compacts électriques offrent une expérience de conduite inédite, alliant silence, puissance et souplesse. Contrairement aux voitures thermiques équipées d’une boîte manuelle, qui nécessitent de passer les vitesses, un SUV électrique fonctionne sans transmission classique. Son moteur délivre un couple instantané, garantissant des accélérations fluides et dynamiques.\r\n \r\nAu-delà des performances, l’absence de consommation de carburant réduit les frais d’usage et l’impact environnemental. L’entretien est aussi plus simple et moins coûteux, car il y a moins de pièces d’usure qu’un moteur thermique. De plus, la capacité du coffre est souvent optimisée, car les SUV électriques ne nécessitent pas de réservoir de carburant ni de boîte de vitesses volumineuse.\r\n \r\nCes modèles intègrent aussi les dernières technologies en matière de connectivité et de sécurité. Grâce à leur autonomie optimisée et à la recharge rapide, ils offrent une alternative performante et pratique aux voitures thermiques."
+        },
+        {
+          "question": "Quelle est la puissance d'un SUV compact électrique ?",
+          "reponse": "La puissance d’un SUV compact électrique dépend de sa motorisation et de sa batterie. Le modèle IONIQ 5 propose plusieurs déclinaisons, avec une version à transmission intégrale développant jusqu’à 325 ch, assurant des accélérations franches et une conduite réactive. Sa technologie avancée et sa batterie 800 V lui permettent une recharge ultra-rapide, r optimisant chaque trajet et réduisant les temps d’attente aux bornes de recharge.\r\n \r\nPour les conducteurs habitués aux sensations d’une boîte manuelle, la transition vers un SUV électrique peut être surprenante, car il n’y a plus de rapports à gérer. Cependant, la réactivité instantanée du moteur électrique compense largement cette différence, offrant une accélération fluide et linéaire sans perte d’énergie. Cette combinaison de puissance et d’efficience énergétique fait des SUV électriques une alternative performante et durable aux motorisations thermiques."
+        }
+      ],
+      "categorie": "SUV compact",
+      "places": 5,
+      "prix_a_partir_de": 44800,
+      "autonomie_km": 570,
+      "batterie_kwh": 84,
+      "puissance_ch": null,
+      "coffre_l": 520,
+      "recharge_10_80_min": 18,
+      "longueur_mm": 4655,
+      "points_forts": [
+        "Recharge ultra-rapide de 10 à 80 % en seulement 18 minutes (système 800 V)",
+        "Autonomie WLTP maximale de 570 km",
+        "Habitacle très spacieux avec un empattement de 3 000 mm",
+        "Volume de coffre de 520 litres",
+        "Accélération de 0 à 100 km/h en 5,3 secondes"
+      ],
+      "profil_ideal": "Ce véhicule convient parfaitement aux familles et aux conducteurs effectuant de longs trajets réguliers grâce à son habitacle modulable et sa capacité de recharge ultra-rapide sur autoroute.",
+      "a_eviter_si": "À éviter si vous recherchez un véhicule citadin de petit gabarit ou si vous n'avez pas accès à des infrastructures de recharge permettant de profiter de sa technologie 800 V.",
+      "motorisation": "100% electrique",
+      "conseillable": true
+    },
+    {
+      "slug": "santa-fe-hybrid",
+      "nom": "SANTA FE Hybrid",
+      "url": "https://www.hyundai.com/fr/fr/modeles/santa-fe-hybrid.html",
+      "description": "Découvrez notre grand SUV 7 places, SANTA FE Hybrid. Son intérieur spacieux et son chargement conquièrent ville et grands espaces.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SANTA_FE_Hybrid_MY25_2024",
+      "photos_interieur": [],
+      "videos": [],
+      "faq": [
+        {
+          "question": "Quels sont les avantages d'un SUV 7 places hybride ?",
+          "reponse": "Un SUV 7 places hybride comme SANTA FE Hybrid est un véhicule idéal pour allier performance, espace et économie de carburant. Grâce à sa motorisation hybride, combinant un moteur thermique et un moteur électrique, il réduit la dépendance aux carburants essence, tout en optimisant son autonomie.\r\n&nbsp;\r\nIl s’agit d’un modèle pensé pour les familles ou les professionnels ayant besoin de polyvalence : le volume de coffre généreux, l’habitabilité sur trois rangées et le confort à bord en font un choix pratique pour les trajets quotidiens comme pour les départs en vacances.\r\n&nbsp;\r\nContrairement à un véhicule 100 % électrique, un SUV hybride n’a pas besoin d’être rechargé sur secteur. Il récupère automatiquement de l’énergie pendant la conduite, ce qui le rend idéal si vous ne disposez pas de borne à domicile. La boîte automatique permet de tirer pleinement parti de cette alternance entre les deux motorisations, assurant une conduite souple, intuitive et sans effort. Pour ceux qui souhaitent aller plus loin dans l'électrification, il existe des variantes hybrides rechargeables, disponibles dans notre gamme hybride rechargeable."
+        },
+        {
+          "question": "Quels critères prioritaires dois-je considérer pour mon grand SUV ?",
+          "reponse": "L’achat d’un SUV 7 places repose sur plusieurs critères fondamentaux. L’espace intérieur est un point essentiel : un bon véhicule familial doit offrir une modularité intelligente des sièges et un volume de coffre suffisamment spacieux pour transporter passagers et bagages sans compromis.\r\n&nbsp;\r\nLa motorisation doit aussi correspondre à votre profil de conducteur. Un SUV thermique conviendra à ceux qui privilégient la simplicité d’usage, tandis qu’un SUV hybride constitue un excellent équilibre entre sobriété, performance et polyvalence. Pour un usage mixte ville-route, ou si vous circulez fréquemment en milieu urbain, l’hybride s’impose comme une solution pertinente pour limiter la consommation et les émissions.\r\n&nbsp;\r\nPour un confort optimal, privilégiez un modèle équipé des dernières technologies : aides à la conduite, freinage d’urgence automatique, connectivité avancée… Ces options améliorent à la fois la sécurité et le plaisir au volant. Pour comparer les différents modèles disponibles, explorez nos SUV."
+        },
+        {
+          "question": "Comment entretenir un SUV 7 places hybride ?",
+          "reponse": "L’entretien d’un SUV 7 places hybride est souvent plus simple et économique que celui d’un véhicule thermique classique. Grâce au moteur électrique, certaines pièces mécaniques sont moins sollicitées, ce qui réduit l’usure et le coût des révisions. Il reste cependant important de respecter les préconisations du constructeur pour garantir la longévité du véhicule.\r\n&nbsp;\r\nLa batterie hybride ne demande pas d’entretien spécifique, mais une vérification régulière est conseillée pour préserver son autonomie et son efficacité. La gestion intelligente de l’énergie permet aussi de prolonger la durée de vie des freins, car le système de récupération d’énergie au freinage réduit leur sollicitation.\r\n&nbsp;\r\nQue vous choisissiez un modèle hybride, essence ou électrique, adopter une conduite souple et éviter les accélérations brusques permet de préserver les performances du moteur et de la batterie. Pour tout savoir sur les particularités des modèles hybrides, consultez notre gamme hybride."
+        },
+        {
+          "question": "Quelle différence de performance entre un SUV 7 places hybride et thermique ?",
+          "reponse": "Le choix entre un SUV 7 places hybride et un SUV thermique repose sur plusieurs critères, notamment la motorisation, l’autonomie, la consommation de carburant et le type de conduite recherché.\r\n \r\nUn SUV thermique, qu’il fonctionne à l’essence ou au diesel, développe généralement une puissance constante et une vitesse soutenue, notamment sur autoroute. Il est souvent équipé d’une boîte automatique ou d’une boîte manuelle, offrant un choix en fonction du confort et des sensations de conduite souhaités. Ce type de véhicule est particulièrement adapté aux longs trajets, avec une autonomie qui ne dépend que de la taille du réservoir et du rendement du moteur.\r\n \r\nUn SUV hybride, lui, combine un moteur thermique et un moteur électrique, ce qui permet une meilleure gestion de l’énergie et une réduction de la consommation de carburant en ville comme sur route. Il offre une accélération plus dynamique grâce au couple instantané du moteur électrique, ce qui améliore la réactivité à basse vitesse. Son autonomie est optimisée par le système de récupération d’énergie au freinage, prolongeant l’utilisation du moteur électrique sans avoir besoin de recharger sur secteur, sauf dans le cas d’un hybride rechargeable."
+        }
+      ],
+      "categorie": "SUV familial",
+      "places": 7,
+      "prix_a_partir_de": 50400,
+      "autonomie_km": null,
+      "batterie_kwh": null,
+      "puissance_ch": 253,
+      "coffre_l": 985,
+      "recharge_10_80_min": null,
+      "longueur_mm": 4830,
+      "points_forts": [
+        "Capacité d'accueil de 7 places de série",
+        "Volume de coffre généreux de 985 litres (rang 2 en place)",
+        "Sécurité renforcée avec 10 airbags de série",
+        "Cockpit digital incurvé avec deux écrans de 12,3 pouces",
+        "Garantie 5 ans kilométrage illimité"
+      ],
+      "profil_ideal": "Ce véhicule convient parfaitement aux familles nombreuses recherchant un maximum d'espace, de modularité et de sécurité pour des trajets polyvalents.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous circulez exclusivement en centre-ville étroit où son gabarit de 4,83 m peut être contraignant.",
+      "motorisation": "hybride",
+      "conseillable": true
+    },
+    {
+      "slug": "santa-fe-plug-in",
+      "nom": "SANTA FE Plug-in",
+      "url": "https://www.hyundai.com/fr/fr/modeles/santa-fe-plug-in.html",
+      "description": "Découvrez SANTA FE Nouvelle Génération, le SUV 7 places hybride rechargeable. Son intérieur spacieux conquit ville et grands espaces.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SANTA_FE_Plug-in_Hybrid_MY25_2024",
+      "photos_interieur": [],
+      "videos": [],
+      "faq": [
+        {
+          "question": "Quelle est l'autonomie d'un SUV 7 places hybride rechargeable ?",
+          "reponse": "Un SUV 7 places hybride rechargeable comme Hyundai SANTA FE Plug-in permet de parcourir jusqu’à plusieurs dizaines de kilomètres en mode 100 % électrique. Cette autonomie est largement suffisante pour couvrir les déplacements du quotidien : accompagnement à l’école, trajets domicile-travail, courses, loisirs ou rendez-vous médicaux. Le tout sans consommer une goutte de carburant ni générer d’émissions locales.\r\nLorsque la batterie est vide, le moteur thermique prend le relais automatiquement, assurant ainsi la continuité du trajet sans intervention de votre part. Vous bénéficiez alors de l’autonomie classique d’un SUV thermique, tout en conservant un haut niveau d’efficience énergétique. Ce fonctionnement bimoteur s’adapte parfaitement aux familles actives qui alternent entre déplacements urbains la semaine et escapades le week-end.\r\nL’autonomie réelle dépend de plusieurs facteurs, comme :\r\n\r\nvotre style de conduite (souple ou dynamique)\r\nle niveau de charge initial de la batterie\r\nla température extérieure ou le relief du trajet\r\nle nombre de passagers ou le poids de chargement\r\n\r\nCette technologie hybride rechargeable offre un équilibre idéal entre confort, souplesse d’utilisation et réduction de la consommation. Si vous souhaitez explorer d’autres modèles offrant ce type de motorisation, consultez notre gamme hybride rechargeable."
+        },
+        {
+          "question": "Pourquoi choisir un SUV familial hybride rechargeable ?",
+          "reponse": "Un SUV hybride rechargeable est une solution pertinente pour les familles qui recherchent à la fois de l’espace, de la polyvalence et une motorisation plus économe en carburant. Il s’adapte à toutes les situations sans renoncer ni à la performance ni au confort.\r\nLes principaux avantages :\r\n\r\nJusqu’à 7 vraies places avec un excellent confort pour tous les passagers\r\nUne autonomie électrique suffisante pour les déplacements du quotidien\r\nUne consommation optimisée, surtout si la recharge est régulière\r\nDes aides à la conduite avancées et un haut niveau de sécurité\r\nDes services connectés pour faciliter les trajets en famille\r\n\r\nSANTA FE Plug-in incarne cette nouvelle génération de véhicules familiaux. Son design robuste, son intérieur spacieux et sa technologie embarquée en font un SUV aussi pratique qu’agréable à conduire.\r\nVous avez besoin d’un format plus urbain ou de dimensions plus contenues ? Découvrez nos SUV pour comparer les options et choisir le modèle adapté à votre quotidien."
+        },
+        {
+          "question": "Quels critères prendre en compte pour choisir un SUV 7 places hybride rechargeable ?",
+          "reponse": "Le choix d’un SUV 7 places hybride rechargeable doit se faire en fonction de vos habitudes de conduite, de vos contraintes logistiques et de vos attentes en matière de confort ou de technologie.\r\nVoici les principaux critères à considérer :\r\n\r\nVotre usage quotidien : si vous effectuez régulièrement des trajets courts, la technologie PHEV est particulièrement avantageuse en termes de consommation\r\nLa possibilité de recharge : disposer d’un accès à une borne à domicile ou au travail est essentiel pour profiter pleinement du mode électrique\r\nL’espace intérieur : modularité des sièges, volume du coffre et confort à bord sont déterminants pour les familles nombreuses ou les longs trajets\r\nLes équipements technologiques : navigation intuitive, écrans connectés, compatibilité smartphone, systèmes d’assistance à la conduite\r\nLe niveau de finition : sellerie, ambiance intérieure, teintes, options de personnalisation selon les versions disponibles\r\n\r\nSANTA FE PHEV répond à ces attentes avec une motorisation performante, un habitacle généreux et une recharge simple à mettre en place. Il propose un excellent compromis pour celles et ceux qui souhaitent conjuguer espace et sobriété sans changer leurs habitudes.\r\nVous préférez un SUV hybride sans branchement, pour une utilisation encore plus simple au quotidien ? Consultez notre gamme hybride, qui inclut des modèles full hybrid parfaitement adaptés aux trajets urbains ou périurbains."
+        }
+      ],
+      "categorie": "SUV familial",
+      "places": 7,
+      "prix_a_partir_de": 59700,
+      "autonomie_km": 65,
+      "batterie_kwh": 13.8,
+      "puissance_ch": 253,
+      "coffre_l": 985,
+      "recharge_10_80_min": null,
+      "longueur_mm": 4830,
+      "points_forts": [
+        "Capacité de 7 places de série",
+        "Volume de coffre généreux de 985 litres (rang 2 en place)",
+        "Sécurité renforcée avec 10 airbags et aides à la conduite de niveau 2",
+        "Autonomie électrique urbaine jusqu'à 65 km",
+        "Garantie 5 ans kilométrage illimité"
+      ],
+      "profil_ideal": "Ce véhicule convient aux familles nombreuses qui souhaitent un SUV spacieux et sécurisé pour effectuer leurs trajets quotidiens en mode électrique tout en conservant la polyvalence thermique pour les longs voyages.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous n'avez pas de solution de recharge régulière à domicile ou au travail, car son efficience dépend directement de l'utilisation de sa batterie.",
+      "motorisation": "hybride rechargeable",
+      "conseillable": true
+    },
+    {
+      "slug": "ioniq9",
+      "nom": "IONIQ 9",
+      "url": "https://www.hyundai.com/fr/fr/modeles/ioniq9.html",
+      "description": "Venez découvrir Nouveau Hyundai IONIQ 9 – un SUV électrique 7 places d'une rare élégance avec son intérieur aussi spacieux que confortable.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_9_2025_360_EXT_NH5_IonosphereGreenPearl_001_1280",
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Interior_2nd-Row-Relaxation-Seat_EU_12",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Animation_Extended-Cargo_7-Seats_Thumbnail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Animation_Extended-Cargo_7-Seats-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Animation_Folding_7-Seats_Thumbnail"
+      ],
+      "videos": [],
+      "faq": [
+        {
+          "question": "Quels sont les avantages d'un SUV électrique 7 places par rapport à un modèle thermique ?",
+          "reponse": "Un SUV électrique 7 places se distingue par une utilisation plus silencieuse, une conduite fluide et une meilleure réponse à l’accélération. Il permet de réduire considérablement les émissions locales tout en profitant d’un véhicule plus reposant, surtout en usage urbain. Grâce à une batterie performante, l’autonomie permet de couvrir aussi bien les trajets quotidiens que les longs parcours sur route. L’entretien est également simplifié, avec moins de pièces mécaniques sujettes à l’usure. L’accès à certains avantages comme les zones à circulation restreinte rend l’électrique plus pertinent que jamais. Pour explorer nos modèles, vous pouvez consulter notre gamme électrique."
+        },
+        {
+          "question": "Quel est le coût moyen d'un SUV électrique 7 places ?",
+          "reponse": "Le tarif d’un SUV électrique 7 places varie selon plusieurs critères comme la puissance, le niveau d’équipements, la capacité de la batterie ou encore les technologies disponibles à bord. Par exemple, il faut prévoir un budget à partir de 69 900 euros pour un SUV 7 places IONIQ 9, avec des variations selon la version et les finitions choisies. Des offres commerciales peuvent ponctuellement rendre l’accès à ce type de véhicule plus avantageux, notamment pour les professionnels. À cela s’ajoutent des aides financières comme la prime CEE, qui permet d’alléger le coût d’achat. Pour les personnes souhaitant bénéficier d’un prix plus accessible, un modèle d’occasion récent peut aussi représenter une alternative intéressante."
+        },
+        {
+          "question": "Comment choisir un SUV électrique 7 places adapté à mes besoins ?",
+          "reponse": "Le choix dépend avant tout de votre utilisation : trajets urbains, longs déplacements, fréquence des passagers, besoins de confort ou d’espace à bord. Il est essentiel de regarder l’autonomie réelle selon le cycle d’homologation, le temps de recharge, le nombre de sièges suivant la configuration, les aides à la sécurité disponibles, ou encore le type de roues motrices (deux ou quatre). Certains modèles proposent des sièges modulables, un intérieur spacieux et des technologies connectées qui améliorent l’expérience de conduite. Pour aller plus loin, n’hésitez pas à comparer nos SUV selon leurs versions, moteurs et services associés."
+        }
+      ],
+      "categorie": "SUV familial",
+      "places": 7,
+      "prix_a_partir_de": 70450,
+      "autonomie_km": 620,
+      "batterie_kwh": 110.3,
+      "puissance_ch": 428,
+      "coffre_l": 338,
+      "recharge_10_80_min": 24,
+      "longueur_mm": 5060,
+      "points_forts": [
+        "Autonomie WLTP jusqu'à 620 km",
+        "Recharge ultra-rapide 10-80% en 24 min (système 800V)",
+        "Volume de chargement maximal de 2 494 litres",
+        "Capacité de remorquage jusqu'à 2 500 kg",
+        "Technologie V2L pour alimenter des appareils (3,6 kW)"
+      ],
+      "profil_ideal": "Ce véhicule convient parfaitement aux familles nombreuses recherchant un SUV électrique haut de gamme, extrêmement spacieux et capable de voyager sur de longues distances grâce à sa charge rapide.",
+      "a_eviter_si": "Ce modèle n'est pas le bon choix si vous circulez principalement dans des rues étroites en raison de sa longueur de 5,06 mètres ou si votre budget est inférieur à 70 000 euros.",
+      "motorisation": "100% electrique",
+      "conseillable": true
+    },
+    {
+      "slug": "ioniq3",
+      "nom": "IONIQ 3",
+      "url": "https://www.hyundai.com/fr/fr/modeles/ioniq3.html",
+      "description": "Découvrez Hyundai IONIQ 3. Une voiture 100 % électrique compacte, spacieuse et irrésistiblement moderne avec jusqu’à 496 km d’autonomie.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3",
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Interior_Centre-Console_16_Interior-Chess",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_Interior_Lifestyle_3x4",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_Interior_Animation_Thumbnail_3x4",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_Interior_Front_Storage_4x3"
+      ],
+      "videos": [],
+      "faq": [
+        {
+          "question": "Qu’est-ce que Hyundai IONIQ 3 ?",
+          "reponse": "Hyundai IONIQ 3 est un véhicule électrique compact alliant un design audacieux à un intérieur spacieux et confortable, ainsi qu’à une technologie facile à utiliser."
+        },
+        {
+          "question": "Comment IONIQ 3 rend-elle la technologie électrique simple et facile à utiliser ?",
+          "reponse": "La technologie de IONIQ 3 est conçue pour simplifier la conduite au quotidien plutôt que d’ajouter de la complexité.\r\nDes fonctionnalités telles que la clé numérique permettent un accès sans clé via smartphone ou objets connectés, tandis que le système Plug &amp; Charge, le planificateur d’itinéraire pour véhicules électriques et la fonctionnalité V2L intérieure et extérieure offrent une expérience de conduite et de recharge fluide.\r\nLa recharge rapide en courant continu (DC) de 10 à 80 % s’effectue en 29 minutes dans des conditions optimales, et est complétée par une capacité de recharge en courant alternatif (AC) allant jusqu’à 22 kW."
+        },
+        {
+          "question": "Qu’est-ce que Hyundai Pleos Connect ?",
+          "reponse": "Pleos Connect est un système d’infodivertissement de nouvelle génération pour les véhicules Hyundai, basé sur le système d’exploitation Android Automotive OS, offrant des fonctionnalités uniques, personnalisables et intuitives.\r\nIONIQ 3 est le premier modèle Hyundai en Europe à intégrer ce système."
+        },
+        {
+          "question": "Quelles sont les principales fonctionnalités du système d’infodivertissement Hyundai Pleos Connect ?",
+          "reponse": "Les principaux points forts du système d’infodivertissement Hyundai Pleos Connect sont :\r\n• Applications préinstallées permettant d’accéder aux médias, à la navigation, à la connexion téléphonique, à Apple CarPlay et Android Auto, entre autres.\r\n• Pleos Connect App Market : une plateforme ouverte de type marketplace permettant aux développeurs tiers de créer des applications adaptées aux goûts et aux besoins évolutifs des clients.\r\n• Reconnaissance vocale améliorée par l’IA."
+        },
+        {
+          "question": "Comment IONIQ 3 répond-elle aux besoins des clients européens ?",
+          "reponse": "IONIQ 3 a été développée pour répondre aux besoins des conducteurs du quotidien ainsi que des jeunes familles accordent autant d’importance aux fonctionnalités qu’au style.\r\nBasée sur la plateforme électrique e-GMP de Hyundai Motor Group et dotée d’une architecture électrique de 400 volts, elle offre un équilibre entre efficacité, autonomie et capacités de recharge, pensé pour un usage confortable et simple au quotidien.\r\nDeux options de batterie sont proposées, avec des autonomies estimées selon le cycle WLTP de plus de 344 km (batterie 42 kWh) et de plus de 496 km (batterie 61 kWh), permettant à chacun de choisir la configuration la mieux adaptée à son mode de vie."
+        },
+        {
+          "question": "De quelle manière  IONIQ 3 parvient-elle à proposer un habitacle spacieux et un confort élevé, malgré son gabarit compact ?",
+          "reponse": "Malgré ses dimensions extérieures compactes, IONIQ 3 offre un intérieur spacieux et modulable, conçu autour du confort des passagers, avec un habitacle aménagé où les éléments sont agencés comme du mobilier afin de créer un environnement chaleureux et intuitif.\r\nUn empattement long et un plancher plat permettent de dégager un espace généreux pour les jambes et la tête, tandis qu’un grand coffre améliore la praticité au quotidien."
+        },
+        {
+          "question": "Qu’est-ce que Hyundai IONIQ ?",
+          "reponse": "IONIQ est une gamme entièrement dédiée à une mobilité de nouvelle génération. Découvrez une lignée de modèles primés : du SUV électrique 7 places de IONIQ 9 à l’agile IONIQ 3, sans oublier IONIQ 5 et sa déclinaison haute performance IONIQ 5 N. Chaque véhicule électrique de notre catalogue est conçu pour simplifier votre passage à l'électrique, notamment grâce à des solutions de recharge ultra-rapide et aux différentes aides à l'achat disponibles (voir modèles éligibles)."
+        },
+        {
+          "question": "Quelles sont les dimensions la Hyundai IONIQ 3 ?",
+          "reponse": "Hyundai IONIQ 3 mesure 4 155 mm de longueur (4 170 mm pour la version N Line), 1 800 mm de largeur, 1 505 mm de hauteur, et dispose d’un empattement de 2 680 mm, ce qui lui confère un gabarit compact mais spacieux."
+        }
+      ],
+      "categorie": "citadine",
+      "places": 5,
+      "prix_a_partir_de": null,
+      "autonomie_km": 497,
+      "batterie_kwh": 61,
+      "puissance_ch": null,
+      "coffre_l": 441,
+      "recharge_10_80_min": 29,
+      "longueur_mm": 4170,
+      "points_forts": [
+        "Autonomie WLTP jusqu'à 497 km",
+        "Recharge rapide de 10 à 80 % en 29 minutes",
+        "Volume de coffre de 441 L avec 119 L de rangement supplémentaire sous plancher",
+        "Fonction V2L (Vehicle-to-Load) jusqu'à 3,6 kW",
+        "Système d'infodivertissement Pleos Connect avec écran jusqu'à 14,6 pouces"
+      ],
+      "profil_ideal": "Conducteurs urbains et jeunes familles recherchant un véhicule compact de 4,15 m facile à manœuvrer sans compromis sur l'habitabilité et l'autonomie pour les longs trajets.",
+      "a_eviter_si": "Ce véhicule n'est pas adapté si vous avez besoin de plus de 5 places ou d'un volume de chargement de type grand SUV pour des besoins utilitaires fréquents.",
+      "motorisation": "100% electrique",
+      "conseillable": true
+    },
+    {
+      "slug": "ioniq5-n",
+      "nom": "IONIQ 5 N",
+      "url": "https://www.hyundai.com/fr/fr/modeles/ioniq5-n.html",
+      "description": "Découvrez Hyundai IONIQ 5 N, notre premier modèle N 100% électrique. Profitez de hautes performances, avec 650 ch et atteignez les 100 km/h en seulement 3,4 secondes.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_N_MY25_2024",
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/24_IONIQ5N_Interior_Static_Circuit_Paddle_Shifting",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/17_IONIQ5N_Interior_Driving_Warehouse_Interior_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/21_IONIQ5N_Interior_Static_Circuit_Interior",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/21_IONIQ5N_Interior_Static_Circuit_Interior_crop"
+      ],
+      "videos": [],
+      "faq": [],
+      "categorie": "SUV compact",
+      "places": 5,
+      "prix_a_partir_de": null,
+      "autonomie_km": 448,
+      "batterie_kwh": 84,
+      "puissance_ch": 650,
+      "coffre_l": null,
+      "recharge_10_80_min": 18,
+      "longueur_mm": null,
+      "points_forts": [
+        "Hautes performances avec 650 ch et 0 à 100 km/h en 3,4 secondes",
+        "Recharge ultra-rapide de 10 à 80 % en seulement 18 minutes",
+        "Sensations immersives via les technologies N e-Shift et N Active Sound+",
+        "Aptitudes sur circuit avec refroidissement optimisé et N Drift Optimizer"
+      ],
+      "profil_ideal": "Ce véhicule convient aux passionnés de conduite sportive et de sensations fortes qui souhaitent passer à l'électrique sans perdre le plaisir mécanique et sonore d'un véhicule de circuit.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si votre priorité absolue est l'efficience énergétique maximale ou si vous recherchez un véhicule électrique au comportement purement feutré et discret.",
+      "motorisation": "100% electrique",
+      "conseillable": true
+    },
+    {
+      "slug": "kona-nouvelle-generation",
+      "nom": "kona-nouvelle-generation",
+      "url": "https://www.hyundai.com/fr/fr/modeles/kona-nouvelle-generation.html",
+      "description": "",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Exterior-Front-Side_3_Three-Quarter-Front",
+      "photos_interieur": [],
+      "videos": [],
+      "faq": [],
+      "categorie": "SUV urbain",
+      "places": 5,
+      "prix_a_partir_de": null,
+      "autonomie_km": null,
+      "batterie_kwh": null,
+      "puissance_ch": null,
+      "coffre_l": 466,
+      "recharge_10_80_min": null,
+      "longueur_mm": null,
+      "points_forts": [
+        "Volume de coffre de 466 litres constant sur toutes les motorisations",
+        "Modularité optimisée avec dossiers rabattables 40:20:40",
+        "Mises à jour à distance OTA (Over The Air)",
+        "Clé numérique compatible smartphone et Apple Watch"
+      ],
+      "profil_ideal": "Ce véhicule convient parfaitement aux citadins et aux petites familles qui recherchent un SUV compact technologique avec un volume de chargement généreux et modulable.",
+      "a_eviter_si": "Ce modèle n'est pas le bon choix si vous avez besoin de plus de 5 places ou si vous recherchez une motorisation thermique de haute performance.",
+      "motorisation": "essence",
+      "conseillable": false
+    },
+    {
+      "slug": "nexo",
+      "nom": "NEXO",
+      "url": "https://www.hyundai.com/fr/fr/modeles/nexo.html",
+      "description": "Découvrez NEXO Nouvelle Génération, le SUV à hydrogène Hyundai qui associe un design affirmé à une technologie de pointe. Jusqu’à 826 km d’autonomie.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_2025_360_EXT_VC2_GoyoCopperPearl_1280",
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Relaxation-Seat_NH2_K4_LHD_KV_Lifestyle_Int_26",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Panoramic-Display_NH2_K4_LHD_panorama-display",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Bang-Olufsen-Speaker_NH2_K4_LHD_bang-olufsen",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Dashboard_Compositing_v008"
+      ],
+      "videos": [],
+      "faq": [
+        {
+          "question": "Qu’est-ce qu’un SUV hydrogène ?",
+          "reponse": "Un SUV hydrogène est un véhicule électrique qui génère sa propre énergie. Au lieu de stocker l'électricité dans une batterie lourde, il utilise une pile à combustible pour transformer l'hydrogène en courant électrique. Le résultat ? Vous profitez du silence de l'électrique sans les contraintes de recharge, avec pour seul rejet de la vapeur d'eau."
+        },
+        {
+          "question": "Pourquoi choisir un SUV hydrogène ?",
+          "reponse": "Choisir NEXO, c'est opter pour la liberté. Vous bénéficiez d'une autonomie exceptionnelle et d'un temps de ravitaillement identique à un véhicule thermique. C'est aussi un geste pour l'environnement : en plus de ne rien émettre, NEXO purifie l'air qu'il consomme, éliminant 99,9 % des particules fines durant vos trajets."
+        },
+        {
+          "question": "Quelle est l’autonomie d’un SUV hydrogène ?",
+          "reponse": "L'autonomie SUV hydrogène est l'une des plus élevées du marché électrifié. Avec 826 km (cycle WLTP), NEXO vous permet de traverser la France sereinement. Contrairement aux batteries classiques, cette performance reste stable, même lorsque les températures chutent, car la technologie fuel cell est peu sensible au froid."
+        },
+        {
+          "question": "Quel est le prix moyen d’un SUV hydrogène ?",
+          "reponse": "Le prix SUV hydrogène s'inscrit dans le segment Premium en raison de sa technologie de pointe. Son usage est cependant optimisé par des coûts d'entretien réduits et des significatives. Consultez nos offres actuelles pour un chiffrage précis."
+        },
+        {
+          "question": "Peut-on recharger un SUV hydrogène à domicile ?",
+          "reponse": "Non, la recharge (ou plus précisément le ravitaillement) nécessite une station dédiée délivrant de l'hydrogène sous pression (700 bars). On ne branche pas NEXO sur une prise secteur. Le réseau de station hydrogène en France se densifie chaque mois, facilitant l'adoption de cette voiture hydrogène sur tout le territoire."
+        }
+      ],
+      "categorie": "SUV familial",
+      "places": 5,
+      "prix_a_partir_de": null,
+      "autonomie_km": 826,
+      "batterie_kwh": null,
+      "puissance_ch": 204,
+      "coffre_l": 510,
+      "recharge_10_80_min": null,
+      "longueur_mm": 4750,
+      "points_forts": [
+        "Autonomie record jusqu'à 826 km en cycle WLTP",
+        "Ravitaillement complet en hydrogène en seulement 5 minutes",
+        "Technologie V2L permettant d'alimenter des appareils jusqu'à 3,6 kW",
+        "Système de purification d'air éliminant 99,9 % des particules fines",
+        "Aide au stationnement intelligent à distance (créneau, bataille, épi)"
+      ],
+      "profil_ideal": "Conducteurs effectuant de longs trajets fréquents qui souhaitent une mobilité zéro émission sans les contraintes de temps de charge des batteries électriques.",
+      "a_eviter_si": "Vous n'avez pas accès à une station de ravitaillement en hydrogène à 700 bars sur vos parcours habituels.",
+      "motorisation": "hydrogene",
+      "conseillable": true
+    },
+    {
+      "slug": "staria-electric",
+      "nom": "STARIA Electric",
+      "url": "https://www.hyundai.com/fr/fr/modeles/staria-electric.html",
+      "description": "Découvrez le nouveau monospace électrique Hyundai STARIA, équipé d’un système de batterie 800 volts permettant une recharge rapide en courant continu (DC) de 10 à 80 % en environ 20 minutes.",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_MY25_2024",
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_dashboard_V01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_Seats_1_V01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_navigation_1_V01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Interior-Close-up_USB-C-Charging-Ports_Details_10"
+      ],
+      "videos": [],
+      "faq": [],
+      "categorie": "monospace",
+      "places": 9,
+      "prix_a_partir_de": null,
+      "autonomie_km": 400,
+      "batterie_kwh": 84,
+      "puissance_ch": null,
+      "coffre_l": 435,
+      "recharge_10_80_min": 20,
+      "longueur_mm": null,
+      "points_forts": [
+        "Recharge ultra-rapide 10-80 % en 20 minutes grâce au système 800V",
+        "Grande modularité avec des configurations en 7 ou 9 places",
+        "Batterie de 84 kWh offrant jusqu'à 400 km d'autonomie WLTP",
+        "Habitacle spacieux avec plancher plat et ports USB-C sur les trois rangées"
+      ],
+      "profil_ideal": "Familles nombreuses ou services de navettes professionnelles ayant besoin de transporter jusqu'à 9 personnes dans un environnement 100 % électrique.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous avez besoin d'un volume de coffre important (plus de 435 litres) tout en transportant 7 passagers ou plus.",
+      "motorisation": "100% electrique",
+      "conseillable": true
+    },
+    {
+      "slug": "ultime-edition",
+      "nom": "ultime-edition",
+      "url": "https://www.hyundai.com/fr/fr/modeles/ultime-edition.html",
+      "description": "",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Exterior-Front-Side_3_Three-Quarter-Front",
+      "photos_interieur": [],
+      "videos": [],
+      "faq": [
+        {
+          "question": "Puis-je encore acheter TUCSON HEV et PHEV, KONA Hybrid, i20 ou BAYON ?",
+          "reponse": "Oui. Bien que la production de la génération actuelle touche à sa fin pour laisser place à une nouvelle ère prochainement, la série Ultime Edition est disponible dès maintenant. C'est l'opportunité de profiter de ces modèles dans une version richement équipée."
+        },
+        {
+          "question": "Qu’est-ce que la série Ultime Edition ?",
+          "reponse": "Ultime Edition est une série limitée qui célèbre le succès de nos modèles emblématiques. Elle propose de nombreux équipements sur TUCSON HEV et PHEV, KONA Hybrid, i20 et BAYON."
+        },
+        {
+          "question": "Hyundai propose-t-il des modèles compacts ?",
+          "reponse": "Absolument. La gamme Hyundai offre un large choix de modèles compacts adaptés à tous les besoins. i20 s'impose comme une citadine dynamique et technologique, tandis que BAYON propose l’agilité d'un crossover urbain avec une position de conduite surélevée. Pour ceux qui recherchent plus de polyvalence, KONA Hybrid offre un design futuriste et un espace intérieur généreux dans un format compact."
+        }
+      ],
+      "categorie": null,
+      "places": 5,
+      "prix_a_partir_de": null,
+      "autonomie_km": null,
+      "batterie_kwh": null,
+      "puissance_ch": null,
+      "coffre_l": null,
+      "recharge_10_80_min": null,
+      "longueur_mm": null,
+      "points_forts": [
+        "Équipements les plus exclusifs et raffinés de la génération actuelle",
+        "Disponibilité immédiate sur les véhicules en stock",
+        "Autonomie électrique jusqu'à 71 km sur la version hybride rechargeable",
+        "Packs de sécurité et de connectivité parmi les plus complets du segment"
+      ],
+      "profil_ideal": "Ce véhicule convient aux acheteurs recherchant une version suréquipée et fiabilisée d'un modèle éprouvé, disponible sans délai de production.",
+      "a_eviter_si": "Ce n'est pas le bon choix si vous souhaitez bénéficier des toutes dernières innovations technologiques et stylistiques des générations à venir.",
+      "motorisation": "essence",
+      "conseillable": false
+    }
+  ]
+}
