@@ -51,17 +51,20 @@ function lireCorps(req) {
   });
 }
 
-// Les envois se font APRES la reponse HTTP : le flow a deja affiche le texte.
-// Aucune erreur ici ne doit remonter, la requete est close.
-async function pousserEnsuite(userNs, sortants) {
-  if (!sortants.length || !mmActif) return;
+// Les envois se font APRES la reponse HTTP, qui est deja close : aucune erreur ici
+// ne doit remonter. Le TEXTE part en premier, puis les cartes, avec un delai entre
+// les deux pour que WhatsApp respecte l'ordre (une carte qui precede le message qui
+// l'annonce donne une conversation incomprehensible).
+async function pousserEnsuite(userNs, texte, sortants) {
+  if (!mmActif) return;
+  const tout = [...(texte ? [{ type: "texte", texte }] : []), ...sortants];
+  if (!tout.length) return;
   try {
-    await sleep(DELAI_AVANT_NODES);
-    const resultats = await envoyerSortants(userNs, sortants);
+    const resultats = await envoyerSortants(userNs, tout, DELAI_AVANT_NODES);
     const ok = resultats.filter((r) => r.ok).length;
     const echecs = resultats.filter((r) => !r.ok);
     console.log(
-      `[envoi] ${userNs} : ${ok}/${resultats.length} node(s)` +
+      `[envoi] ${userNs} : ${ok}/${resultats.length} message(s)` +
         (echecs.length ? ` | echec : ${echecs[0].erreur}` : "") +
         ` | quota ${budgetMm().restant}/${budgetMm().total}`
     );
@@ -103,22 +106,23 @@ const serveur = http.createServer(async (req, res) => {
   const t0 = Date.now();
   try {
     const { reponse, sortants, etape, tours } = await traiterMessage(userNs, message);
-    // Reponse d'abord : le flow affiche le texte sans attendre les envois.
-    repondre(res, 200, { reponse });
+    // On acquitte immediatement : le flow n'a rien a afficher ni a mapper, tout est
+    // envoye au contact par l'API juste apres. `reponse` n'est la que pour le debug.
+    repondre(res, 200, { ok: true, reponse });
     console.log(
       `[${new Date().toISOString()}] ${userNs} t${tours} "${message.slice(0, 60)}" ` +
         `-> ${etape} (${((Date.now() - t0) / 1000).toFixed(1)}s)` +
         (sortants.length ? ` +${sortants.length} node(s)` : "")
     );
-    pousserEnsuite(userNs, sortants);
+    pousserEnsuite(userNs, reponse, sortants);
   } catch (e) {
     console.error(`[erreur] ${userNs} "${message.slice(0, 60)}" : ${e.stack || e.message}`);
+    // Le client attend une reponse : sans cet envoi, la conversation reste muette.
+    pousserEnsuite(userNs, "Desole, j'ai eu un souci technique. Pouvez-vous reformuler ?", []);
     if (!res.headersSent) {
       // 4xx et non 5xx : Cloudflare remplace le corps de toute reponse 5xx par sa
       // propre page d'erreur, le flow ne verrait jamais ce message.
-      repondre(res, 422, {
-        reponse: "Desole, j'ai eu un souci technique. Pouvez-vous reformuler ?",
-      });
+      repondre(res, 422, { error: "erreur interne" });
     }
   }
 });

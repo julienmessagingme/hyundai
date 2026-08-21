@@ -104,6 +104,29 @@ export async function envoyerNode(userNs, nodeNs) {
   }
 }
 
+/**
+ * Envoie un message texte au contact.
+ *
+ * Le texte partait initialement dans la reponse HTTP, a charge pour le flow de
+ * l'afficher. Mesure du premier test reel : la requete arrivait, le bot repondait,
+ * et le client ne recevait RIEN, car ce mapping n'existait pas cote editeur. On
+ * n'appuie pas le fonctionnement du bot sur un cablage manuel invisible depuis le
+ * code : le bot envoie desormais son texte lui-meme.
+ */
+export async function envoyerTexte(userNs, contenu) {
+  if (!mmActif) return { ok: false, erreur: "MM_API_TOKEN absent" };
+  const content = String(contenu || "").trim();
+  if (!content) return { ok: true };
+  try {
+    return verifier(
+      await requete("POST", "/subscriber/send-text", { user_ns: userNs, content }),
+      "send-text"
+    );
+  } catch (e) {
+    return { ok: false, erreur: String(e.message) };
+  }
+}
+
 /** Remplit les champs, laisse le temps a la propagation, puis declenche le node. */
 async function remplirPuisEnvoyer(userNs, champs, nodeNs) {
   const rempli = await remplirChamps(userNs, champs);
@@ -153,14 +176,21 @@ export async function retourMenu(userNs) {
 }
 
 /**
- * Envoie une suite de messages sortants dans l'ordre, en espacant les nodes pour
+ * Envoie une suite de messages sortants dans l'ordre, en espacant les envois pour
  * que WhatsApp respecte la sequence.
+ * @param {number} delaiApresTexte pause supplementaire entre le message texte et la
+ *   premiere carte : la photo met plus de temps a s'afficher, sans cette marge elle
+ *   arrive avant le texte qui l'annonce.
  */
-export async function envoyerSortants(userNs, sortants) {
+export async function envoyerSortants(userNs, sortants, delaiApresTexte = 0) {
   const resultats = [];
   let emplacement = 0;
   for (const m of sortants) {
-    if (m.type === "vehicule") {
+    if (m.type === "texte") {
+      resultats.push(await envoyerTexte(userNs, m.texte));
+      if (delaiApresTexte) await sleep(delaiApresTexte);
+      continue; // le delai ci-dessus remplace l'espacement standard
+    } else if (m.type === "vehicule") {
       resultats.push(await pousserVehicule(userNs, emplacement, m));
       emplacement = Math.min(1, emplacement + 1);
     } else if (m.type === "concession") {
