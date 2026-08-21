@@ -122,3 +122,61 @@ cd /home/ubuntu/hyundai && git pull && npm install && pm2 restart hyundai --upda
 
 Voir `.env.example`. Les secrets (clé gateway, token workspace, secret webhook) vivent
 uniquement dans le `.env` du VPS, jamais dans le dépôt.
+
+## Contrat du webhook
+
+Le flow appelle le bot, le bot repond le texte a afficher.
+
+```
+POST https://hyundai.messagingme.app/webhook
+x-webhook-secret: <WEBHOOK_SECRET>
+Content-Type: application/json
+
+{ "user_ns": "<identifiant du contact>", "message": "<ce que le client vient d'ecrire>" }
+```
+
+Reponse :
+
+```json
+{ "reponse": "le texte que le flow doit afficher" }
+```
+
+`user_ns` est aussi accepte sous les noms `external_id` et `subscriber_id`, et
+`message` sous les noms `text` et `last_input` : le node HTTP Request fonctionne avec
+l'une ou l'autre convention sans adaptation.
+
+Codes de retour : `401` secret absent ou faux, `400` corps invalide ou champ manquant,
+`422` erreur interne (et non 5xx : Cloudflare remplace le corps de toute reponse 5xx
+par sa propre page d'erreur, le flow ne verrait jamais le message).
+
+### Messages d'entree
+
+Un message contenant "vehicule neuf", "LOA" ou "occasion" **redemarre** un parcours
+propre : c'est le clic sur un bouton du menu. Tout autre message poursuit la
+conversation en cours.
+
+### Ce qui part par la reponse et ce qui part par l'API
+
+Le texte revient dans la reponse HTTP : le flow n'a qu'a l'afficher, et cela ne
+consomme aucun appel API. Les cartes vehicule, l'epingle GPS et le retour au menu ne
+peuvent pas passer par la : ils sont pousses juste apres via l'API workspace, apres
+`MM_POST_REPLY_DELAY_MS`, le temps que le flow ait affiche le texte. Sans ce delai la
+carte arrive avant le texte qui l'annonce.
+
+## Deploiement effectue
+
+| Element | Valeur |
+|---|---|
+| Chemin VPS | `/home/ubuntu/hyundai` |
+| Process | PM2 `hyundai` (Node 22.23.1) |
+| Bind | `172.18.0.1:8150` (gateway Docker `mcp-robot_default`) |
+| Proxy NPM | host id 23, `hyundai.messagingme.app` vers `172.18.0.1:8150` |
+| Depot | `github.com/julienmessagingme/hyundai` (public, sans secret) |
+
+```bash
+cd /home/ubuntu/hyundai && git pull && npm install --omit=dev && pm2 restart hyundai --update-env
+```
+
+Le `.env` du VPS n'est jamais commite (chmod 600). Le bot bind sur la gateway Docker
+et non sur `0.0.0.0` : le port n'est pas joignable depuis l'exterieur, seul NPM y
+accede.
