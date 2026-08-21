@@ -101,6 +101,28 @@ function motorisationDepuisNom(nom, slug) {
   return "essence";
 }
 
+// Meme contamination que pour les champs chiffres, mais dans le TEXTE LIBRE : les
+// points forts du TUCSON Hybrid annoncaient "288 ch en version rechargeable" et
+// "autonomie electrique 92 km", qui sont ceux du PLUG-IN. Sur un vehicule qui ne se
+// branche pas, tout argument de recharge ou d'autonomie electrique est faux : on le
+// retire plutot que d'esperer que le modele n'en parlera pas.
+const ARGUMENT_RECHARGEABLE =
+  /rechargeable|plug-?in|autonomie [ée]lectrique|se recharge|recharge (rapide|ultra|en|de|sur)|borne|kwh|\d+\s*km (d'|en )?[ée]lectrique|batterie de \d/i;
+
+function nettoyerArguments(vehicule) {
+  if (/electrique|rechargeable/.test(vehicule.motorisation)) return vehicule;
+  const avant = vehicule.points_forts?.length || 0;
+  if (Array.isArray(vehicule.points_forts)) {
+    vehicule.points_forts = vehicule.points_forts.filter((p) => !ARGUMENT_RECHARGEABLE.test(p));
+  }
+  for (const cle of ["profil_ideal", "a_eviter_si"]) {
+    if (vehicule[cle] && ARGUMENT_RECHARGEABLE.test(vehicule[cle])) vehicule[cle] = null;
+  }
+  const retires = avant - (vehicule.points_forts?.length || 0);
+  if (retires) console.log(`      (${vehicule.slug} : ${retires} argument(s) de recharge retire(s))`);
+  return vehicule;
+}
+
 async function extraire(fiche) {
   const completion = await client.chat.completions.create({
     model: MODEL,
@@ -191,7 +213,7 @@ async function main() {
     );
     for (const r of resultats) {
       if (!r) continue;
-      vehicules.push(r);
+      vehicules.push(nettoyerArguments(r));
       console.log(
         `  ok  ${r.slug.padEnd(26)} ${String(r.categorie || "?").padEnd(14)} ` +
           `${r.motorisation.padEnd(20)} ${String(r.places ?? "?").padStart(2)}pl  ` +

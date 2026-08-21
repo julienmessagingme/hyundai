@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-08-21T17:30:45.823Z",
+  "genere_le": "2026-08-21T17:39:46.852Z",
   "modele_extraction": "google/gemini-3-flash",
   "total": 17,
   "vehicules": [
@@ -63,7 +63,7 @@
         "Garantie 5 ans avec kilométrage illimité"
       ],
       "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs urbains recherchant un SUV compact facile à manœuvrer tout en offrant une habitabilité intérieure optimisée et des technologies de connectivité modernes.",
-      "a_eviter_si": "Ce modèle n'est pas le bon choix si vous recherchez une motorisation 100% électrique ou hybride rechargeable, ou si vous avez besoin d'un volume de coffre chiffré pour des besoins de chargement spécifiques.",
+      "a_eviter_si": null,
       "motorisation": "essence",
       "conseillable": true
     },
@@ -126,14 +126,14 @@
       "recharge_10_80_min": 30,
       "longueur_mm": null,
       "points_forts": [
-        "Autonomie jusqu'à 370 km WLTP",
-        "Recharge rapide 10 à 80 % en 30 minutes sur borne 120 kW",
-        "Sièges arrière coulissants sur 16 cm et rabattables à plat",
-        "Volume de coffre modulable de 238 à 351 litres",
-        "Garantie batterie 8 ans ou 160 000 km"
+        "Modularité avancée avec sièges arrière coulissants sur 16 cm",
+        "Recharge rapide de 10 à 80 % en 30 minutes (borne 120 kW)",
+        "Autonomie WLTP jusqu'à 370 km avec la batterie 49 kWh",
+        "Tous les sièges rabattables à plat pour le transport d'objets",
+        "Garantie batterie de 8 ans ou 160 000 km"
       ],
-      "profil_ideal": "Citadins recherchant un véhicule électrique compact et très maniable, offrant une modularité intérieure exceptionnelle pour sa catégorie.",
-      "a_eviter_si": "Vous effectuez principalement de longs trajets autoroutiers nécessitant une vitesse de pointe élevée ou un volume de coffre important sans rabattre les sièges.",
+      "profil_ideal": "Ce véhicule convient parfaitement aux citadins recherchant une voiture compacte et maniable pour se garer facilement, tout en bénéficiant d'une habitabilité intérieure flexible.",
+      "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous effectuez principalement de longs trajets autoroutiers nécessitant une vitesse de pointe élevée et un volume de coffre fixe important.",
       "motorisation": "100% electrique",
       "conseillable": true
     },
@@ -278,8 +278,6 @@
       "longueur_mm": 4535,
       "points_forts": [
         "Volume de coffre généreux jusqu'à 616 litres",
-        "Puissance maximale de 288 ch en version rechargeable",
-        "Autonomie électrique urbaine atteignant 92 km",
         "Garantie 5 ans avec kilométrage illimité",
         "Double écran incurvé de 12,3 pouces et aides à la conduite avancées"
       ],
@@ -325,13 +323,13 @@
       "longueur_mm": 4535,
       "points_forts": [
         "Autonomie électrique jusqu'à 92 km en cycle urbain",
-        "Puissance cumulée performante de 288 ch",
-        "Volume de coffre de 558 litres avec banquette en place",
+        "Puissance combinée de 288 ch et 0 à 100 km/h en 7,5 s",
         "Double écran panoramique incurvé de 12,3 pouces",
-        "Garantie 5 ans kilométrage illimité"
+        "Volume de coffre de 558 L malgré l'hybridation",
+        "Garantie 5 ans kilométrage illimité et 8 ans pour la batterie"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs pouvant recharger quotidiennement à domicile ou au travail pour effectuer leurs trajets urbains en mode 100% électrique.",
-      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous n'avez pas de solution de recharge régulière, car vous transporteriez le poids de la batterie sans bénéficier de l'économie de carburant.",
+      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs effectuant des trajets quotidiens urbains ou périurbains en mode 100% électrique tout en conservant la polyvalence d'un moteur thermique pour les longs trajets.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous n'avez pas de solution de recharge régulière à domicile ou au travail, car son efficience dépend de l'utilisation fréquente de sa batterie.",
       "motorisation": "hybride rechargeable",
       "conseillable": true
     },
@@ -376,14 +374,14 @@
       "recharge_10_80_min": 18,
       "longueur_mm": 4655,
       "points_forts": [
-        "Recharge ultra-rapide de 10 à 80 % en seulement 18 minutes (système 800 V)",
+        "Recharge ultra-rapide de 10 à 80 % en seulement 18 minutes",
         "Autonomie WLTP maximale de 570 km",
-        "Habitacle très spacieux avec un empattement de 3 000 mm",
+        "Habitacle spacieux avec un empattement de 3 000 mm",
         "Volume de coffre de 520 litres",
         "Accélération de 0 à 100 km/h en 5,3 secondes"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux familles et aux conducteurs effectuant de longs trajets réguliers grâce à son habitacle modulable et sa capacité de recharge ultra-rapide sur autoroute.",
-      "a_eviter_si": "À éviter si vous recherchez un véhicule citadin de petit gabarit ou si vous n'avez pas accès à des infrastructures de recharge permettant de profiter de sa technologie 800 V.",
+      "profil_ideal": "Ce véhicule convient parfaitement aux familles et aux gros rouleurs souhaitant passer à l'électrique sans contrainte sur les longs trajets grâce à sa technologie de recharge 800 V.",
+      "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous recherchez un modèle urbain très maniable, compte tenu de sa longueur de 4,65 mètres et de son gabarit de SUV.",
       "motorisation": "100% electrique",
       "conseillable": true
     },
@@ -515,13 +513,13 @@
       "longueur_mm": 5060,
       "points_forts": [
         "Autonomie WLTP jusqu'à 620 km",
-        "Recharge ultra-rapide 10-80% en 24 min (système 800V)",
+        "Recharge ultra-rapide 10-80 % en 24 min (système 800V)",
         "Volume de chargement maximal de 2 494 litres",
-        "Capacité de remorquage jusqu'à 2 500 kg",
-        "Technologie V2L pour alimenter des appareils (3,6 kW)"
+        "Modularité intérieure avec 6 ou 7 places et sièges pivotants",
+        "Capacité de remorquage jusqu'à 2 500 kg"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux familles nombreuses recherchant un SUV électrique haut de gamme, extrêmement spacieux et capable de voyager sur de longues distances grâce à sa charge rapide.",
-      "a_eviter_si": "Ce modèle n'est pas le bon choix si vous circulez principalement dans des rues étroites en raison de sa longueur de 5,06 mètres ou si votre budget est inférieur à 70 000 euros.",
+      "profil_ideal": "Familles nombreuses recherchant un véhicule électrique spacieux et haut de gamme capable de couvrir de longues distances avec un confort optimal.",
+      "a_eviter_si": "Ce véhicule n'est pas recommandé pour un usage strictement urbain en raison de sa longueur de 5,06 mètres ou si votre budget est inférieur à 70 000 euros.",
       "motorisation": "100% electrique",
       "conseillable": true
     },
@@ -646,13 +644,13 @@
       "recharge_10_80_min": null,
       "longueur_mm": null,
       "points_forts": [
-        "Volume de coffre de 466 litres constant sur toutes les motorisations",
-        "Modularité optimisée avec dossiers rabattables 40:20:40",
-        "Mises à jour à distance OTA (Over The Air)",
-        "Clé numérique compatible smartphone et Apple Watch"
+        "Volume de coffre de 466 litres",
+        "Modularité avec dossiers rabattables 40:20:40",
+        "Mises à jour à distance (OTA)",
+        "Clé numérique sur smartphone et Apple Watch"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux citadins et aux petites familles qui recherchent un SUV compact technologique avec un volume de chargement généreux et modulable.",
-      "a_eviter_si": "Ce modèle n'est pas le bon choix si vous avez besoin de plus de 5 places ou si vous recherchez une motorisation thermique de haute performance.",
+      "profil_ideal": "Ce véhicule convient aux conducteurs urbains et aux petites familles recherchant un SUV compact au design futuriste avec des équipements technologiques modernes.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous recherchez spécifiquement une motorisation électrifiée ou si vous avez besoin d'un volume de chargement de catégorie supérieure.",
       "motorisation": "essence",
       "conseillable": false
     },
@@ -780,7 +778,6 @@
       "points_forts": [
         "Équipements les plus exclusifs et raffinés de la génération actuelle",
         "Disponibilité immédiate sur les véhicules en stock",
-        "Autonomie électrique jusqu'à 71 km sur la version hybride rechargeable",
         "Packs de sécurité et de connectivité parmi les plus complets du segment"
       ],
       "profil_ideal": "Ce véhicule convient aux acheteurs recherchant une version suréquipée et fiabilisée d'un modèle éprouvé, disponible sans délai de production.",
