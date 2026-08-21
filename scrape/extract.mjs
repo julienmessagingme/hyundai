@@ -50,6 +50,9 @@ Rends UNIQUEMENT un objet JSON, sans commentaire ni bloc de code, avec ces cles 
 - "coffre_l": volume de coffre minimal en litres, sieges en place (entier), ou null
 - "recharge_10_80_min": duree de charge rapide 10 a 80% en minutes (entier), ou null
 - "longueur_mm": longueur du vehicule en mm (entier), ou null
+- "offre_loa": l'offre de location telle qu'ELLE EST ECRITE sur la page, par exemple
+  "a partir de 139 EUR/mois en LLD sur 37 mois et 45 000 km", ou null si la page
+  n'annonce aucune mensualite. N'assemble jamais une offre a partir du prix d'achat.
 - "points_forts": 3 a 5 arguments courts et CONCRETS, chiffres quand c'est possible
 - "profil_ideal": une phrase disant a QUI ce vehicule convient le mieux et pourquoi
 - "a_eviter_si": une phrase disant dans quel cas ce vehicule N'EST PAS le bon choix
@@ -121,6 +124,17 @@ function nettoyerArguments(vehicule) {
   const retires = avant - (vehicule.points_forts?.length || 0);
   if (retires) console.log(`      (${vehicule.slug} : ${retires} argument(s) de recharge retire(s))`);
   return vehicule;
+}
+
+// Une mensualite doit RESTER une mensualite : le modele rend parfois "199 EUR" seul,
+// alors que la page dit "a partir de 199 EUR /mois". Presente tel quel, ce montant se
+// lit comme un prix d'achat. Sans mention de periodicite, on prefere ne rien annoncer.
+function offreLoaValide(offre) {
+  const t = String(offre || "").trim();
+  if (!t) return null;
+  if (!/\/\s*mois|par mois|mensualit|lld|loa|location/i.test(t)) return null;
+  if (!/\d/.test(t)) return null;
+  return t;
 }
 
 async function extraire(fiche) {
@@ -196,6 +210,7 @@ async function main() {
             ...json,
             // valeurs sures : elles ecrasent toute sortie du LLM
             motorisation,
+            offre_loa: offreLoaValide(json.offre_loa),
             conseillable: !NON_CONSEILLABLES.has(fiche.slug),
             prix_a_partir_de: fiche.prix_a_partir_de ?? json.prix_a_partir_de ?? null,
             autonomie_km: aUneAutonomie ? json.autonomie_km ?? null : null,
@@ -221,6 +236,56 @@ async function main() {
           `${r.autonomie_km ? "  " + r.autonomie_km + " km" : ""}`
       );
     }
+  }
+
+  // Une extraction qui echoue sur quelques modeles ne doit PAS publier un catalogue
+  // ampute : le bot proposerait alors un choix reduit sans que rien ne le signale.
+  // On repasse une fois sur les manquants, puis on refuse d'ecrire si le compte n'y est pas.
+  const manquants = fiches.filter((f) => !vehicules.some((v) => v.slug === f.slug));
+  if (manquants.length) {
+    console.log(`\n${manquants.length} echec(s), seconde tentative : ${manquants.map((f) => f.slug).join(", ")}`);
+    for (const fiche of manquants) {
+      try {
+        const { json } = await extraire(fiche);
+        const motorisation = motorisationDepuisNom(fiche.nom, fiche.slug);
+        const electrifie = /electrique|rechargeable|hydrogene/.test(motorisation);
+        vehicules.push(
+          nettoyerArguments({
+            slug: fiche.slug,
+            nom: fiche.nom,
+            url: fiche.url,
+            description: fiche.description,
+            photo:
+              fiche.image_principale ||
+              fiche.photos.find((p) => p.vue === "exterieur")?.url ||
+              fiche.photos[0]?.url ||
+              null,
+            photos_interieur: fiche.photos.filter((p) => p.vue === "interieur").slice(0, 4).map((p) => p.url),
+            videos: fiche.videos.filter((v) => v.type === "mp4").map((v) => v.url),
+            faq: fiche.faq,
+            ...json,
+            motorisation,
+            offre_loa: offreLoaValide(json.offre_loa),
+            conseillable: !NON_CONSEILLABLES.has(fiche.slug),
+            prix_a_partir_de: fiche.prix_a_partir_de ?? json.prix_a_partir_de ?? null,
+            autonomie_km: electrifie ? json.autonomie_km ?? null : null,
+            batterie_kwh: /electrique|rechargeable/.test(motorisation) ? json.batterie_kwh ?? null : null,
+            places: json.places ?? 5,
+          })
+        );
+        console.log(`  rattrape  ${fiche.slug}`);
+      } catch (e) {
+        console.error(`  KO definitif  ${fiche.slug} : ${e.message}`);
+      }
+    }
+  }
+
+  if (vehicules.length !== fiches.length) {
+    console.error(
+      `\nECHEC : ${vehicules.length}/${fiches.length} vehicules seulement. ` +
+        `${OUT} n'est PAS reecrit (un catalogue ampute se verrait a l'usage, pas au deploiement).`
+    );
+    process.exit(1);
   }
 
   vehicules.sort((a, b) => (a.prix_a_partir_de ?? 1e9) - (b.prix_a_partir_de ?? 1e9));

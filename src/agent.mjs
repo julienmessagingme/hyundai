@@ -31,11 +31,21 @@ const CATALOGUE = catalogueCondense();
 // parcours, il ne doit dependre ni de la casse, ni des accents, ni d'un encodage
 // approximatif en amont. Un "e" accentue mal encode devient un caractere de
 // remplacement, d'ou le "." tolerant plutot qu'une classe [ee].
+// Les libelles des boutons sont FIXES et connus ("un vehicule neuf", "occasion",
+// "vehicule LOA"). Les motifs sont donc ANCRES sur le message entier, avec juste ce
+// qu'il faut de tolerance sur l'article et le mot "vehicule"/"voiture". Chercher le
+// mot-cle n'importe ou dans la phrase ne marche pas : "la LOA m'interesse" ou "ca
+// coute combien en LOA" sont des phrases de conversation, pas des clics.
+const PREFIXE = "^(un |une |le |la )?(vehicule|voiture)?\\s*";
 const ENTREES = [
-  { motif: /v.hicule\s+neuf|\bneuve?\b/, type: "neuf" },
-  { motif: /\bloa\b|location\s+avec\s+option/, type: "LOA" },
-  { motif: /occasion/, type: "occasion" },
+  { motif: new RegExp(PREFIXE + "(neuf|neuve)$"), type: "neuf" },
+  { motif: new RegExp(PREFIXE + "(en\\s+)?loa$"), type: "LOA" },
+  { motif: new RegExp(PREFIXE + "(d'?\\s*)?occasion$"), type: "occasion" },
 ];
+
+// Garde-fou de forme : un libelle de bouton tient en quelques mots. Au dela, c'est
+// une phrase du client, meme si elle contient le mot-cle.
+const MOTS_MAX_BOUTON = 5;
 
 /** Minuscules, accents retires, caracteres de remplacement compris. */
 function normaliser(texte) {
@@ -45,8 +55,20 @@ function normaliser(texte) {
     .toLowerCase();
 }
 
+/**
+ * Type d'entree SI le message est un clic sur un bouton du menu, sinon null.
+ *
+ * Le mot-cle seul ne suffit pas : "et si je la prends en LOA, est-ce que ca marche
+ * la Tucson ?" contient "LOA" mais c'est une QUESTION au milieu d'un parcours en
+ * cours, la reconnaitre comme un bouton remettait la conversation a zero. On exige
+ * donc que le message entier soit court : un bouton l'est toujours, une question non.
+ */
 export function detecterEntree(message) {
-  const t = normaliser(message);
+  const t = normaliser(message).trim();
+  const mots = t.split(/\s+/).filter(Boolean).length;
+  if (mots > MOTS_MAX_BOUTON) return null;
+  // Une phrase courte peut rester une question ("c'est quoi la LOA ?").
+  if (/[?]|^(c'?est|quoi|comment|pourquoi|combien|quel)/.test(t)) return null;
   return ENTREES.find((e) => e.motif.test(t))?.type || null;
 }
 
@@ -78,6 +100,11 @@ HONNETETE
 - Tu ne promets rien que le catalogue ne dise pas. Si tu ne sais pas, tu le dis.
 - Tu tiens compte du champ "A eviter si" : si un vehicule ne convient pas au client, tu ne le proposes pas, meme s'il est seduisant.
 - Un hybride simple ne se recharge pas sur une prise et n'a pas d'autonomie electrique annoncee. Un hybride rechargeable, si. Ne confonds jamais les deux.
+- LOCATION (LOA ou LLD) : tu ne cites une mensualite QUE si l'outil consulter_vehicule
+  te la donne dans "offre_loa". Hyundai ne publie pas d'offre pour tous les modeles.
+  Si tu ne l'as pas, tu le dis simplement et tu renvoies vers la concession, qui
+  etablit un devis personnalise. Tu n'estimes JAMAIS une mensualite toi-meme, et tu ne
+  la deduis jamais du prix d'achat : un chiffre invente se verifie en une minute.
 
 CE QUE TU SAIS DU CLIENT
 - Type de demande : ${s.type_entree || "non precise"}
