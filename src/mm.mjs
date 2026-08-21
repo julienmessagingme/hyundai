@@ -170,6 +170,16 @@ export async function pousserConcession(userNs, concession, description) {
   );
 }
 
+/**
+ * Envoie une photo seule (node dedie qui n'affiche qu'une image).
+ * Un node = une photo : pour en envoyer plusieurs, on repete la sequence, ce qui
+ * coute 2 requetes par image.
+ */
+export async function pousserPhoto(userNs, url) {
+  if (!url) return { ok: false, erreur: "url absente" };
+  return remplirPuisEnvoyer(userNs, { [env.MM_VF_PHOTO_EXTRA]: url }, env.MM_NODE_PHOTO);
+}
+
 /** Ramene le contact au menu principal. */
 export async function retourMenu(userNs) {
   return envoyerNode(userNs, env.MM_NODE_MAIN_MENU);
@@ -193,6 +203,8 @@ export async function envoyerSortants(userNs, sortants, delaiApresTexte = 0) {
     } else if (m.type === "vehicule") {
       resultats.push(await pousserVehicule(userNs, emplacement, m));
       emplacement = Math.min(1, emplacement + 1);
+    } else if (m.type === "photo") {
+      resultats.push(await pousserPhoto(userNs, m.url));
     } else if (m.type === "concession") {
       resultats.push(await pousserConcession(userNs, m.concession, m.description));
     } else if (m.type === "menu") {

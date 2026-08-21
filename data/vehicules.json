@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-08-21T17:39:46.852Z",
+  "genere_le": "2026-08-21T21:50:38.471Z",
   "modele_extraction": "google/gemini-3-flash",
   "total": 17,
   "vehicules": [
@@ -9,7 +9,24 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/i20.html",
       "description": "Explorez Hyundai Nouvelle i20, un design élégant et sportif avec des options de connectivité avancées. Profitez d'une motorisation hybride légère pour une consommation optimisée. Découvrez-en plus maintenant.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_MY25_2024",
-      "photos_interieur": [],
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_Exterior-Side_Parking_07_i20_Parking_Side",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/i20-80",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_20251217Film_Hyundai_i20_Bayon_16x9_Thumbnail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_BAYON_20251217Film_Hyundai_i20_Bayon_16x9_Video",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_Exterior_2023-Lifestyle-Video-Human-Ready_04",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20-Regular_INT_PI_SHOT13_Wireless_Charger",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/i20_Initia",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/i20_Intuitive"
+      ],
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_INT-Regular_SHOT7_3QDash",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_INT-Regular_SHOT8_SideDash",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_INT_touchscreen",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_INT_steering-wheel",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_Interior_2023-Lifestyle-Video-Human-Ready_02",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/all-new-i20-Interior-bose-speaker"
+      ],
       "videos": [],
       "faq": [],
       "categorie": "citadine",
@@ -21,15 +38,15 @@
       "coffre_l": null,
       "recharge_10_80_min": null,
       "longueur_mm": null,
+      "offre_loa": null,
       "points_forts": [
         "Double écran numérique de 10,25 pouces",
         "Technologies de sécurité SmartSense avec régulateur adaptatif",
-        "Connectivité complète Apple CarPlay et Android Auto",
-        "Garantie 5 ans kilométrage illimité",
-        "Système audio premium Bose à 7 haut-parleurs"
+        "Motorisation hybride légère pour une consommation optimisée",
+        "Garantie 5 ans kilométrage illimité"
       ],
-      "profil_ideal": "Conducteurs urbains recherchant une voiture compacte, technologique et sécurisante pour les trajets quotidiens.",
-      "a_eviter_si": "Vous avez besoin d'un grand volume de chargement ou d'une motorisation 100% électrique.",
+      "profil_ideal": "Conducteurs urbains et périurbains recherchant une voiture compacte dotée d'équipements technologiques modernes et d'aides à la conduite avancées.",
+      "a_eviter_si": "Vous recherchez un véhicule 100 % électrique ou si vous avez besoin d'un volume de chargement important pour un usage familial.",
       "motorisation": "essence",
       "conseillable": true
     },
@@ -39,11 +56,25 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/bayon.html",
       "description": "Explorez le nouveau Hyundai BAYON, un SUV crossover élégant avec un intérieur spacieux, un design affirmé et des équipements de sécurité avancés.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_MY25_2024",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_Exterior-Side-Topview_Parking_05_Bayon_Parking_Topview_16-9",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/BAYON-29",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_20251217Film_Hyundai_i20_Bayon_16x9_Thumbnail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_BAYON_20251217Film_Hyundai_i20_Bayon_16x9_Video",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Exterior_SHOT03_34_Front",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Exterior_SHOT06_Top_View_Normal_Cut_Through",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_Exterior-Front_Parking_04_Bayon_Parking_34Front_16-9",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Exterior_SHOT01_Front"
+      ],
       "photos_interieur": [
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_SHOT07_Full_Dashboard_Straight_Angle_edit",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_AVN_edit",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_Human_Ready_2304",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_SHOT09_Side_Roominess_No_B_Pillar_edit"
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_SHOT09_Side_Roominess_No_B_Pillar_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_SHOT11_Rear_Seat_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_2024_Interior_SHOT15_Wireless_Charger",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_Interior_2024_Connected_Routing-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_BAYON_Interior_2024_Fuel-1"
       ],
       "videos": [],
       "faq": [],
@@ -56,15 +87,32 @@
       "coffre_l": null,
       "recharge_10_80_min": null,
       "longueur_mm": null,
+      "offre_loa": null,
       "points_forts": [
-        "Double écran de 10,25 pouces pour l'instrumentation et l'infodivertissement",
-        "Espace aux jambes généreux de 1 072 mm à l'avant et 882 mm à l'arrière",
-        "Sécurité avancée avec freinage d'urgence autonome et surveillance des angles morts",
-        "Garantie 5 ans avec kilométrage illimité"
+        "Double écran de 10,25 pouces (compteurs numériques et tactile central)",
+        "Garde au toit généreuse de 993 mm à l'avant et 977 mm à l'arrière",
+        "Pack sécurité Smart Sense incluant le freinage d'urgence et le suivi de voie"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs urbains recherchant un SUV compact facile à manœuvrer tout en offrant une habitabilité intérieure optimisée et des technologies de connectivité modernes.",
+      "profil_ideal": "Conducteurs urbains recherchant un véhicule compact et facile à manœuvrer sans compromis sur les technologies de connectivité et la sécurité.",
       "a_eviter_si": null,
       "motorisation": "essence",
+      "finitions": [
+        {
+          "nom": "Initia",
+          "apports": "Finition d'entrée de gamme incluant une caméra de recul, un écran tactile 10,25'' avec navigation et les services connectés Bluelink.",
+          "prix": 25350
+        },
+        {
+          "nom": "Intuitive",
+          "apports": "Elle ajoute des compteurs numériques 10,25'', des jantes alliage 16'', des feux de jour à LED et des rétroviseurs rabattables électriquement.",
+          "prix": null
+        },
+        {
+          "nom": "Creative",
+          "apports": "Elle intègre l'accès mains-libres, la climatisation automatique, des feux avant bi-LED et des jantes alliage 17''.",
+          "prix": null
+        }
+      ],
       "conseillable": true
     },
     {
@@ -73,11 +121,25 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/inster-electric.html",
       "description": "Prêt à découvrir Nouveau Hyundai INSTER ? Ce SUV 100% électrique redéfinit style, habitabilité et prestations avec dynamisme sur son segment.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_MY25_2024",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/INSTER-leasing-autoplus",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/HYUNDAI_INSTER_JAN26_14-6_169_mixV1_TVC_LOM1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_Evo_Tactical_Exterior-compact-eSUV_300dpi_high",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_Evo_Tactical_Cargo-space_300dpi_high",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_Exterior_2024_Technical_Data_Mobile_16x9",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_Evo_Tactical_Fast-charging_Animation_Thumbnail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_Evo_Tactical_Fast-charging_Animation-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_Evo_Tactical_BS_front-static_300dpi_high"
+      ],
       "photos_interieur": [
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_Evo_Backseatdriver_30s_ProRes_16x9_clean_TVC_Thumbnail",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_2024_Interior_KV_Revealing_04",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_Cross_2024_interior",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTEROID_Interior_No-1"
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTEROID_Interior_No-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_2024_Interior_KV_Revealing_12",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_2024_Interior_SHOT30_Paddle_Shifters",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_2024_Interior_SHOT17_Steering_Wheel_Straight_Angle",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_INSTER_2024_Interior_SHOT22_Digital_Cluster_Type1"
       ],
       "videos": [
         "https://www.hyundai.com/content/dam/hyundai/sites/fr/pip/inster/2026/03-mars/HYUNDAI_INSTER_JAN26_14-6_169_mixV1_TVC_LOM1.mp4"
@@ -121,19 +183,19 @@
       "prix_a_partir_de": 25350,
       "autonomie_km": 370,
       "batterie_kwh": 49,
-      "puissance_ch": 115,
+      "puissance_ch": null,
       "coffre_l": 238,
       "recharge_10_80_min": 30,
       "longueur_mm": null,
+      "offre_loa": "à partir de 139€ /mois en LLD sur 37 mois et 45 000 km avec un 1er loyer de 0€ (aide location sociale de 6 500€ déduite)",
       "points_forts": [
-        "Modularité avancée avec sièges arrière coulissants sur 16 cm",
-        "Recharge rapide de 10 à 80 % en 30 minutes (borne 120 kW)",
-        "Autonomie WLTP jusqu'à 370 km avec la batterie 49 kWh",
-        "Tous les sièges rabattables à plat pour le transport d'objets",
-        "Garantie batterie de 8 ans ou 160 000 km"
+        "Autonomie jusqu'à 370 km WLTP",
+        "Sièges arrière coulissants sur 16 cm",
+        "Tous les sièges rabattables à plat",
+        "Recharge rapide récupérant 259 km en 30 min"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux citadins recherchant une voiture compacte et maniable pour se garer facilement, tout en bénéficiant d'une habitabilité intérieure flexible.",
-      "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous effectuez principalement de longs trajets autoroutiers nécessitant une vitesse de pointe élevée et un volume de coffre fixe important.",
+      "profil_ideal": "Citadins recherchant un véhicule électrique compact et très maniable pour le stationnement, tout en bénéficiant d'une modularité intérieure flexible pour le quotidien.",
+      "a_eviter_si": "Ce véhicule n'est pas recommandé pour les utilisateurs effectuant principalement de longs trajets autoroutiers ou ayant besoin d'un coffre volumineux sans avancer les sièges arrière.",
       "motorisation": "100% electrique",
       "conseillable": true
     },
@@ -143,6 +205,14 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/kona-hybrid.html",
       "description": "Découvrez KONA Hybrid. Un SUV urbain hybride audacieux, au design futuriste, à la technologie de pointe et à la motorisations électrifiée efficiente.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_Hybrid_MY25_2024-2",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/KONA-HEV-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/KONA_HEV_Intuitive-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/KONA_HEV_Creative-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/KONA_HEV_Executive-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_Electric_MY25_2024",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_Hybrid_MY25_2024-2"
+      ],
       "photos_interieur": [],
       "videos": [],
       "faq": [
@@ -173,19 +243,37 @@
       "autonomie_km": null,
       "batterie_kwh": null,
       "puissance_ch": 129,
-      "coffre_l": 466,
+      "coffre_l": null,
       "recharge_10_80_min": null,
       "longueur_mm": null,
+      "offre_loa": null,
       "points_forts": [
-        "Volume de coffre de 466 L (VDA) avec banquette en place",
-        "Double écran de 12,3 pouces pour l'instrumentation et la navigation",
-        "Consommation de carburant réduite jusqu'à 25 % par rapport au thermique",
-        "Garantie 5 ans kilométrage illimité et 8 ans pour la batterie haute tension",
-        "Technologies de sécurité SmartSense incluant caméra 360° et régulateur adaptatif"
+        "Double écran de 12,3 pouces avec interface digitale moderne",
+        "Jusqu'à 25 % d'économie de carburant par rapport à un thermique",
+        "Clé numérique compatible smartphone et montre connectée",
+        "Mises à jour logicielles et cartographiques à distance (OTA)",
+        "Garantie 5 ans kilométrage illimité et batterie garantie 8 ans"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs urbains et périurbains qui souhaitent réduire leur consommation sans avoir à se soucier de la recharge électrique.",
-      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous recherchez une autonomie significative en mode 100 % électrique pour vos trajets quotidiens.",
+      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs urbains qui souhaitent réduire leur consommation et leurs émissions sans avoir à gérer la contrainte de la recharge électrique.",
+      "a_eviter_si": null,
       "motorisation": "hybride",
+      "finitions": [
+        {
+          "nom": "Intuitive",
+          "apports": "Cette version d'entrée de gamme dispose de l'accès mains-libres, d'une caméra de recul, de la climatisation bi-zone et d'un système de navigation de 12,3 pouces.",
+          "prix": null
+        },
+        {
+          "nom": "Creative",
+          "apports": "Elle ajoute le chargeur sans fil, l'éclairage d'ambiance à LED, les sièges avant et le volant chauffants ainsi que la surveillance active des angles morts.",
+          "prix": null
+        },
+        {
+          "nom": "N Line",
+          "apports": "Elle se distingue par un design sportif incluant des boucliers et jantes spécifiques, un ciel de toit noir et une atmosphère intérieure avec surpiqûres rouges.",
+          "prix": null
+        }
+      ],
       "conseillable": true
     },
     {
@@ -194,7 +282,20 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/kona-electric.html",
       "description": "Découvrez KONA Electric, le SUV électrique audacieux avec un espace agrandi et une technologie avancée. Réservez un essai aujourd'hui !",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_Electric_MY25_2024",
-      "photos_interieur": [],
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/KONA_electric",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/KONA-Electric-Intuitive-Green-leasing-ev",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA-Electric-N-Line_Exterior_Front_Left_Compositing",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_Electric_MY25_2024",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_EV_Animation_Walkthrough_MY24_16x9_2",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_Electric_Exterior_Talent_20261231_4x3",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SX2_KONA_EV_K5_RHD_FEATURE_SMART_POWER_TAILGATE"
+      ],
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SX2_KONA_EV_K5_RHD_FEATURE_PADDLE_SHIFTERS",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_EV-BASIS_PI_SHOT16_Digital_Cluster",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SX2_KONA_EV_K5_RHD_FEATURE_BOSE_PREMIUM"
+      ],
       "videos": [],
       "faq": [
         {
@@ -227,16 +328,39 @@
       "coffre_l": 466,
       "recharge_10_80_min": 41,
       "longueur_mm": null,
+      "offre_loa": "à partir de 189€ /mois en LLD sur 37 mois et 45 000 km maximum, sans apport après déduction de l'aide location sociale de 9 000€",
       "points_forts": [
         "Autonomie WLTP maximale de 514 km",
         "Volume de coffre de 466 litres",
         "Assistance à la conduite sur autoroute de niveau 2",
-        "Garantie batterie haute tension de 8 ans ou 160 000 km",
-        "Planificateur de trajet intelligent intégré"
+        "Garantie batterie de 8 ans ou 160 000 km",
+        "Planificateur de trajets et mises à jour à distance"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs urbains et aux familles cherchant un SUV électrique polyvalent, doté d'une autonomie importante et de technologies de sécurité modernes.",
-      "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous recherchez les vitesses de recharge les plus rapides du marché, certains modèles de la gamme supérieure étant deux fois plus rapides.",
+      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs urbains et périurbains recherchant un SUV électrique polyvalent, technologique et éligible au dispositif de leasing social.",
+      "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous recherchez les vitesses de recharge ultra-rapides du segment supérieur (technologie 800V) pour des arrêts autoroutiers de moins de 20 minutes.",
       "motorisation": "100% electrique",
+      "finitions": [
+        {
+          "nom": "Intuitive",
+          "apports": "Dispose de l'accès mains-libres, d'une caméra de recul, de la climatisation automatique bi-zone et d'un système de navigation sur écran tactile 12,3 pouces.",
+          "prix": null
+        },
+        {
+          "nom": "Creative",
+          "apports": "Ajoute le chargeur sans fil, l'éclairage d'ambiance à LED, les feux Seamless Horizon, les sièges avant et le volant chauffants.",
+          "prix": null
+        },
+        {
+          "nom": "N Line",
+          "apports": "Ajoute un design sportif avec des boucliers et jantes spécifiques, un ciel de toit noir et une atmosphère intérieure à surpiqûres rouges.",
+          "prix": null
+        },
+        {
+          "nom": "Premium",
+          "apports": "Ajoute l'affichage tête-haute, la caméra 360°, les sièges avant réglables électriquement et la surveillance active des angles morts.",
+          "prix": null
+        }
+      ],
       "conseillable": true
     },
     {
@@ -245,7 +369,26 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/tucson-hybrid.html",
       "description": "Découvrez le nouveau SUV hybride, TUCSON Hybrid, avec son design affiné, son intérieur spacieux totalement repensé et sa technologie de pointe.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Hybrid_MY25_2024",
-      "photos_interieur": [],
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_2024_NLINE_Video_Thumbnail_02",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_2024_NLINE_RF_details_21s_FULLHD_16x9_CLEAN_1_komp",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/TUCSON-HEV",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_2024_PHEV_Features_Thumbnail_02",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_2024_PHEV_Medley_30s_FULLHD_16x9_CLEAN_1_komp-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Exterior_13_LF_Ext_rgb",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_2024_NLINE_PHEV_Video_Thumbnail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_2024_PHEV_NLINE_8s_FULLHD_16x9_CLEAN_1_komp"
+      ],
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Interior_08_SKV_Int",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Interior_2024_PHEV_Steering_Wheel_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Interior_2024_PHEV_Armrest_Type_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Interior_2024_Curved_Display_PHEV_T2P_Beauty_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Interior_07_SKV_HUD",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Interior_2024_Digital_Cluster_PHEV_T2P_Beauty_Sport-Mode_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Interior_07_SKV_HUD_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Interior_2024_Center_Console_HEV_T2P_Beauty"
+      ],
       "videos": [
         "https://www.hyundai.com/content/dam/hyundai/sites/global/models/nx4-phev/full-pip/videos/Hyundai_TUCSON_2024_PHEV_NLINE_8s_FULLHD_16x9_CLEAN_1_komp.mp4"
       ],
@@ -272,17 +415,20 @@
       "prix_a_partir_de": 38800,
       "autonomie_km": null,
       "batterie_kwh": null,
-      "puissance_ch": 288,
-      "coffre_l": 616,
+      "puissance_ch": null,
+      "coffre_l": null,
       "recharge_10_80_min": null,
-      "longueur_mm": 4535,
+      "longueur_mm": null,
+      "offre_loa": null,
       "points_forts": [
-        "Volume de coffre généreux jusqu'à 616 litres",
-        "Garantie 5 ans avec kilométrage illimité",
-        "Double écran incurvé de 12,3 pouces et aides à la conduite avancées"
+        "Double écran incurvé de 12,3 pouces",
+        "Jusqu'à 25% d'économie de carburant par rapport au thermique",
+        "Garantie 5 ans kilométrage illimité",
+        "Surveillance des angles morts par affichage caméra au tableau de bord",
+        "Connectivité Apple CarPlay et Android Auto sans fil"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux familles et aux conducteurs technophiles recherchant un SUV polyvalent, spacieux et performant pour tous types de trajets.",
-      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous recherchez un gabarit très réduit pour le stationnement urbain ou si vous n'avez pas l'utilité d'un grand volume de chargement.",
+      "profil_ideal": "Conducteurs recherchant un SUV polyvalent et technologique souhaitant réduire leur consommation sans la contrainte de la recharge électrique manuelle.",
+      "a_eviter_si": null,
       "motorisation": "hybride",
       "conseillable": true
     },
@@ -292,7 +438,26 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/tucson-plug-in.html",
       "description": "Découvrez le nouveau SUV hybride rechargeable, TUCSON PHEV, avec son design affiné, son intérieur spacieux totalement repensé et sa technologie de pointe.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Plug-in_Hybrid_MY25_2024",
-      "photos_interieur": [],
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Exterior_01a_KV_Talent",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/TUCSON-PHEV-2",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_2024_PHEV_Features_Thumbnail_02",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_2024_PHEV_Medley_30s_FULLHD_16x9_CLEAN_1_komp",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Exterior_13_LF_Ext_rgb",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Exterior_14_LF_Ext_Charging_rgb",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_2024_PHEV_Video_Thumbnail_02",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Exterior_06_SKV_IFS"
+      ],
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Interior_08_SKV_Int",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Interior_2024_Curved_Display_PHEV_T2P_Beauty_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Interior_07_SKV_HUD",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Interior_2024_Digital_Cluster_PHEV_T2P_Beauty_Sport-Mode_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Interior_2024_Digital_Cluster_PHEV_T2P_Beauty",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Tucson_PHEV_2024_Interior_07_SKV_HUD_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Interior_2024_Climate_Control_PHEV_T2P_Beauty_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Interior_2024_Center_Console_HEV_T2P_Beauty"
+      ],
       "videos": [],
       "faq": [
         {
@@ -315,21 +480,21 @@
       "categorie": "SUV compact",
       "places": 5,
       "prix_a_partir_de": 43600,
-      "autonomie_km": 92,
-      "batterie_kwh": 13.8,
+      "autonomie_km": null,
+      "batterie_kwh": null,
       "puissance_ch": 288,
-      "coffre_l": 558,
+      "coffre_l": null,
       "recharge_10_80_min": null,
-      "longueur_mm": 4535,
+      "longueur_mm": null,
+      "offre_loa": null,
       "points_forts": [
-        "Autonomie électrique jusqu'à 92 km en cycle urbain",
-        "Puissance combinée de 288 ch et 0 à 100 km/h en 7,5 s",
-        "Double écran panoramique incurvé de 12,3 pouces",
-        "Volume de coffre de 558 L malgré l'hybridation",
-        "Garantie 5 ans kilométrage illimité et 8 ans pour la batterie"
+        "Puissance combinée performante de 288 ch",
+        "Double écran panoramique incurvé (2 x 12,3 pouces)",
+        "Garantie 5 ans kilométrage illimité",
+        "Système d'aide à la conduite sur autoroute 1.5"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs effectuant des trajets quotidiens urbains ou périurbains en mode 100% électrique tout en conservant la polyvalence d'un moteur thermique pour les longs trajets.",
-      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous n'avez pas de solution de recharge régulière à domicile ou au travail, car son efficience dépend de l'utilisation fréquente de sa batterie.",
+      "profil_ideal": "Ce véhicule convient parfaitement aux conducteurs effectuant des trajets quotidiens courts (domicile-travail) en mode 100% électrique tout en conservant la polyvalence d'un moteur thermique pour les longs trajets.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous n'avez pas de solution de recharge régulière à domicile ou au travail, car son efficience et ses économies de carburant dépendent de l'utilisation de la batterie.",
       "motorisation": "hybride rechargeable",
       "conseillable": true
     },
@@ -339,11 +504,25 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/ioniq5.html",
       "description": "Hyundai IONIQ 5, notre SUV compact 100 % électrique, avec batterie 800 V et recharge ultra-rapide, offre jusqu’à 570 km d’autonomie.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_MY25_2024",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_N_Line_2024_Lineup_15s_FULLHD_16x9_CLEAN_1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_2024_SHOT05_Side_Lights_On",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-5_Range",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-5_Charging-15min",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_2024_SHOT03_34_Front_Lights_On",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_Exterior_2024_Technical_Data_Mobile-11",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_Exterior_2024_LED_Headlamps_ON",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_2024_Highlights_Video_Thumbnail_1"
+      ],
       "photos_interieur": [
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-5_5-Seats",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_2024_Interior_6-Enhanced-IONIQ-5",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_Interior_2024_Inside_the_digital_side_mirrors",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_2024_Interior_Surround_view"
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_2024_Interior_Surround_view",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/IONIQ5_interior_airbags1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_Interior_2024_Global-Key-Visual_20",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_Interior_2024_FEATURE_12_3_2-inch_colour_LCD_cluster",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_Interior_2024_Wirelessly_-charging_your_-smartphone"
       ],
       "videos": [],
       "faq": [
@@ -373,15 +552,15 @@
       "coffre_l": 520,
       "recharge_10_80_min": 18,
       "longueur_mm": 4655,
+      "offre_loa": null,
       "points_forts": [
-        "Recharge ultra-rapide de 10 à 80 % en seulement 18 minutes",
-        "Autonomie WLTP maximale de 570 km",
-        "Habitacle spacieux avec un empattement de 3 000 mm",
-        "Volume de coffre de 520 litres",
-        "Accélération de 0 à 100 km/h en 5,3 secondes"
+        "Recharge ultra-rapide de 10 à 80 % en seulement 18 minutes grâce au système 800 V",
+        "Autonomie WLTP généreuse allant jusqu'à 570 km",
+        "Espace intérieur important avec un empattement de 3 000 mm",
+        "Volume de coffre de 520 litres adapté aux besoins familiaux"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux familles et aux gros rouleurs souhaitant passer à l'électrique sans contrainte sur les longs trajets grâce à sa technologie de recharge 800 V.",
-      "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous recherchez un modèle urbain très maniable, compte tenu de sa longueur de 4,65 mètres et de son gabarit de SUV.",
+      "profil_ideal": "Ce véhicule convient parfaitement aux familles et aux conducteurs effectuant de longs trajets qui recherchent un habitacle spacieux et une technologie de recharge parmi les plus rapides du marché.",
+      "a_eviter_si": "Ce modèle n'est pas recommandé si vous recherchez un véhicule de petit gabarit pour stationner facilement dans des espaces urbains très restreints.",
       "motorisation": "100% electrique",
       "conseillable": true
     },
@@ -391,7 +570,26 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/santa-fe-hybrid.html",
       "description": "Découvrez notre grand SUV 7 places, SANTA FE Hybrid. Son intérieur spacieux et son chargement conquièrent ville et grands espaces.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SANTA_FE_Hybrid_MY25_2024",
-      "photos_interieur": [],
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_HEV_3-4_Avant_Gris",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTAFE-HEV",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Exterior_2023_PHEV_KV_FRONT_STILL",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_HEV_Lateral_Gris_Fonce",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_HEV_Intuitive",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_HEV_Creative",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_HEV_Executive",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SANTA_FE_Plug-in_Hybrid_MY25_2024"
+      ],
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2023-10-Airbags-FDCG",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_Interieur1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2023-P_15",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2023_IN_P_01_PR_v04",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_2023-Centre-Console_Thumbail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2024_PHEV_Shot_19_Wireless_Charger",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2023_IN_P_01_PR_v04_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2024_PHEV_Shot_15_AVN_edit_2"
+      ],
       "videos": [],
       "faq": [
         {
@@ -417,18 +615,17 @@
       "autonomie_km": null,
       "batterie_kwh": null,
       "puissance_ch": 253,
-      "coffre_l": 985,
+      "coffre_l": null,
       "recharge_10_80_min": null,
       "longueur_mm": 4830,
+      "offre_loa": null,
       "points_forts": [
-        "Capacité d'accueil de 7 places de série",
-        "Volume de coffre généreux de 985 litres (rang 2 en place)",
+        "Capacité de 7 places avec habitacle généreux",
         "Sécurité renforcée avec 10 airbags de série",
-        "Cockpit digital incurvé avec deux écrans de 12,3 pouces",
-        "Garantie 5 ans kilométrage illimité"
+        "Cockpit digital incurvé avec deux écrans de 12,3 pouces"
       ],
-      "profil_ideal": "Ce véhicule convient parfaitement aux familles nombreuses recherchant un maximum d'espace, de modularité et de sécurité pour des trajets polyvalents.",
-      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous circulez exclusivement en centre-ville étroit où son gabarit de 4,83 m peut être contraignant.",
+      "profil_ideal": "Ce véhicule convient parfaitement aux familles nombreuses recherchant un SUV spacieux, technologique et polyvalent pour alterner entre ville et grands espaces.",
+      "a_eviter_si": "À éviter si vous circulez exclusivement dans des zones urbaines très denses aux stationnements étroits ou si vous n'avez pas l'utilité des 7 places.",
       "motorisation": "hybride",
       "conseillable": true
     },
@@ -438,7 +635,26 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/santa-fe-plug-in.html",
       "description": "Découvrez SANTA FE Nouvelle Génération, le SUV 7 places hybride rechargeable. Son intérieur spacieux conquit ville et grands espaces.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SANTA_FE_Plug-in_Hybrid_MY25_2024",
-      "photos_interieur": [],
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Exterior_2023_PHEV_KV_FRONT_CORNER_STILL",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTAFE-PHEV",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Exterior_2023_PHEV_KV_FRONT_STILL",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Exterior_2023_PHEV_KV_SIDE_STILL_",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_PHEV_Intuitive",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_PHEV_Creative",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_PHEV_Executive",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_PHEV_Calligraphy"
+      ],
+      "photos_interieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2023-10-Airbags-FDCG",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/SANTA_FE_Interieur1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_2023-Centre-Console_Thumbail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2024_PHEV_Shot_19_Wireless_Charger",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2023_IN_P_01_PR_v04_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2024_PHEV_Shot_15_AVN_edit_2",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2024_PHEV_Shot_18_Steering_Wheel",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_SantaFe_Interior_2024_PHEV_Shot_10_Side_Roominess"
+      ],
       "videos": [],
       "faq": [
         {
@@ -460,19 +676,41 @@
       "autonomie_km": 65,
       "batterie_kwh": 13.8,
       "puissance_ch": 253,
-      "coffre_l": 985,
+      "coffre_l": null,
       "recharge_10_80_min": null,
-      "longueur_mm": 4830,
+      "longueur_mm": null,
+      "offre_loa": null,
       "points_forts": [
         "Capacité de 7 places de série",
-        "Volume de coffre généreux de 985 litres (rang 2 en place)",
-        "Sécurité renforcée avec 10 airbags et aides à la conduite de niveau 2",
-        "Autonomie électrique urbaine jusqu'à 65 km",
-        "Garantie 5 ans kilométrage illimité"
+        "Sécurité renforcée avec 10 airbags",
+        "Double écran panoramique de 12,3 pouces",
+        "Autonomie électrique urbaine jusqu'à 65 km"
       ],
-      "profil_ideal": "Ce véhicule convient aux familles nombreuses qui souhaitent un SUV spacieux et sécurisé pour effectuer leurs trajets quotidiens en mode électrique tout en conservant la polyvalence thermique pour les longs voyages.",
-      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous n'avez pas de solution de recharge régulière à domicile ou au travail, car son efficience dépend directement de l'utilisation de sa batterie.",
+      "profil_ideal": "Familles nombreuses cherchant un véhicule spacieux et sécurisé, capable de rouler en mode électrique pour les trajets quotidiens tout en conservant la polyvalence pour les longs trajets.",
+      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous n'avez pas de solution de recharge régulière pour exploiter la motorisation hybride rechargeable.",
       "motorisation": "hybride rechargeable",
+      "finitions": [
+        {
+          "nom": "Intuitive",
+          "apports": "Cette version d'entrée de gamme propose 7 places, l'accès mains-libres, l'aide au stationnement avec caméra de recul et des sièges avant chauffants.",
+          "prix": null
+        },
+        {
+          "nom": "Creative",
+          "apports": "Elle ajoute le chargeur sans fil, les compteurs numériques 12 pouces, des jantes alliage 20 pouces et une sellerie en cuir réglable électriquement.",
+          "prix": null
+        },
+        {
+          "nom": "Executive",
+          "apports": "Elle intègre l'assistance à la conduite de niveau 2, la caméra 360°, le système audio premium Bose et la surveillance active des angles morts.",
+          "prix": null
+        },
+        {
+          "nom": "Calligraphy",
+          "apports": "Elle se distingue par une sellerie en cuir Nappa, des sièges avant multi-confort, une boîte à gants avec désinfection UV-C et des finitions extérieures noires.",
+          "prix": null
+        }
+      ],
       "conseillable": true
     },
     {
@@ -481,11 +719,25 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/ioniq9.html",
       "description": "Venez découvrir Nouveau Hyundai IONIQ 9 – un SUV électrique 7 places d'une rare élégance avec son intérieur aussi spacieux que confortable.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_9_2025_360_EXT_NH5_IonosphereGreenPearl_001_1280",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Exterior_04_KV_IONIQ_9_34_Front",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Exterior-Side_Lights-off_PI-07",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_EVO-Video_30sec_Thumbnail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_EVO-Video_30sec",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Animation_Cargo_Thumbnail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Animation_Cargo-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Exterior-side_Driving_EU_27-2",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Exterior-Side_Charging-Cable_Closeup_1383"
+      ],
       "photos_interieur": [
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Interior_2nd-Row-Relaxation-Seat_EU_12",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Animation_Extended-Cargo_7-Seats_Thumbnail",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Animation_Extended-Cargo_7-Seats-1",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Animation_Folding_7-Seats_Thumbnail"
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Animation_Folding_7-Seats_Thumbnail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Animation_Folding_7-Seats-1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Interior-Charging_100W-USB-C-FDCG",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Features-on-Demand_AVN-Cluster_PI-24",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-9_Interior_1st_Row_02_EU_10"
       ],
       "videos": [],
       "faq": [
@@ -511,16 +763,33 @@
       "coffre_l": 338,
       "recharge_10_80_min": 24,
       "longueur_mm": 5060,
+      "offre_loa": null,
       "points_forts": [
-        "Autonomie WLTP jusqu'à 620 km",
-        "Recharge ultra-rapide 10-80 % en 24 min (système 800V)",
-        "Volume de chargement maximal de 2 494 litres",
-        "Modularité intérieure avec 6 ou 7 places et sièges pivotants",
-        "Capacité de remorquage jusqu'à 2 500 kg"
+        "Autonomie WLTP importante jusqu'à 620 km",
+        "Recharge ultra-rapide 10-80 % en 24 min grâce au système 800 V",
+        "Volume de chargement maximal impressionnant de 2 494 litres",
+        "Modularité intérieure avec 7 places et sièges relaxants ou pivotants"
       ],
-      "profil_ideal": "Familles nombreuses recherchant un véhicule électrique spacieux et haut de gamme capable de couvrir de longues distances avec un confort optimal.",
-      "a_eviter_si": "Ce véhicule n'est pas recommandé pour un usage strictement urbain en raison de sa longueur de 5,06 mètres ou si votre budget est inférieur à 70 000 euros.",
+      "profil_ideal": "Familles nombreuses recherchant un véhicule électrique haut de gamme offrant un espace intérieur maximal et la capacité de réaliser de longs trajets grâce à sa recharge rapide.",
+      "a_eviter_si": "Ce véhicule n'est pas recommandé pour les conducteurs circulant principalement dans des zones urbaines aux rues étroites ou disposant de places de parking limitées en raison de sa longueur de 5,06 mètres.",
       "motorisation": "100% electrique",
+      "finitions": [
+        {
+          "nom": "Creative",
+          "apports": "Elle propose de série l'assistance à la conduite de niveau 2, le cockpit numérique incurvé et des sièges chauffants en cuir et laine.",
+          "prix": 70450
+        },
+        {
+          "nom": "Executive",
+          "apports": "Elle ajoute notamment la caméra 360°, le système audio Bose, le toit ouvrant panoramique et les sièges avant relaxation à mémoire.",
+          "prix": null
+        },
+        {
+          "nom": "Calligraphy",
+          "apports": "Cette version haut de gamme intègre la sellerie cuir Nappa, des rétroviseurs extérieurs numériques et une boîte à gants avec désinfection UV-C.",
+          "prix": null
+        }
+      ],
       "conseillable": true
     },
     {
@@ -529,11 +798,25 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/ioniq3.html",
       "description": "Découvrez Hyundai IONIQ 3. Une voiture 100 % électrique compacte, spacieuse et irrésistiblement moderne avec jusqu’à 496 km d’autonomie.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Exterior-Front-Side_3_Three-Quarter-Front",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_Exterior_Lifestyle_Side_16x9",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_USP_Film_Thumbnail_16x9",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Exterior-Rear_2_Three-Quarter-Rear",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Graphic-Element_Line",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Range_Counter_Animation-Thumbnail",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Battery-Icon",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Exterior-Front_Headlight-Closeup_20-LED-Lights"
+      ],
       "photos_interieur": [
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Interior_Centre-Console_16_Interior-Chess",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_Interior_Lifestyle_3x4",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_Interior_Animation_Thumbnail_3x4",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_Interior_Front_Storage_4x3"
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_Interior_Front_Storage_4x3",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_Interior_Trunk_Megabox_Lifestyle_4x3",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Interior_5-Rear-Seats",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Bose-Sound-System_260407_HME_BJ1_N_WP_Teaser_4_15s_FULLHD_16x9_BOSE",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_3_Interior_Infotainment_Lifestyle_1x1"
       ],
       "videos": [],
       "faq": [
@@ -579,16 +862,18 @@
       "coffre_l": 441,
       "recharge_10_80_min": 29,
       "longueur_mm": 4170,
+      "offre_loa": null,
       "points_forts": [
-        "Autonomie WLTP jusqu'à 497 km",
+        "Autonomie de référence jusqu'à 497 km WLTP",
         "Recharge rapide de 10 à 80 % en 29 minutes",
-        "Volume de coffre de 441 L avec 119 L de rangement supplémentaire sous plancher",
-        "Fonction V2L (Vehicle-to-Load) jusqu'à 3,6 kW",
-        "Système d'infodivertissement Pleos Connect avec écran jusqu'à 14,6 pouces"
+        "Volume de coffre de 441 L avec rangements sous plancher",
+        "Fonction V2L permettant d'alimenter des appareils jusqu'à 3,6 kW",
+        "Système d'infodivertissement Pleos Connect avec écran jusqu'à 14,6\""
       ],
-      "profil_ideal": "Conducteurs urbains et jeunes familles recherchant un véhicule compact de 4,15 m facile à manœuvrer sans compromis sur l'habitabilité et l'autonomie pour les longs trajets.",
-      "a_eviter_si": "Ce véhicule n'est pas adapté si vous avez besoin de plus de 5 places ou d'un volume de chargement de type grand SUV pour des besoins utilitaires fréquents.",
+      "profil_ideal": "Conducteurs urbains et jeunes familles recherchant un véhicule compact facile à manœuvrer sans compromis sur l'habitabilité et l'autonomie pour les longs trajets.",
+      "a_eviter_si": "Ce véhicule n'est pas adapté si vous avez besoin de plus de 5 places ou si vous recherchez une berline de grand gabarit.",
       "motorisation": "100% electrique",
+      "finitions": [],
       "conseillable": true
     },
     {
@@ -597,11 +882,25 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/ioniq5-n.html",
       "description": "Découvrez Hyundai IONIQ 5 N, notre premier modèle N 100% électrique. Profitez de hautes performances, avec 650 ch et atteignez les 100 km/h en seulement 3,4 secondes.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_N_MY25_2024",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/01_IONIQ5N_Exterior_Driving_Circuit_Front_01_crop",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_N_Animation_Walkthrough_MY24_21x9_1_edit_1",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_N_Exterior_2023_PI_SHOT10_Side_Lights_On",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/05_IONIQ5N_Exterior_Driving_Winding_Road_Rear_01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/03_IONIQ5N_Exterior_Driving_Circuit_Front_02",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/IONIQ_5_N_2023_Highlights_Sound_Background",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/11_IONIQ5N_Exterior_Static_Warehouse_Profile_01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_N_2023_Highlights_Pillar_01"
+      ],
       "photos_interieur": [
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/24_IONIQ5N_Interior_Static_Circuit_Paddle_Shifting",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/17_IONIQ5N_Interior_Driving_Warehouse_Interior_edit",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/21_IONIQ5N_Interior_Static_Circuit_Interior",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/21_IONIQ5N_Interior_Static_Circuit_Interior_crop"
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/21_IONIQ5N_Interior_Static_Circuit_Interior_crop",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_N_Digital_Cluster_NMODE",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_N_Interior_2023_BOSE_Speaker",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_N_Interior_2023_Wireless_Charging_edit",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ_5_N_Interior_2023_Shot_42_Usb_C_Front"
       ],
       "videos": [],
       "faq": [],
@@ -614,15 +913,17 @@
       "coffre_l": null,
       "recharge_10_80_min": 18,
       "longueur_mm": null,
+      "offre_loa": null,
       "points_forts": [
-        "Hautes performances avec 650 ch et 0 à 100 km/h en 3,4 secondes",
-        "Recharge ultra-rapide de 10 à 80 % en seulement 18 minutes",
-        "Sensations immersives via les technologies N e-Shift et N Active Sound+",
-        "Aptitudes sur circuit avec refroidissement optimisé et N Drift Optimizer"
+        "Performances de supercar avec 650 ch et un 0 à 100 km/h en 3,4 s",
+        "Recharge ultra-rapide de 10 à 80 % en seulement 18 minutes grâce au système 800V",
+        "Technologies N e-Shift et N Active Sound+ pour des sensations de conduite immersives",
+        "Conception optimisée pour le circuit avec N Drift Optimizer et gestion thermique avancée"
       ],
-      "profil_ideal": "Ce véhicule convient aux passionnés de conduite sportive et de sensations fortes qui souhaitent passer à l'électrique sans perdre le plaisir mécanique et sonore d'un véhicule de circuit.",
-      "a_eviter_si": "Ce véhicule n'est pas le bon choix si votre priorité absolue est l'efficience énergétique maximale ou si vous recherchez un véhicule électrique au comportement purement feutré et discret.",
+      "profil_ideal": "Les passionnés de pilotage et de sensations fortes qui recherchent un véhicule électrique capable de performances sur circuit tout en restant utilisable au quotidien.",
+      "a_eviter_si": "Vous privilégiez l'efficience énergétique et l'autonomie maximale plutôt que la puissance brute et les sensations sportives.",
       "motorisation": "100% electrique",
+      "finitions": [],
       "conseillable": true
     },
     {
@@ -630,7 +931,16 @@
       "nom": "kona-nouvelle-generation",
       "url": "https://www.hyundai.com/fr/fr/modeles/kona-nouvelle-generation.html",
       "description": "",
-      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Exterior-Front-Side_3_Three-Quarter-Front",
+      "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/gamme_kona_09-24",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/gamme_kona_09-24",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_Electric_N-Line_Exterior_21x9",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_Electric_MY25_2024",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/visuel-kona-hybrid",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_EV-BASIS_SHOT05_Side_Lamp_On",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/New-Kona-Cargo-Space",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_KONA_EV_Exterior_2023-LIFESTYLE_01"
+      ],
       "photos_interieur": [],
       "videos": [],
       "faq": [],
@@ -643,15 +953,17 @@
       "coffre_l": 466,
       "recharge_10_80_min": null,
       "longueur_mm": null,
+      "offre_loa": null,
       "points_forts": [
-        "Volume de coffre de 466 litres",
-        "Modularité avec dossiers rabattables 40:20:40",
-        "Mises à jour à distance (OTA)",
-        "Clé numérique sur smartphone et Apple Watch"
+        "Volume de coffre de 466 litres constant sur toutes les motorisations",
+        "Modularité optimisée avec dossiers rabattables 40:20:40 et plancher ajustable",
+        "Technologies de connectivité avec clé numérique et mises à jour à distance (OTA)",
+        "Système Apple CarPlay et Android Auto sans fil de série"
       ],
-      "profil_ideal": "Ce véhicule convient aux conducteurs urbains et aux petites familles recherchant un SUV compact au design futuriste avec des équipements technologiques modernes.",
-      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous recherchez spécifiquement une motorisation électrifiée ou si vous avez besoin d'un volume de chargement de catégorie supérieure.",
+      "profil_ideal": "Ce véhicule convient parfaitement aux familles et aux conducteurs urbains recherchant un SUV compact polyvalent avec un espace de chargement généreux et des équipements technologiques modernes.",
+      "a_eviter_si": "Ce choix n'est pas idéal si vous privilégiez la réduction de consommation de carburant d'un hybride ou l'absence totale d'émissions à l'échappement de la version électrique.",
       "motorisation": "essence",
+      "finitions": [],
       "conseillable": false
     },
     {
@@ -660,11 +972,25 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/nexo.html",
       "description": "Découvrez NEXO Nouvelle Génération, le SUV à hydrogène Hyundai qui associe un design affirmé à une technologie de pointe. Jusqu’à 826 km d’autonomie.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_2025_360_EXT_VC2_GoyoCopperPearl_1280",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Exterior-Front_Highlight_Headliner",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Icon_1_Key_Fact",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Icon_2_Key_Fact_4x3",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Icon_3_Key_Fact",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Exterior-Driving_Rear_NH2-87",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Icon_1_Hydrogen_Tech",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Icon_2_Hydrogen_Tech",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Icon_3_Hydrogen_Tech"
+      ],
       "photos_interieur": [
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Relaxation-Seat_NH2_K4_LHD_KV_Lifestyle_Int_26",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Panoramic-Display_NH2_K4_LHD_panorama-display",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Bang-Olufsen-Speaker_NH2_K4_LHD_bang-olufsen",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Dashboard_Compositing_v008"
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Dashboard_Compositing_v008",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior-Closeup_Regenerative-Braking_Pedal-Misapplication-Safety-Assist",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Digital-Side-Mirror_NH2_K4_LHD_DSM",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior_Digital-Centre-Mirror_NH2_K4_LHD_DCM",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_NEXO_Interior-Display_OTA-Update_NH2_K4_LHD_OTA"
       ],
       "videos": [],
       "faq": [
@@ -698,16 +1024,18 @@
       "coffre_l": 510,
       "recharge_10_80_min": null,
       "longueur_mm": 4750,
+      "offre_loa": null,
       "points_forts": [
-        "Autonomie record jusqu'à 826 km en cycle WLTP",
-        "Ravitaillement complet en hydrogène en seulement 5 minutes",
-        "Technologie V2L permettant d'alimenter des appareils jusqu'à 3,6 kW",
-        "Système de purification d'air éliminant 99,9 % des particules fines",
-        "Aide au stationnement intelligent à distance (créneau, bataille, épi)"
+        "Autonomie exceptionnelle jusqu'à 826 km WLTP",
+        "Ravitaillement ultra-rapide en seulement 5 minutes",
+        "Technologie V2L (Vehicle-to-Load) jusqu'à 3,6 kW",
+        "Purification de l'air éliminant 99,9 % des particules fines",
+        "Performances et autonomie stables par temps froid"
       ],
-      "profil_ideal": "Conducteurs effectuant de longs trajets fréquents qui souhaitent une mobilité zéro émission sans les contraintes de temps de charge des batteries électriques.",
-      "a_eviter_si": "Vous n'avez pas accès à une station de ravitaillement en hydrogène à 700 bars sur vos parcours habituels.",
+      "profil_ideal": "Gros rouleurs cherchant une mobilité zéro émission avec un temps de plein similaire au thermique et une autonomie non impactée par le froid.",
+      "a_eviter_si": "Vous ne disposez pas d'une station hydrogène à 700 bars à proximité, car le véhicule ne peut pas être rechargé sur une prise électrique.",
       "motorisation": "hydrogene",
+      "finitions": [],
       "conseillable": true
     },
     {
@@ -716,11 +1044,19 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/staria-electric.html",
       "description": "Découvrez le nouveau monospace électrique Hyundai STARIA, équipé d’un système de batterie 800 volts permettant une recharge rapide en courant continu (DC) de 10 à 80 % en environ 20 minutes.",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_MY25_2024",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Exterior-Front",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Exterior_3QREAR_V01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_closeup_wheel_V01",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Exterior-Close-up_Charging_Details_04",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Crop_Sound_System"
+      ],
       "photos_interieur": [
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_dashboard_V01",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_Seats_1_V01",
         "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_navigation_1_V01",
-        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Interior-Close-up_USB-C-Charging-Ports_Details_10"
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA-Electric_Interior-Close-up_USB-C-Charging-Ports_Details_10",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_STARIA_Electric_Interior_02"
       ],
       "videos": [],
       "faq": [],
@@ -733,15 +1069,23 @@
       "coffre_l": 435,
       "recharge_10_80_min": 20,
       "longueur_mm": null,
+      "offre_loa": null,
       "points_forts": [
-        "Recharge ultra-rapide 10-80 % en 20 minutes grâce au système 800V",
-        "Grande modularité avec des configurations en 7 ou 9 places",
-        "Batterie de 84 kWh offrant jusqu'à 400 km d'autonomie WLTP",
-        "Habitacle spacieux avec plancher plat et ports USB-C sur les trois rangées"
+        "Recharge ultra-rapide de 10 à 80 % en environ 20 minutes sur chargeur 350 kW",
+        "Grande modularité avec des configurations disponibles en 7 ou 9 places",
+        "Autonomie électrique WLTP atteignant 400 km avec batterie 84 kWh",
+        "Habitacle spacieux à plancher plat avec ports USB-C sur les trois rangées"
       ],
-      "profil_ideal": "Familles nombreuses ou services de navettes professionnelles ayant besoin de transporter jusqu'à 9 personnes dans un environnement 100 % électrique.",
-      "a_eviter_si": "Ce véhicule n'est pas le bon choix si vous avez besoin d'un volume de coffre important (plus de 435 litres) tout en transportant 7 passagers ou plus.",
+      "profil_ideal": "Familles très nombreuses ou professionnels du transport de passagers recherchant un volume intérieur maximal et une motorisation zéro émission.",
+      "a_eviter_si": "Ce véhicule n'est pas le meilleur choix si vous avez besoin d'un volume de coffre très important en configuration 7 places (limité à 435 L) ou si vos trajets ne permettent pas l'accès à des bornes de recharge rapide.",
       "motorisation": "100% electrique",
+      "finitions": [
+        {
+          "nom": "Executive",
+          "apports": "Elle propose une configuration 7 places Luxury dotée d'équipements haut de gamme et d'un habitacle spacieux.",
+          "prix": null
+        }
+      ],
       "conseillable": true
     },
     {
@@ -750,6 +1094,16 @@
       "url": "https://www.hyundai.com/fr/fr/modeles/ultime-edition.html",
       "description": "",
       "photo": "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Exterior-Front-Side_3_Three-Quarter-Front",
+      "photos_exterieur": [
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_IONIQ-3_Exterior-Front-Side_3_Three-Quarter-Front",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/header_MOCEAN",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/170913_nhm_hyu_3022_39L",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Header_Guide_EV",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_TUCSON_Stage",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Runout_KONA_Hybrid_Exterior_Front",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_Runout_TUCSON_Exterior_Building",
+        "https://dmassets.hyundai.com/is/image/hyundaiautoever/Hyundai_i20_MY24_2023"
+      ],
       "photos_interieur": [],
       "videos": [],
       "faq": [
@@ -766,7 +1120,7 @@
           "reponse": "Absolument. La gamme Hyundai offre un large choix de modèles compacts adaptés à tous les besoins. i20 s'impose comme une citadine dynamique et technologique, tandis que BAYON propose l’agilité d'un crossover urbain avec une position de conduite surélevée. Pour ceux qui recherchent plus de polyvalence, KONA Hybrid offre un design futuriste et un espace intérieur généreux dans un format compact."
         }
       ],
-      "categorie": null,
+      "categorie": "SUV urbain",
       "places": 5,
       "prix_a_partir_de": null,
       "autonomie_km": null,
@@ -775,14 +1129,17 @@
       "coffre_l": null,
       "recharge_10_80_min": null,
       "longueur_mm": null,
+      "offre_loa": null,
       "points_forts": [
-        "Équipements les plus exclusifs et raffinés de la génération actuelle",
-        "Disponibilité immédiate sur les véhicules en stock",
-        "Packs de sécurité et de connectivité parmi les plus complets du segment"
+        "Équipements exclusifs et configuration suréquipée",
+        "Disponibilité immédiate en stock",
+        "Pack sécurité et connectivité parmi les plus complets",
+        "Position de conduite surélevée et excellente visibilité périphérique"
       ],
-      "profil_ideal": "Ce véhicule convient aux acheteurs recherchant une version suréquipée et fiabilisée d'un modèle éprouvé, disponible sans délai de production.",
-      "a_eviter_si": "Ce n'est pas le bon choix si vous souhaitez bénéficier des toutes dernières innovations technologiques et stylistiques des générations à venir.",
+      "profil_ideal": "Conducteurs recherchant une citadine ou un crossover essence éprouvé, bénéficiant d'une dotation technologique maximale et d'une livraison rapide.",
+      "a_eviter_si": "Vous souhaitez acquérir un véhicule 100% électrique ou si vous préférez attendre les innovations stylistiques de la future génération.",
       "motorisation": "essence",
+      "finitions": [],
       "conseillable": false
     }
   ]

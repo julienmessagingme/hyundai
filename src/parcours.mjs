@@ -30,6 +30,8 @@ function neuve(typeEntree) {
     usage: null,
     sensibilite_carbone: null,
     vehicules_proposes: [],
+    // urls deja poussees, pour ne pas renvoyer deux fois la meme image
+    photos_envoyees: new Set(),
     interesse_essai: null,
     horizon_projet: null,
     code_postal: null,

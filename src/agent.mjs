@@ -5,7 +5,12 @@
 // tout ce qui n'est pas texte (carte vehicule, epingle GPS, retour menu) passe par eux.
 import OpenAI from "openai";
 import { env } from "./env.mjs";
-import { catalogueCondense, faqVehicule, vehiculeParSlug } from "./catalogue.mjs";
+import {
+  catalogueCondense,
+  faqVehicule,
+  vehiculeParSlug,
+  photosVehicule,
+} from "./catalogue.mjs";
 import { concessionsProches } from "./concessions.mjs";
 import {
   ETAPES,
@@ -21,6 +26,8 @@ const client = new OpenAI({
 });
 const MODEL = env.LLM_MODEL || "google/gemini-3-flash";
 const MAX_TOURS_LLM = 4; // garde-fou : au dela, on rend ce qu'on a plutot que de boucler
+// Chaque photo coute 2 requetes API (remplissage du champ + declenchement du node).
+const MAX_PHOTOS = Number(env.PHOTOS_PAR_DEMANDE || 3);
 
 const CATALOGUE = catalogueCondense();
 
@@ -100,6 +107,12 @@ HONNETETE
 - Tu ne promets rien que le catalogue ne dise pas. Si tu ne sais pas, tu le dis.
 - Tu tiens compte du champ "A eviter si" : si un vehicule ne convient pas au client, tu ne le proposes pas, meme s'il est seduisant.
 - Un hybride simple ne se recharge pas sur une prise et n'a pas d'autonomie electrique annoncee. Un hybride rechargeable, si. Ne confonds jamais les deux.
+- FINITIONS : tu ne nommes une finition (Intuitive, Creative, Executive, N Line...)
+  QUE si elle figure dans le catalogue ci-dessous pour CE vehicule precis, ou si
+  consulter_vehicule te la rend. Ces noms se ressemblent d'un modele a l'autre et il
+  est tentant de les deviner : ne le fais pas. Si tu ne les as pas, dis que les
+  versions disponibles sont a confirmer avec la concession, et propose de detailler
+  les equipements que tu connais.
 - LOCATION (LOA ou LLD) : tu ne cites une mensualite QUE si l'outil consulter_vehicule
   te la donne dans "offre_loa". Hyundai ne publie pas d'offre pour tous les modeles.
   Si tu ne l'as pas, tu le dis simplement et tu renvoies vers la concession, qui
@@ -159,6 +172,27 @@ const OUTILS = [
         type: "object",
         properties: { slug: { type: "string", description: "slug du vehicule" } },
         required: ["slug"],
+      },
+    },
+  },
+  {
+    type: "function",
+    function: {
+      name: "envoyer_photos",
+      description:
+        "Envoie au client des photos supplementaires d'un vehicule. A appeler des qu'il en demande plus, ou qu'il veut voir l'interieur, l'habitacle, le coffre, le tableau de bord ou l'ecran. Les photos partent une par une ; annonce simplement que tu les envoies, sans les decrire.",
+      parameters: {
+        type: "object",
+        properties: {
+          slug: { type: "string", description: "slug du vehicule concerne" },
+          vue: {
+            type: "string",
+            enum: ["interieur", "exterieur"],
+            description:
+              "interieur pour l'habitacle, le tableau de bord, les sieges ; exterieur pour le design et les vues du vehicule",
+          },
+        },
+        required: ["slug", "vue"],
       },
     },
   },
@@ -336,6 +370,34 @@ export async function traiterMessage(userNs, message) {
             texteFige = true;
           }
           resultat = { envoye: true, vehicules: [v1.nom, v2.nom] };
+          break;
+        }
+
+        case "envoyer_photos": {
+          const v = vehiculeParSlug(args.slug);
+          if (!v) {
+            resultat = { erreur: `vehicule inconnu : ${args.slug}` };
+            break;
+          }
+          const urls = photosVehicule(
+            v.slug,
+            args.vue === "exterieur" ? "exterieur" : "interieur",
+            s.photos_envoyees,
+            MAX_PHOTOS
+          );
+          if (!urls.length) {
+            // On le dit au modele plutot que d'annoncer des photos qui n'arriveront pas.
+            resultat = {
+              aucune_photo: true,
+              consigne: `Aucune photo supplementaire disponible pour ${v.nom}. Dis-le simplement et propose le lien de la page, ou un essai en concession.`,
+            };
+            break;
+          }
+          for (const url of urls) {
+            sortants.push({ type: "photo", url });
+            s.photos_envoyees.add(url);
+          }
+          resultat = { envoyees: urls.length, vehicule: v.nom, vue: args.vue };
           break;
         }
 

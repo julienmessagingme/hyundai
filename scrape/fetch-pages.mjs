@@ -75,7 +75,7 @@ function photos(html, slug, nomProduit) {
   // obtenir assez de photos. "TUCSON Hybrid" ne matche aucun fichier (le CDN dit
   // "Hyundai_TUCSON_2024") alors que "TUCSON" oui ; a l'inverse "IONIQ 5" doit
   // rester specifique, sinon on ramasse les IONIQ 3 et 9 presents sur la meme page.
-  const mots = String(nomProduit || slug.replace(/-/g, " ")).trim().split(/s+/);
+  const mots = String(nomProduit || slug.replace(/-/g, " ")).trim().split(/\s+/);
   const matchant = (cle) => urls.filter((u) => cleNorm(u.split("/").pop()).includes(cle));
   let duModele = [];
   for (let n = mots.length; n >= 1; n--) {
@@ -84,8 +84,13 @@ function photos(html, slug, nomProduit) {
     duModele = matchant(cle);
     if (duModele.length >= 3) break;
   }
-  const classe = (u) =>
-    /interior|interieur|cockpit|dashboard|seat|cabin/i.test(u) ? "interieur" : "exterieur";
+  // Toutes les photos d'habitacle ne portent pas le mot "Interior" : le CDN nomme
+  // aussi par equipement ("Digital_Cluster", "PADDLE_SHIFTERS", "BOSE_PREMIUM").
+  // On classe donc aussi sur ces elements, en restant sur ceux qui ne peuvent etre
+  // que dans l'habitacle (un hayon ou un phare, eux, restent a l'exterieur).
+  const INTERIEUR =
+    /interior|interieur|cockpit|dash|seat|cabin|cluster|console|steering|paddle|display|screen|audio|bose|climate|navigation|ambient|armrest|upholster/i;
+  const classe = (u) => (INTERIEUR.test(u.split("/").pop()) ? "interieur" : "exterieur");
   // repli sur toutes les images si le filtre par nom ne rend rien
   return (duModele.length ? duModele : urls).map((url) => ({ url, vue: classe(url) }));
 }
@@ -105,6 +110,20 @@ function videos(html, ld) {
       vignette: b.thumbnailUrl || null,
     }));
   return [...mp4, ...players];
+}
+
+/** Fusionne deux listes de photos en retirant les doublons d'URL. */
+function fusionnerPhotos(...listes) {
+  const vues = new Set();
+  const sortie = [];
+  for (const liste of listes) {
+    for (const p of liste) {
+      if (vues.has(p.url)) continue;
+      vues.add(p.url);
+      sortie.push(p);
+    }
+  }
+  return sortie;
 }
 
 async function main() {
@@ -129,6 +148,19 @@ async function main() {
       const faq = ld.find((b) => b["@type"] === "FAQPage") || null;
       const prix = produit?.offers?.price ? Number(produit.offers.price) : null;
 
+      // Page equipements du modele : c'est la QUE se trouvent les vraies photos
+      // d'habitacle (console centrale, ecran, sieges) pour les modeles dont la page
+      // principale ne porte que le visuel officiel et 300 frames de configurateur.
+      // Elle sert aussi de source pour les finitions. Absente sur certains modeles :
+      // son echec ne doit pas faire echouer la fiche.
+      let htmlEquip = "";
+      try {
+        htmlEquip = await get(`${BASE}/fr/fr/modeles/${slug}/equipements.html`);
+        await sleep(DELAY_MS);
+      } catch {
+        /* pas de page equipements pour ce modele */
+      }
+
       const fiche = {
         slug,
         url,
@@ -142,9 +174,15 @@ async function main() {
           question: q.name,
           reponse: String(q.acceptedAnswer?.text || "").replace(/<[^>]*>/g, "").trim(),
         })),
-        photos: photos(html, slug, produit?.name),
+        // Photos des deux pages fusionnees, doublons retires : la page principale
+        // donne les vues exterieures, la page equipements l'habitacle.
+        photos: fusionnerPhotos(
+          photos(html, slug, produit?.name),
+          htmlEquip ? photos(htmlEquip, slug, produit?.name) : []
+        ),
         videos: videos(html, ld),
         texte: visibleText(html),
+        texte_equipements: htmlEquip ? visibleText(htmlEquip) : "",
         scrape_le: new Date().toISOString(),
       };
 

@@ -54,6 +54,11 @@ export function catalogueCondense() {
       return [
         `### ${v.nom}  [slug: ${v.slug}]`,
         specs,
+        // Seuls les NOMS des finitions ici : le detail passe par consulter_vehicule,
+        // sinon le prompt systeme double de taille pour une information rarement utile.
+        v.finitions?.length
+          ? `Finitions : ${v.finitions.map((f) => f.nom).join(", ")}`
+          : null,
         v.points_forts?.length ? `Points forts : ${v.points_forts.join(" ; ")}` : null,
         v.profil_ideal ? `Ideal pour : ${v.profil_ideal}` : null,
         v.a_eviter_si ? `A eviter si : ${v.a_eviter_si}` : null,
@@ -90,5 +95,34 @@ export function faqVehicule(slug) {
     },
     points_forts: v.points_forts,
     a_eviter_si: v.a_eviter_si,
+    finitions: v.finitions || [],
+    offre_loa: v.offre_loa || null,
+    photos_disponibles: {
+      interieur: (v.photos_interieur || []).length,
+      exterieur: (v.photos_exterieur || []).length,
+    },
   };
+}
+
+/**
+ * Photos a envoyer pour un vehicule.
+ * @param {"interieur"|"exterieur"} vue
+ * @param {Set<string>} dejaEnvoyees urls deja poussees dans cette conversation, pour
+ *   ne pas renvoyer deux fois la meme image si le client redemande des photos.
+ */
+export function photosVehicule(slug, vue, dejaEnvoyees = new Set(), max = 3) {
+  const v = vehiculeParSlug(slug);
+  if (!v) return [];
+  const source =
+    vue === "exterieur"
+      ? [...(v.photos_exterieur || []), ...(v.photo ? [v.photo] : [])]
+      : v.photos_interieur || [];
+  const dispo = source.filter((u) => u && !dejaEnvoyees.has(u));
+  // Rien de neuf dans la vue demandee : on retombe sur l'autre plutot que de laisser
+  // le client sans image apres lui avoir dit qu'on lui en envoyait.
+  if (!dispo.length) {
+    const autre = vue === "exterieur" ? v.photos_interieur || [] : [...(v.photos_exterieur || []), v.photo];
+    return autre.filter((u) => u && !dejaEnvoyees.has(u)).slice(0, max);
+  }
+  return dispo.slice(0, max);
 }

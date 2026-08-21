@@ -13,7 +13,7 @@ import OpenAI from "openai";
 
 const RAW = "data/raw";
 const OUT = "data/vehicules.json";
-const CONCURRENCE = 3; // 17 pages, on reste poli avec le gateway
+const CONCURRENCE = 2; // 17 pages, on reste poli avec le gateway
 
 // Presents dans le catalogue mais a ne PAS recommander a un client :
 // une serie speciale et une page teaser d'un modele a venir, sans prix ni fiche
@@ -31,9 +31,14 @@ const env = Object.fromEntries(
     })
 );
 
+// Depuis l'ajout de la page equipements, le prompt a double et les requetes longues
+// tombent en "Connection error". On laisse donc au SDK le soin de reessayer, avec un
+// timeout large : c'est un traitement hors ligne, la duree importe peu, l'exhaustivite si.
 const client = new OpenAI({
   apiKey: env.AI_GATEWAY_API_KEY,
   baseURL: env.LLM_BASE_URL || "https://ai-gateway.vercel.sh/v1",
+  maxRetries: 5,
+  timeout: 180000,
 });
 const MODEL = env.LLM_MODEL || "google/gemini-3-flash";
 
@@ -77,16 +82,22 @@ function retirerBoilerplate(fiches, seuil = 0.6) {
   const min = Math.ceil(fiches.length * seuil);
   const freq = new Map();
   for (const f of fiches) {
-    for (const l of new Set(f.texte.split("\n"))) freq.set(l, (freq.get(l) || 0) + 1);
+    for (const l of new Set([...f.texte.split("\n"), ...(f.texte_equipements || "").split("\n")]))
+      freq.set(l, (freq.get(l) || 0) + 1);
   }
   let avant = 0;
   let apres = 0;
+  // Les deux pages portent le meme menu et le meme pied de page : on nettoie aussi
+  // la page equipements, sinon le bruit revient par elle.
   for (const f of fiches) {
-    const lignes = f.texte.split("\n");
-    avant += lignes.length;
-    const gardees = lignes.filter((l) => (freq.get(l) || 0) < min);
-    apres += gardees.length;
-    f.texte = gardees.join("\n");
+    for (const champ of ["texte", "texte_equipements"]) {
+      if (!f[champ]) continue;
+      const lignes = f[champ].split("\n");
+      avant += lignes.length;
+      const gardees = lignes.filter((l) => (freq.get(l) || 0) < min);
+      apres += gardees.length;
+      f[champ] = gardees.join("\n");
+    }
   }
   console.log(`Boilerplate retire : ${avant - apres} lignes sur ${avant}`);
   return fiches;
@@ -137,6 +148,74 @@ function offreLoaValide(offre) {
   return t;
 }
 
+const CONSIGNE_FINITIONS = `Tu lis la page "equipements" d'un modele Hyundai France et tu en tires ses FINITIONS, c'est a dire les versions commercialisees du vehicule.
+
+Rends UNIQUEMENT un objet JSON de la forme :
+{"finitions": [{"nom": "Intuitive", "apports": "...", "prix": 25350}]}
+
+- "nom" : le nom de la finition (Intuitive, Creative, Executive, Initia, N Line...)
+- "apports" : en UNE phrase, ce que cette finition ajoute par rapport a la precedente
+- "prix" : son tarif en euros si la page l'indique, sinon null
+- classe-les dans l'ordre croissant de gamme
+- liste vide si la page n'en presente aucune
+
+N'inclus NI les options, NI les accessoires, NI les coloris : uniquement les versions
+du vehicule. N'invente aucun nom : s'il n'est pas ecrit sur la page, il n'existe pas.`;
+
+/**
+ * Les finitions font l'objet d'un appel SEPARE, sur la seule page equipements.
+ * Fusionner les deux taches dans un unique appel doublait la taille du prompt et
+ * faisait tomber une requete sur trois en "Connection error". Un appel = une tache :
+ * les prompts restent courts, et l'echec d'une extraction n'emporte pas l'autre.
+ */
+/**
+ * Isole la zone des finitions dans un texte de page.
+ * Les finitions sont annoncees par des blocs "Equipements supplementaires par rapport
+ * a la finition X" : on prend donc de la premiere a la derniere mention de
+ * "finition", avec une marge. Cela evite d'envoyer la page entiere au modele, ce qui
+ * faisait tomber une requete sur trois.
+ */
+function zoneFinitions(texte, marge = 12) {
+  const lignes = String(texte || "").split("\n");
+  const reperes = lignes
+    .map((l, i) => (/finition/i.test(l) ? i : -1))
+    .filter((i) => i >= 0);
+  if (!reperes.length) return "";
+  const debut = Math.max(0, reperes[0] - marge);
+  const fin = Math.min(lignes.length, reperes[reperes.length - 1] + marge);
+  return lignes.slice(debut, fin).join("\n");
+}
+
+async function extraireFinitions(fiche) {
+  // Les finitions figurent sur la page PRINCIPALE du modele ("Configurer / Creative /
+  // Equipements supplementaires par rapport a la finition Intuitive"), pas sur la page
+  // equipements, qui ne porte que la liste d'equipements par categorie.
+  const source = [zoneFinitions(fiche.texte), zoneFinitions(fiche.texte_equipements)]
+    .filter(Boolean)
+    .join("\n\n");
+  if (!source) return [];
+  const completion = await client.chat.completions.create({
+    model: MODEL,
+    temperature: 0,
+    response_format: { type: "json_object" },
+    messages: [
+      { role: "system", content: CONSIGNE_FINITIONS },
+      {
+        role: "user",
+        content:
+          `Vehicule : ${fiche.nom}\n\n` +
+          `--- EXTRAIT DE LA PAGE, ZONE DES FINITIONS ---\n${source.slice(0, 9000)}\n--- FIN ---`,
+      },
+    ],
+  });
+  try {
+    const j = JSON.parse((completion.choices[0].message.content || "{}").replace(/^```json\s*|\s*```$/g, ""));
+    return Array.isArray(j.finitions) ? j.finitions.filter((f) => f && f.nom) : [];
+  } catch {
+    return [];
+  }
+}
+
 async function extraire(fiche) {
   const completion = await client.chat.completions.create({
     model: MODEL,
@@ -151,7 +230,7 @@ async function extraire(fiche) {
           `Motorisation (certaine) : ${motorisationDepuisNom(fiche.nom, fiche.slug)}\n` +
           `Description officielle : ${fiche.description}\n` +
           `Prix annonce dans les donnees structurees : ${fiche.prix_a_partir_de ?? "absent"}\n\n` +
-          `--- TEXTE DE LA PAGE ---\n${fiche.texte.slice(0, 20000)}\n--- FIN ---`,
+          `--- TEXTE DE LA PAGE ---\n${fiche.texte.slice(0, 18000)}\n--- FIN ---`,
       },
     ],
   });
@@ -179,6 +258,7 @@ async function main() {
       vague.map(async (fiche) => {
         try {
           const { json, usage } = await extraire(fiche);
+          const finitions = await extraireFinitions(fiche);
           tokensIn += usage?.prompt_tokens || 0;
           tokensOut += usage?.completion_tokens || 0;
           const motorisation = motorisationDepuisNom(fiche.nom, fiche.slug);
@@ -201,15 +281,17 @@ async function main() {
             url: fiche.url,
             description: fiche.description,
             photo,
+            photos_exterieur: fiche.photos.filter((p) => p.vue === "exterieur").slice(0, 8).map((p) => p.url),
             photos_interieur: fiche.photos
               .filter((p) => p.vue === "interieur")
-              .slice(0, 4)
+              .slice(0, 8)
               .map((p) => p.url),
             videos: fiche.videos.filter((v) => v.type === "mp4").map((v) => v.url),
             faq: fiche.faq,
             ...json,
             // valeurs sures : elles ecrasent toute sortie du LLM
             motorisation,
+            finitions,
             offre_loa: offreLoaValide(json.offre_loa),
             conseillable: !NON_CONSEILLABLES.has(fiche.slug),
             prix_a_partir_de: fiche.prix_a_partir_de ?? json.prix_a_partir_de ?? null,
@@ -260,7 +342,8 @@ async function main() {
               fiche.photos.find((p) => p.vue === "exterieur")?.url ||
               fiche.photos[0]?.url ||
               null,
-            photos_interieur: fiche.photos.filter((p) => p.vue === "interieur").slice(0, 4).map((p) => p.url),
+            photos_exterieur: fiche.photos.filter((p) => p.vue === "exterieur").slice(0, 8).map((p) => p.url),
+            photos_interieur: fiche.photos.filter((p) => p.vue === "interieur").slice(0, 8).map((p) => p.url),
             videos: fiche.videos.filter((v) => v.type === "mp4").map((v) => v.url),
             faq: fiche.faq,
             ...json,
