@@ -1,0 +1,17 @@
+{
+  "name": "hyundai-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Bot IA Hyundai France : conseil vehicule et qualification de leads vers le reseau de concessions.",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "scrape:pages": "node scrape/fetch-pages.mjs",
+    "scrape:concessions": "node scrape/concessions.mjs",
+    "scrape:extract": "node scrape/extract.mjs"
+  },
+  "dependencies": {
+    "openai": "^4.77.0"
+  },
+  "engines": { "node": ">=22" }
+}

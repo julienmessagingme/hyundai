@@ -1,0 +1,2827 @@
+{
+  "genere_le": "2026-08-21T17:15:29.502Z",
+  "source": "https://www.hyundai.com/fr/fr/liste-concessionnaire.html",
+  "total": 188,
+  "concessions": [
+    {
+      "id": "c06ab00420",
+      "nom": "Hyundai Aix En Provence",
+      "ville": "Aix En Provence",
+      "adresse": "130 Rue Bastide De Verdaches",
+      "code_postal": "13290",
+      "commune": "Aix-en-Provence",
+      "latitude": 43.508333,
+      "longitude": 5.402996,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/aix-en-provence/130-rue-bastide-de-verdaches/c06ab00420",
+      "geocodage": {
+        "score": 0.968,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00244",
+      "nom": "Hyundai Ajaccio",
+      "ville": "Ajaccio",
+      "adresse": "Route De Mezzavia",
+      "code_postal": "20090",
+      "commune": "Ajaccio",
+      "latitude": 41.949836,
+      "longitude": 8.769913,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/ajaccio/route-de-mezzavia/c06ab00244",
+      "geocodage": {
+        "score": 0.963,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81434",
+      "nom": "Hyundai Albertville",
+      "ville": "Albertville",
+      "adresse": "11 Rue Robert Piddat",
+      "code_postal": "73200",
+      "commune": "Albertville",
+      "latitude": 45.662599,
+      "longitude": 6.409093,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/albertville/11-rue-robert-piddat/c06ab81434",
+      "geocodage": {
+        "score": 0.962,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00386",
+      "nom": "Hyundai Ales",
+      "ville": "Ales",
+      "adresse": "900 Avenue Olivier De Serres",
+      "code_postal": "30100",
+      "commune": "Alès",
+      "latitude": 44.105156,
+      "longitude": 4.086675,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/ales/900-avenue-olivier-de-serres/c06ab00386",
+      "geocodage": {
+        "score": 0.768,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00507",
+      "nom": "Hyundai Amilly",
+      "ville": "Amilly",
+      "adresse": "879 Avenue D Antibes",
+      "code_postal": "45200",
+      "commune": "Amilly",
+      "latitude": 47.9792,
+      "longitude": 2.733244,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/amilly/879-avenue-d-antibes/c06ab00507",
+      "geocodage": {
+        "score": 0.969,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00435",
+      "nom": "Hyundai Annecy",
+      "ville": "Annecy",
+      "adresse": "14 Chemin De Periaz",
+      "code_postal": "74600",
+      "commune": "Annecy",
+      "latitude": 45.876027,
+      "longitude": 6.09179,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/annecy/14-chemin-de-periaz/c06ab00435",
+      "geocodage": {
+        "score": 0.78,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00497",
+      "nom": "Hyundai Argenteuil",
+      "ville": "Argenteuil",
+      "adresse": "102 Boulevard Jean Allemane",
+      "code_postal": "95100",
+      "commune": "Argenteuil",
+      "latitude": 48.956482,
+      "longitude": 2.256147,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/argenteuil/102-boulevard-jean-allemane/c06ab00497",
+      "geocodage": {
+        "score": 0.98,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00469",
+      "nom": "Hyundai Arles",
+      "ville": "Arles",
+      "adresse": "42 Avenue Des Arches",
+      "code_postal": "13200",
+      "commune": "Arles",
+      "latitude": 43.665405,
+      "longitude": 4.644976,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/arles/42-avenue-des-arches/c06ab00469",
+      "geocodage": {
+        "score": 0.97,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00564",
+      "nom": "Hyundai Arnas",
+      "ville": "Arnas",
+      "adresse": "4 Rue Du Rail",
+      "code_postal": "69400",
+      "commune": "Arnas",
+      "latitude": 46.010907,
+      "longitude": 4.720984,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/arnas/4-rue-du-rail/c06ab00564",
+      "geocodage": {
+        "score": 0.766,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00540",
+      "nom": "Hyundai Arras",
+      "ville": "Arras",
+      "adresse": "95 Avenue Winston Churchill",
+      "code_postal": "62000",
+      "commune": "Arras",
+      "latitude": 50.297706,
+      "longitude": 2.750464,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/arras/95-avenue-winston-churchill/c06ab00540",
+      "geocodage": {
+        "score": 0.976,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00570",
+      "nom": "Hyundai Aubenas",
+      "ville": "Aubenas",
+      "adresse": "Rue De La Garenche",
+      "code_postal": "07200",
+      "commune": "Aubenas",
+      "latitude": 44.618087,
+      "longitude": 4.404655,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/aubenas/rue-de-la-garenche/c06ab00570",
+      "geocodage": {
+        "score": 0.952,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00273",
+      "nom": "Hyundai Auch",
+      "ville": "Auch",
+      "adresse": "4 Allee Berthe Morisot",
+      "code_postal": "32000",
+      "commune": "Auch",
+      "latitude": 43.663597,
+      "longitude": 0.612625,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/auch/4-allee-berthe-morisot/c06ab00273",
+      "geocodage": {
+        "score": 0.958,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00528",
+      "nom": "Hyundai Augny",
+      "ville": "Augny",
+      "adresse": "81 Rue Adrienne Bolland",
+      "code_postal": "57685",
+      "commune": "Augny",
+      "latitude": 49.073296,
+      "longitude": 6.112302,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/augny/81-rue-adrienne-bolland/c06ab00528",
+      "geocodage": {
+        "score": 0.945,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00556",
+      "nom": "Hyundai Aulnoy Lez Valenciennes",
+      "ville": "Aulnoy Lez Valenciennes",
+      "adresse": "136 162 Rue Jules Mousseron",
+      "code_postal": "59300",
+      "commune": "Aulnoy-lez-Valenciennes",
+      "latitude": 50.329777,
+      "longitude": 3.512826,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/aulnoy-lez-valenciennes/136-162-rue-jules-mousseron/c06ab00556",
+      "geocodage": {
+        "score": 0.589,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81414",
+      "nom": "Hyundai Avranches",
+      "ville": "Avranches",
+      "adresse": "25 Rue De La Liberte",
+      "code_postal": "50300",
+      "commune": "Avranches",
+      "latitude": 48.690508,
+      "longitude": -1.354993,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/avranches/25-rue-de-la-liberte/c06ab81414",
+      "geocodage": {
+        "score": 0.97,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00395",
+      "nom": "Hyundai Barberey Saint Sulpice",
+      "ville": "Barberey Saint Sulpice",
+      "adresse": "17 Rue Amedee Bollee",
+      "code_postal": "10600",
+      "commune": "Barberey-Saint-Sulpice",
+      "latitude": 48.327851,
+      "longitude": 4.025463,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/barberey-saint-sulpice/17-rue-amedee-bollee/c06ab00395",
+      "geocodage": {
+        "score": 0.949,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00095",
+      "nom": "Hyundai Bayonne",
+      "ville": "Bayonne",
+      "adresse": "70 Avenue Du 8 Mai 1945",
+      "code_postal": "64100",
+      "commune": "Bayonne",
+      "latitude": 43.467179,
+      "longitude": -1.492674,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/bayonne/70-avenue-du-8-mai-1945/c06ab00095",
+      "geocodage": {
+        "score": 0.972,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00484",
+      "nom": "Hyundai Beaucouze",
+      "ville": "Beaucouze",
+      "adresse": "1 Rue Du Landreau",
+      "code_postal": "49070",
+      "commune": "Beaucouzé",
+      "latitude": 47.471445,
+      "longitude": -0.620227,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/beaucouze/1-rue-du-landreau/c06ab00484",
+      "geocodage": {
+        "score": 0.806,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00481",
+      "nom": "Hyundai Beauvais",
+      "ville": "Beauvais",
+      "adresse": "120_Rue_de_Tille",
+      "code_postal": "35580",
+      "commune": "Guichen",
+      "latitude": 47.957872,
+      "longitude": -1.778045,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/beauvais/120_Rue_de_Tille/c06ab00481",
+      "geocodage": {
+        "score": 0.958,
+        "approximatif": true
+      }
+    },
+    {
+      "id": "c06ab00404",
+      "nom": "Hyundai Belleville Sur Meuse",
+      "ville": "Belleville Sur Meuse",
+      "adresse": "1 Rue Jean Claude Duret",
+      "code_postal": "55430",
+      "commune": "Belleville-sur-Meuse",
+      "latitude": 49.182828,
+      "longitude": 5.368803,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/belleville-sur-meuse/1-rue-jean-claude-duret/c06ab00404",
+      "geocodage": {
+        "score": 0.953,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00331",
+      "nom": "Hyundai Bergerac",
+      "ville": "Bergerac",
+      "adresse": "D936e1",
+      "code_postal": "24100",
+      "commune": "Bergerac",
+      "latitude": 44.85304,
+      "longitude": 0.482291,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/bergerac/d936e1/c06ab00331",
+      "geocodage": {
+        "score": 0.45,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00361",
+      "nom": "Hyundai Besancon",
+      "ville": "Besancon",
+      "adresse": "4 Boulevard President John Fitzgerald Kennedy",
+      "code_postal": "14100",
+      "commune": "Lisieux",
+      "latitude": 49.144088,
+      "longitude": 0.239157,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/besancon/4-boulevard-president-john-fitzgerald-kennedy/c06ab00361",
+      "geocodage": {
+        "score": 0.699,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00446",
+      "nom": "Hyundai Bessoncourt",
+      "ville": "Bessoncourt",
+      "adresse": "4 Impasse Des Marcassins",
+      "code_postal": "90160",
+      "commune": "Bessoncourt",
+      "latitude": 47.643019,
+      "longitude": 6.912498,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/bessoncourt/4-impasse-des-marcassins/c06ab00446",
+      "geocodage": {
+        "score": 0.946,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00380",
+      "nom": "Hyundai Beziers",
+      "ville": "Beziers",
+      "adresse": "261 Rue Raoul Bayou",
+      "code_postal": "34500",
+      "commune": "Béziers",
+      "latitude": 43.344634,
+      "longitude": 3.254322,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/beziers/261-rue-raoul-bayou/c06ab00380",
+      "geocodage": {
+        "score": 0.964,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00440",
+      "nom": "Hyundai Bieville Beuville",
+      "ville": "Bieville Beuville",
+      "adresse": "Boulevard Du Suffolk",
+      "code_postal": "14112",
+      "commune": "Biéville-Beuville",
+      "latitude": 49.227098,
+      "longitude": -0.367862,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/bieville-beuville/boulevard-du-suffolk/c06ab00440",
+      "geocodage": {
+        "score": 0.955,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00191",
+      "nom": "Hyundai Bischheim",
+      "ville": "Bischheim",
+      "adresse": "12 Rue Emile Mathis",
+      "code_postal": "67800",
+      "commune": "Bischheim",
+      "latitude": 48.618015,
+      "longitude": 7.728216,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/bischheim/12-rue-emile-mathis/c06ab00191",
+      "geocodage": {
+        "score": 0.957,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00109",
+      "nom": "Hyundai Blois",
+      "ville": "Blois",
+      "adresse": "9 Rue Des Guignieres",
+      "code_postal": "41000",
+      "commune": "Blois",
+      "latitude": 47.615359,
+      "longitude": 1.327444,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/blois/9-rue-des-guignieres/c06ab00109",
+      "geocodage": {
+        "score": 0.962,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00187",
+      "nom": "Hyundai Borgo",
+      "ville": "Borgo",
+      "adresse": "1793 Avenue De Rasignani",
+      "code_postal": "20290",
+      "commune": "Borgo",
+      "latitude": 42.584465,
+      "longitude": 9.439497,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/borgo/1793-avenue-de-rasignani/c06ab00187",
+      "geocodage": {
+        "score": 0.959,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00519",
+      "nom": "Hyundai Brest",
+      "ville": "Brest",
+      "adresse": "54 Route De Gouesnou",
+      "code_postal": "29200",
+      "commune": "Brest",
+      "latitude": 48.410026,
+      "longitude": -4.46839,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/brest/54-route-de-gouesnou/c06ab00519",
+      "geocodage": {
+        "score": 0.708,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00541",
+      "nom": "Hyundai Brignoles",
+      "ville": "Brignoles",
+      "adresse": "1160 Boulevard Bernard Long",
+      "code_postal": "83170",
+      "commune": "Brignoles",
+      "latitude": 43.399746,
+      "longitude": 6.048749,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/brignoles/1160-boulevard-bernard-long/c06ab00541",
+      "geocodage": {
+        "score": 0.968,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00180",
+      "nom": "Hyundai Brive La Gaillarde",
+      "ville": "Brive La Gaillarde",
+      "adresse": "49 Avenue Abbe Jean Alvitre",
+      "code_postal": "19100",
+      "commune": "Brive-la-Gaillarde",
+      "latitude": 45.153053,
+      "longitude": 1.507724,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/brive-la-gaillarde/49-avenue-abbe-jean-alvitre/c06ab00180",
+      "geocodage": {
+        "score": 0.973,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00415",
+      "nom": "Hyundai Bruay La Buissiere",
+      "ville": "Bruay La Buissiere",
+      "adresse": "Rue Eric Tabarly",
+      "code_postal": "62700",
+      "commune": "Bruay-la-Buissière",
+      "latitude": 50.491893,
+      "longitude": 2.580072,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/bruay-la-buissiere/rue-eric-tabarly/c06ab00415",
+      "geocodage": {
+        "score": 0.964,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00416",
+      "nom": "Hyundai Buchelay",
+      "ville": "Buchelay",
+      "adresse": "2 Rue De Gamelines",
+      "code_postal": "78200",
+      "commune": "Buchelay",
+      "latitude": 48.990862,
+      "longitude": 1.67772,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/buchelay/2-rue-de-gamelines/c06ab00416",
+      "geocodage": {
+        "score": 0.771,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00493",
+      "nom": "Hyundai Bussy Saint Georges",
+      "ville": "Bussy Saint Georges",
+      "adresse": "2 Avenue De L Europe",
+      "code_postal": "77600",
+      "commune": "Bussy-Saint-Georges",
+      "latitude": 48.830692,
+      "longitude": 2.709538,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/bussy-saint-georges/2-avenue-de-l-europe/c06ab00493",
+      "geocodage": {
+        "score": 0.966,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00533",
+      "nom": "Hyundai Cahors",
+      "ville": "Cahors",
+      "adresse": "1080 Avenue Anatole De Monzie",
+      "code_postal": "46000",
+      "commune": "Cahors",
+      "latitude": 44.431467,
+      "longitude": 1.444361,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/cahors/1080-avenue-anatole-de-monzie/c06ab00533",
+      "geocodage": {
+        "score": 0.971,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81496",
+      "nom": "Hyundai Calais",
+      "ville": "Calais",
+      "adresse": "60 Rue De Gutenberg",
+      "code_postal": "62100",
+      "commune": "Calais",
+      "latitude": 50.937811,
+      "longitude": 1.863885,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/calais/60-rue-de-gutenberg/c06ab81496",
+      "geocodage": {
+        "score": 0.679,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00557",
+      "nom": "Hyundai Cambrai",
+      "ville": "Cambrai",
+      "adresse": "200 Route De Solesmes",
+      "code_postal": "59400",
+      "commune": "Cambrai",
+      "latitude": 50.181935,
+      "longitude": 3.270705,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/cambrai/200-route-de-solesmes/c06ab00557",
+      "geocodage": {
+        "score": 0.746,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00531",
+      "nom": "Hyundai Carcassonne",
+      "ville": "Carcassonne",
+      "adresse": "Avenue Du Souvenir Francais",
+      "code_postal": "11000",
+      "commune": "Carcassonne",
+      "latitude": 43.208544,
+      "longitude": 2.382897,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/carcassonne/avenue-du-souvenir-francais/c06ab00531",
+      "geocodage": {
+        "score": 0.963,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81277",
+      "nom": "Hyundai Carpentras",
+      "ville": "Carpentras",
+      "adresse": "1849 Avenue Dwight Eisenhower",
+      "code_postal": "84200",
+      "commune": "Carpentras",
+      "latitude": 44.036607,
+      "longitude": 5.050786,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/carpentras/1849-avenue-dwight-eisenhower/c06ab81277",
+      "geocodage": {
+        "score": 0.971,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00487",
+      "nom": "Hyundai Castelnau Le Lez",
+      "ville": "Castelnau Le Lez",
+      "adresse": "145 Rue Alphonse Beau De Rochas",
+      "code_postal": "34170",
+      "commune": "Castelnau-le-Lez",
+      "latitude": 43.638559,
+      "longitude": 3.929154,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/castelnau-le-lez/145-rue-alphonse-beau-de-rochas/c06ab00487",
+      "geocodage": {
+        "score": 0.96,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00401",
+      "nom": "Hyundai Castres",
+      "ville": "Castres",
+      "adresse": "Route De Mazamet",
+      "code_postal": "81100",
+      "commune": "Castres",
+      "latitude": 43.590608,
+      "longitude": 2.269684,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/castres/route-de-mazamet/c06ab00401",
+      "geocodage": {
+        "score": 0.962,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00306",
+      "nom": "Hyundai Cesson Sevigne",
+      "ville": "Cesson Sevigne",
+      "adresse": "9 Rue De Paris",
+      "code_postal": "35510",
+      "commune": "Cesson-Sévigné",
+      "latitude": 48.113962,
+      "longitude": -1.598666,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/cesson-sevigne/9-rue-de-paris/c06ab00306",
+      "geocodage": {
+        "score": 0.815,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00554",
+      "nom": "Hyundai Chalon Sur Saone",
+      "ville": "Chalon Sur Saone",
+      "adresse": "1 Rue Louis Alphonse Poitevin",
+      "code_postal": "71100",
+      "commune": "Chalon-sur-Saône",
+      "latitude": 46.769067,
+      "longitude": 4.860327,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/chalon-sur-saone/1-rue-louis-alphonse-poitevin/c06ab00554",
+      "geocodage": {
+        "score": 0.964,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab82364",
+      "nom": "Hyundai Chalons En Champagne",
+      "ville": "Chalons En Champagne",
+      "adresse": "N44",
+      "code_postal": "51000",
+      "commune": "Châlons-en-Champagne",
+      "latitude": 48.955254,
+      "longitude": 4.368278,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/chalons-en-champagne/n44/c06ab82364",
+      "geocodage": {
+        "score": 0.719,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00355",
+      "nom": "Hyundai Chambourcy",
+      "ville": "Chambourcy",
+      "adresse": "11 Rue Camille Blanc",
+      "code_postal": "78240",
+      "commune": "Chambourcy",
+      "latitude": 48.904522,
+      "longitude": 2.050883,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/chambourcy/11-rue-camille-blanc/c06ab00355",
+      "geocodage": {
+        "score": 0.955,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab82356",
+      "nom": "Hyundai Champniers",
+      "ville": "Champniers",
+      "adresse": "157 Rue De L Entrait",
+      "code_postal": "16430",
+      "commune": "Champniers",
+      "latitude": 45.6877,
+      "longitude": 0.181825,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/champniers/157-rue-de-l-entrait/c06ab82356",
+      "geocodage": {
+        "score": 0.953,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00461",
+      "nom": "Hyundai Charleville Mezieres",
+      "ville": "Charleville Mezieres",
+      "adresse": "33 Rue Paulin Richier",
+      "code_postal": "08000",
+      "commune": "Charleville-Mézières",
+      "latitude": 49.740756,
+      "longitude": 4.7033,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/charleville-mezieres/33-rue-paulin-richier/c06ab00461",
+      "geocodage": {
+        "score": 0.968,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81356",
+      "nom": "Hyundai Chateaubernard",
+      "ville": "Chateaubernard",
+      "adresse": "Rue Pierre Latecoere",
+      "code_postal": "16100",
+      "commune": "Châteaubernard",
+      "latitude": 45.678535,
+      "longitude": -0.309053,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/chateaubernard/rue-pierre-latecoere/c06ab81356",
+      "geocodage": {
+        "score": 0.949,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00506",
+      "nom": "Hyundai Chateauroux",
+      "ville": "Chateauroux",
+      "adresse": "Avenue De La Chatre",
+      "code_postal": "36000",
+      "commune": "Châteauroux",
+      "latitude": 46.805859,
+      "longitude": 1.710935,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/chateauroux/avenue-de-la-chatre/c06ab00506",
+      "geocodage": {
+        "score": 0.978,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81485",
+      "nom": "Hyundai Chatuzange Le Goubet",
+      "ville": "Chatuzange Le Goubet",
+      "adresse": "130 Avenue Charles De Gaulle",
+      "code_postal": "26300",
+      "commune": "Chatuzange-le-Goubet",
+      "latitude": 45.036225,
+      "longitude": 5.080482,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/chatuzange-le-goubet/130-avenue-charles-de-gaulle/c06ab81485",
+      "geocodage": {
+        "score": 0.96,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00374",
+      "nom": "Hyundai Chaumont",
+      "ville": "Chaumont",
+      "adresse": "35 Avenue De La Republique",
+      "code_postal": "52000",
+      "commune": "Chaumont",
+      "latitude": 48.102603,
+      "longitude": 5.144612,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/chaumont/35-avenue-de-la-republique/c06ab00374",
+      "geocodage": {
+        "score": 0.97,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00389",
+      "nom": "Hyundai Chavelot",
+      "ville": "Chavelot",
+      "adresse": "30 Rue D Epinal",
+      "code_postal": "88150",
+      "commune": "Chavelot",
+      "latitude": 48.219198,
+      "longitude": 6.437197,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/chavelot/30-rue-d-epinal/c06ab00389",
+      "geocodage": {
+        "score": 0.954,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00217",
+      "nom": "Hyundai Chenove",
+      "ville": "Chenove",
+      "adresse": "48 Rue De Longvic",
+      "code_postal": "21300",
+      "commune": "Chenôve",
+      "latitude": 47.285682,
+      "longitude": 5.019373,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/chenove/48-rue-de-longvic/c06ab00217",
+      "geocodage": {
+        "score": 0.965,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00174",
+      "nom": "Hyundai Cherbourg En Cotentin",
+      "ville": "Cherbourg En Cotentin",
+      "adresse": "100 Boulevard De L Est",
+      "code_postal": "50110",
+      "commune": "Cherbourg-en-Cotentin",
+      "latitude": 49.635517,
+      "longitude": -1.599477,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/cherbourg-en-cotentin/100-boulevard-de-l-est/c06ab00174",
+      "geocodage": {
+        "score": 0.968,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81484",
+      "nom": "Hyundai Cholet",
+      "ville": "Cholet",
+      "adresse": "Rue Gustave Fouillaron",
+      "code_postal": "49300",
+      "commune": "Cholet",
+      "latitude": 47.029558,
+      "longitude": -0.91718,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/cholet/rue-gustave-fouillaron/c06ab81484",
+      "geocodage": {
+        "score": 0.967,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00163",
+      "nom": "Hyundai Clermont Ferrand",
+      "ville": "Clermont Ferrand",
+      "adresse": "16 Avenue De L Agriculture",
+      "code_postal": "63100",
+      "commune": "Clermont-Ferrand",
+      "latitude": 45.779202,
+      "longitude": 3.122173,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/clermont-ferrand/16-avenue-de-l-agriculture/c06ab00163",
+      "geocodage": {
+        "score": 0.971,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00495",
+      "nom": "Hyundai Coignieres",
+      "ville": "Coignieres",
+      "adresse": "41 41b Route Nationale 10",
+      "code_postal": "78310",
+      "commune": "Coignières",
+      "latitude": 48.75085,
+      "longitude": 1.931221,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/coignieres/41-41b-route-nationale-10/c06ab00495",
+      "geocodage": {
+        "score": 0.722,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00162",
+      "nom": "Hyundai Colayrac Saint Cirq",
+      "ville": "Colayrac Saint Cirq",
+      "adresse": "904 Route D Agen",
+      "code_postal": "47450",
+      "commune": "Colayrac-Saint-Cirq",
+      "latitude": 44.219077,
+      "longitude": 0.584748,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/colayrac-saint-cirq/904-route-d-agen/c06ab00162",
+      "geocodage": {
+        "score": 0.961,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81430",
+      "nom": "Hyundai Colmar",
+      "ville": "Colmar",
+      "adresse": "122 Rue Du Ladhof",
+      "code_postal": "68000",
+      "commune": "Colmar",
+      "latitude": 48.091395,
+      "longitude": 7.371882,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/colmar/122-rue-du-ladhof/c06ab81430",
+      "geocodage": {
+        "score": 0.978,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00368",
+      "nom": "Hyundai Corbeil Essonnes",
+      "ville": "Corbeil Essonnes",
+      "adresse": "17 19 Avenue Du 8 Mai 1945",
+      "code_postal": "91100",
+      "commune": "Corbeil-Essonnes",
+      "latitude": 48.610852,
+      "longitude": 2.458075,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/corbeil-essonnes/17-19-avenue-du-8-mai-1945/c06ab00368",
+      "geocodage": {
+        "score": 0.821,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81445",
+      "nom": "Hyundai Coulommiers",
+      "ville": "Coulommiers",
+      "adresse": "6 Boulevard De La Marne",
+      "code_postal": "77120",
+      "commune": "Coulommiers",
+      "latitude": 48.803408,
+      "longitude": 3.089471,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/coulommiers/6-boulevard-de-la-marne/c06ab81445",
+      "geocodage": {
+        "score": 0.964,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab82268",
+      "nom": "Hyundai Dechy",
+      "ville": "Dechy",
+      "adresse": "Rue Barak Obama",
+      "code_postal": "59187",
+      "commune": "Dechy",
+      "latitude": 50.343351,
+      "longitude": 3.119518,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/dechy/rue-barak-obama/c06ab82268",
+      "geocodage": {
+        "score": 0.756,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00537",
+      "nom": "Hyundai Distre",
+      "ville": "Distre",
+      "adresse": "5 Rue Du Commerce",
+      "code_postal": "49400",
+      "commune": "Distré",
+      "latitude": 47.229524,
+      "longitude": -0.132632,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/distre/5-rue-du-commerce/c06ab00537",
+      "geocodage": {
+        "score": 0.948,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81364",
+      "nom": "Hyundai Dizy",
+      "ville": "Dizy",
+      "adresse": "Les Bas Jardins",
+      "code_postal": "51530",
+      "commune": "Dizy",
+      "latitude": 49.062693,
+      "longitude": 3.960906,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/dizy/les-bas-jardins/c06ab81364",
+      "geocodage": {
+        "score": 0.655,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00543",
+      "nom": "Hyundai Domancy",
+      "ville": "Domancy",
+      "adresse": "214 Route De Letraz",
+      "code_postal": "74700",
+      "commune": "Domancy",
+      "latitude": 45.912847,
+      "longitude": 6.651938,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/domancy/214-route-de-letraz/c06ab00543",
+      "geocodage": {
+        "score": 0.952,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00496",
+      "nom": "Hyundai Dunkerque",
+      "ville": "Dunkerque",
+      "adresse": "562 Avenue De La Villette",
+      "code_postal": "59640",
+      "commune": "Dunkerque",
+      "latitude": 51.021427,
+      "longitude": 2.359108,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/dunkerque/562-avenue-de-la-villette/c06ab00496",
+      "geocodage": {
+        "score": 0.966,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00490",
+      "nom": "Hyundai Echirolles",
+      "ville": "Echirolles",
+      "adresse": "43 Cours Jean Jaures",
+      "code_postal": "38130",
+      "commune": "Échirolles",
+      "latitude": 45.152761,
+      "longitude": 5.707584,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/echirolles/43-cours-jean-jaures/c06ab00490",
+      "geocodage": {
+        "score": 0.975,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00324",
+      "nom": "Hyundai Estancarbon",
+      "ville": "Estancarbon",
+      "adresse": "Boulevard Des Landes",
+      "code_postal": "31800",
+      "commune": "Estancarbon",
+      "latitude": 43.114848,
+      "longitude": 0.764914,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/estancarbon/boulevard-des-landes/c06ab00324",
+      "geocodage": {
+        "score": 0.948,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00568",
+      "nom": "Hyundai Faches Thumesnil",
+      "ville": "Faches Thumesnil",
+      "adresse": "455 Avenue Du General Leclerc",
+      "code_postal": "59155",
+      "commune": "Faches-Thumesnil",
+      "latitude": 50.58493,
+      "longitude": 3.087531,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/faches-thumesnil/455-avenue-du-general-leclerc/c06ab00568",
+      "geocodage": {
+        "score": 0.971,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00558",
+      "nom": "Hyundai Feignies",
+      "ville": "Feignies",
+      "adresse": "124 Route De Valenciennes",
+      "code_postal": "59750",
+      "commune": "Feignies",
+      "latitude": 50.280608,
+      "longitude": 3.908066,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/feignies/124-route-de-valenciennes/c06ab00558",
+      "geocodage": {
+        "score": 0.965,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab82291",
+      "nom": "Hyundai Gap",
+      "ville": "Gap",
+      "adresse": "52 Avenue De Provence",
+      "code_postal": "05000",
+      "commune": "Gap",
+      "latitude": 44.540041,
+      "longitude": 6.056078,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/gap/52-avenue-de-provence/c06ab82291",
+      "geocodage": {
+        "score": 0.967,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab82440",
+      "nom": "Hyundai Glos",
+      "ville": "Glos",
+      "adresse": "351 Boulevard Jean Charles Contel",
+      "code_postal": "14100",
+      "commune": "Glos",
+      "latitude": 49.142774,
+      "longitude": 0.285558,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/glos/351-boulevard-jean-charles-contel/c06ab82440",
+      "geocodage": {
+        "score": 0.951,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00516",
+      "nom": "Hyundai Gonesse",
+      "ville": "Gonesse",
+      "adresse": "2 Rue De La Liberte",
+      "code_postal": "95500",
+      "commune": "Gonesse",
+      "latitude": 48.997126,
+      "longitude": 2.419591,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/gonesse/2-rue-de-la-liberte/c06ab00516",
+      "geocodage": {
+        "score": 0.967,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00088",
+      "nom": "Hyundai Grasse",
+      "ville": "Grasse",
+      "adresse": "185 Route De Cannes",
+      "code_postal": "06130",
+      "commune": "Grasse",
+      "latitude": 43.633383,
+      "longitude": 6.954561,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/grasse/185-route-de-cannes/c06ab00088",
+      "geocodage": {
+        "score": 0.974,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00328",
+      "nom": "Hyundai Haguenau",
+      "ville": "Haguenau",
+      "adresse": "91 Route De Marienthal",
+      "code_postal": "67500",
+      "commune": "Haguenau",
+      "latitude": 48.795369,
+      "longitude": 7.805165,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/haguenau/91-route-de-marienthal/c06ab00328",
+      "geocodage": {
+        "score": 0.974,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00527",
+      "nom": "Hyundai Issy Les Moulineaux",
+      "ville": "Issy Les Moulineaux",
+      "adresse": "143 Avenue De Verdun",
+      "code_postal": "92130",
+      "commune": "Issy-les-Moulineaux",
+      "latitude": 48.81788,
+      "longitude": 2.250837,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/issy-les-moulineaux/143-avenue-de-verdun/c06ab00527",
+      "geocodage": {
+        "score": 0.976,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00569",
+      "nom": "Hyundai Jaux",
+      "ville": "Jaux",
+      "adresse": "382 Avenue Jean Moulin",
+      "code_postal": "60880",
+      "commune": "Jaux",
+      "latitude": 49.406014,
+      "longitude": 2.776512,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/jaux/382-avenue-jean-moulin/c06ab00569",
+      "geocodage": {
+        "score": 0.738,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00549",
+      "nom": "Hyundai La Chapelle Longueville",
+      "ville": "La Chapelle Longueville",
+      "adresse": "12 Route De Rouen",
+      "code_postal": "27950",
+      "commune": "La Chapelle-Longueville",
+      "latitude": 49.109678,
+      "longitude": 1.453299,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/la-chapelle-longueville/12-route-de-rouen/c06ab00549",
+      "geocodage": {
+        "score": 0.96,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00016",
+      "nom": "Hyundai La Garde",
+      "ville": "La Garde",
+      "adresse": "86 Allee Des 4 Chemins",
+      "code_postal": "83130",
+      "commune": "La Garde",
+      "latitude": 43.136331,
+      "longitude": 6.02564,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/la-garde/86-allee-des-4-chemins/c06ab00016",
+      "geocodage": {
+        "score": 0.964,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00534",
+      "nom": "Hyundai La Garenne Colombes",
+      "ville": "La Garenne Colombes",
+      "adresse": "71 Boulevard National",
+      "code_postal": "92250",
+      "commune": "La Garenne-Colombes",
+      "latitude": 48.905924,
+      "longitude": 2.238536,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/la-garenne-colombes/71-boulevard-national/c06ab00534",
+      "geocodage": {
+        "score": 0.968,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00434",
+      "nom": "Hyundai La Motte Servolex",
+      "ville": "La Motte Servolex",
+      "adresse": "190 Rue Des Epinettes",
+      "code_postal": "73290",
+      "commune": "La Motte-Servolex",
+      "latitude": 45.60915,
+      "longitude": 5.885575,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/la-motte-servolex/190-rue-des-epinettes/c06ab00434",
+      "geocodage": {
+        "score": 0.959,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00479",
+      "nom": "Hyundai La Queue En Brie",
+      "ville": "La Queue En Brie",
+      "adresse": "2 6 Rue Du General De Gaulle",
+      "code_postal": "94510",
+      "commune": "La Queue-en-Brie",
+      "latitude": 48.781416,
+      "longitude": 2.571577,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/la-queue-en-brie/2-6-rue-du-general-de-gaulle/c06ab00479",
+      "geocodage": {
+        "score": 0.837,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00453",
+      "nom": "Hyundai La Teste De Buch",
+      "ville": "La Teste De Buch",
+      "adresse": "931 Boulevard De L Industrie",
+      "code_postal": "33260",
+      "commune": "La Teste-de-Buch",
+      "latitude": 44.610044,
+      "longitude": -1.128946,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/la-teste-de-buch/931-boulevard-de-l-industrie/c06ab00453",
+      "geocodage": {
+        "score": 0.968,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00066",
+      "nom": "Hyundai Labege",
+      "ville": "Labege",
+      "adresse": "3690 Route De Baziege La Lauragaise",
+      "code_postal": "31670",
+      "commune": "Labège",
+      "latitude": 43.554694,
+      "longitude": 1.506083,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/labege/3690-route-de-baziege-la-lauragaise/c06ab00066",
+      "geocodage": {
+        "score": 0.593,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00295",
+      "nom": "Hyundai Lanester",
+      "ville": "Lanester",
+      "adresse": "150 Rue Antoine Lavoisier",
+      "code_postal": "56600",
+      "commune": "Lanester",
+      "latitude": 47.779698,
+      "longitude": -3.339115,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/lanester/150-rue-antoine-lavoisier/c06ab00295",
+      "geocodage": {
+        "score": 0.769,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81292",
+      "nom": "Hyundai Lannion",
+      "ville": "Lannion",
+      "adresse": "193 Route De Tregastel",
+      "code_postal": "22300",
+      "commune": "Lannion",
+      "latitude": 48.764301,
+      "longitude": -3.476259,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/lannion/193-route-de-tregastel/c06ab81292",
+      "geocodage": {
+        "score": 0.966,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81548",
+      "nom": "Hyundai Laon",
+      "ville": "Laon",
+      "adresse": "2 Rue Voltaire",
+      "code_postal": "02000",
+      "commune": "Laon",
+      "latitude": 49.572574,
+      "longitude": 3.654528,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/laon/2-rue-voltaire/c06ab81548",
+      "geocodage": {
+        "score": 0.963,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00517",
+      "nom": "Hyundai Laxou",
+      "ville": "Laxou",
+      "adresse": "6 Rue Du Saintois",
+      "code_postal": "54520",
+      "commune": "Laxou",
+      "latitude": 48.691179,
+      "longitude": 6.131026,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/laxou/6-rue-du-saintois/c06ab00517",
+      "geocodage": {
+        "score": 0.96,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00450",
+      "nom": "Hyundai Le Bouscat",
+      "ville": "Le Bouscat",
+      "adresse": "83 131 Boulevard Godard",
+      "code_postal": "33110",
+      "commune": "Le Bouscat",
+      "latitude": 44.864034,
+      "longitude": -0.580884,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/le-bouscat/83-131-boulevard-godard/c06ab00450",
+      "geocodage": {
+        "score": 0.705,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00438",
+      "nom": "Hyundai Le Cannet",
+      "ville": "Le Cannet",
+      "adresse": "50 Avenue Du Campon",
+      "code_postal": "06110",
+      "commune": "Le Cannet",
+      "latitude": 43.570758,
+      "longitude": 7.015435,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/le-cannet/50-avenue-du-campon/c06ab00438",
+      "geocodage": {
+        "score": 0.969,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00108",
+      "nom": "Hyundai Le Havre",
+      "ville": "Le Havre",
+      "adresse": "40 Rue Marcel Paul",
+      "code_postal": "76600",
+      "commune": "Le Havre",
+      "latitude": 49.493507,
+      "longitude": 0.145844,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/le-havre/40-rue-marcel-paul/c06ab00108",
+      "geocodage": {
+        "score": 0.97,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00511",
+      "nom": "Hyundai Le Kremlin Bicetre",
+      "ville": "Le Kremlin Bicetre",
+      "adresse": "145 Avenue De Fontainebleau",
+      "code_postal": "94270",
+      "commune": "Le Kremlin-Bicêtre",
+      "latitude": 48.807224,
+      "longitude": 2.363389,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/le-kremlin-bicetre/145-avenue-de-fontainebleau/c06ab00511",
+      "geocodage": {
+        "score": 0.972,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00196",
+      "nom": "Hyundai Le Mans",
+      "ville": "Le Mans",
+      "adresse": "26 Boulevard Pierre Lefaucheux",
+      "code_postal": "72000",
+      "commune": "Le Mans",
+      "latitude": 47.982,
+      "longitude": 0.196,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/le-mans/26-boulevard-pierre-lefaucheux/c06ab00196",
+      "geocodage": {
+        "score": 0.958,
+        "approximatif": true
+      }
+    },
+    {
+      "id": "c06ab00275",
+      "nom": "Hyundai Le Pontet",
+      "ville": "Le Pontet",
+      "adresse": "Avenue De Fontvert",
+      "code_postal": "84130",
+      "commune": "Le Pontet",
+      "latitude": 43.976884,
+      "longitude": 4.871225,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/le-pontet/avenue-de-fontvert/c06ab00275",
+      "geocodage": {
+        "score": 0.962,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00566",
+      "nom": "Hyundai Les Sables D Olonne",
+      "ville": "Les Sables D Olonne",
+      "adresse": "36 Rue Clement Ader",
+      "code_postal": "85340",
+      "commune": "Les Sables-d'Olonne",
+      "latitude": 46.52164,
+      "longitude": -1.780875,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/les-sables-d-olonne/36-rue-clement-ader/c06ab00566",
+      "geocodage": {
+        "score": 0.971,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00459",
+      "nom": "Hyundai Lescure D Albigeois",
+      "ville": "Lescure D Albigeois",
+      "adresse": "N88",
+      "code_postal": "81380",
+      "commune": "Lescure-d'Albigeois",
+      "latitude": 43.962938,
+      "longitude": 2.185909,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/lescure-d-albigeois/n88/c06ab00459",
+      "geocodage": {
+        "score": 0.703,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00553",
+      "nom": "Hyundai Libourne",
+      "ville": "Libourne",
+      "adresse": "1 Rue Firmin Didot",
+      "code_postal": "33500",
+      "commune": "Libourne",
+      "latitude": 44.947116,
+      "longitude": -0.242171,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/libourne/1-rue-firmin-didot/c06ab00553",
+      "geocodage": {
+        "score": 0.963,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00268",
+      "nom": "Hyundai Lievin",
+      "ville": "Lievin",
+      "adresse": "Avenue Francois Mitterrand",
+      "code_postal": "62800",
+      "commune": "Liévin",
+      "latitude": 50.426473,
+      "longitude": 2.787243,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/lievin/avenue-francois-mitterrand/c06ab00268",
+      "geocodage": {
+        "score": 0.838,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00320",
+      "nom": "Hyundai Lille",
+      "ville": "Lille",
+      "adresse": "10 Rue Lavoisier Lomme",
+      "code_postal": "59160",
+      "commune": "Lille",
+      "latitude": 50.644505,
+      "longitude": 3.007648,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/lille/10-rue-lavoisier-lomme/c06ab00320",
+      "geocodage": {
+        "score": 0.973,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00354",
+      "nom": "Hyundai Limoges",
+      "ville": "Limoges",
+      "adresse": "34 Avenue Louis Armand",
+      "code_postal": "87280",
+      "commune": "Limoges",
+      "latitude": 45.868085,
+      "longitude": 1.268832,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/limoges/34-avenue-louis-armand/c06ab00354",
+      "geocodage": {
+        "score": 0.965,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00471",
+      "nom": "Hyundai Longueau",
+      "ville": "Longueau",
+      "adresse": "15 Rue Laurent Lavoisier",
+      "code_postal": "80330",
+      "commune": "Longueau",
+      "latitude": 49.873277,
+      "longitude": 2.367921,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/longueau/15-rue-laurent-lavoisier/c06ab00471",
+      "geocodage": {
+        "score": 0.658,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81415",
+      "nom": "Hyundai Longuenesse",
+      "ville": "Longuenesse",
+      "adresse": "32 Route De Blendecques",
+      "code_postal": "62219",
+      "commune": "Longuenesse",
+      "latitude": 50.736046,
+      "longitude": 2.266094,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/longuenesse/32-route-de-blendecques/c06ab81415",
+      "geocodage": {
+        "score": 0.964,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00437",
+      "nom": "Hyundai Longwy",
+      "ville": "Longwy",
+      "adresse": "18 Les Maragolles",
+      "code_postal": "54720",
+      "commune": "Lexy",
+      "latitude": 49.514008,
+      "longitude": 5.732206,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/longwy/18-les-maragolles/c06ab00437",
+      "geocodage": {
+        "score": 0.616,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00530",
+      "nom": "Hyundai Lons",
+      "ville": "Lons",
+      "adresse": "149 Boulevard Charles De Gaulle",
+      "code_postal": "64140",
+      "commune": "Lons",
+      "latitude": 43.311051,
+      "longitude": -0.412725,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/lons/149-boulevard-charles-de-gaulle/c06ab00530",
+      "geocodage": {
+        "score": 0.786,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00130",
+      "nom": "Hyundai Luisant",
+      "ville": "Luisant",
+      "adresse": "18 Rue Jean Perrin",
+      "code_postal": "28600",
+      "commune": "Luisant",
+      "latitude": 48.417267,
+      "longitude": 1.452094,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/luisant/18-rue-jean-perrin/c06ab00130",
+      "geocodage": {
+        "score": 0.961,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00478",
+      "nom": "Hyundai Macon",
+      "ville": "Macon",
+      "adresse": "483 Rue Gustave Eiffel",
+      "code_postal": "71000",
+      "commune": "Mâcon",
+      "latitude": 46.286511,
+      "longitude": 4.811997,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/macon/483-rue-gustave-eiffel/c06ab00478",
+      "geocodage": {
+        "score": 0.957,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00291",
+      "nom": "Hyundai Manosque",
+      "ville": "Manosque",
+      "adresse": "Boulevard Saint Joseph",
+      "code_postal": "04100",
+      "commune": "Manosque",
+      "latitude": 43.822802,
+      "longitude": 5.796341,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/manosque/boulevard-saint-joseph/c06ab00291",
+      "geocodage": {
+        "score": 0.964,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00330",
+      "nom": "Hyundai Marseille",
+      "ville": "Marseille",
+      "adresse": "26 Avenue Fernand Sardou",
+      "code_postal": "13016",
+      "commune": "Marseille",
+      "latitude": 43.359774,
+      "longitude": 5.339268,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/marseille/26-avenue-fernand-sardou/c06ab00330",
+      "geocodage": {
+        "score": 0.953,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00340",
+      "nom": "Hyundai Marseille",
+      "ville": "Marseille",
+      "adresse": "1 Avenue De Saint Menet",
+      "code_postal": "13011",
+      "commune": "Marseille",
+      "latitude": 43.290018,
+      "longitude": 5.47736,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/marseille/1-avenue-de-saint-menet/c06ab00340",
+      "geocodage": {
+        "score": 0.972,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00445",
+      "nom": "Hyundai Meaux",
+      "ville": "Meaux",
+      "adresse": "50 Rue Francois De Tessan",
+      "code_postal": "77100",
+      "commune": "Meaux",
+      "latitude": 48.947805,
+      "longitude": 2.879796,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/meaux/50-rue-francois-de-tessan/c06ab00445",
+      "geocodage": {
+        "score": 0.972,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00356",
+      "nom": "Hyundai Medis",
+      "ville": "Medis",
+      "adresse": "3 Rue Marco Polo",
+      "code_postal": "17600",
+      "commune": "Médis",
+      "latitude": 45.631179,
+      "longitude": -0.985287,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/medis/3-rue-marco-polo/c06ab00356",
+      "geocodage": {
+        "score": 0.949,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00560",
+      "nom": "Hyundai Montauban",
+      "ville": "Montauban",
+      "adresse": "300 Chemin De Gimbelet",
+      "code_postal": "82000",
+      "commune": "Montauban",
+      "latitude": 43.979484,
+      "longitude": 1.318047,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/montauban/300-chemin-de-gimbelet/c06ab00560",
+      "geocodage": {
+        "score": 0.775,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00555",
+      "nom": "Hyundai Montceau Les Mines",
+      "ville": "Montceau Les Mines",
+      "adresse": "14 Rue De Chatillon",
+      "code_postal": "71300",
+      "commune": "Montceau-les-Mines",
+      "latitude": 46.688274,
+      "longitude": 4.355099,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/montceau-les-mines/14-rue-de-chatillon/c06ab00555",
+      "geocodage": {
+        "score": 0.961,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00393",
+      "nom": "Hyundai Montlhery",
+      "ville": "Montlhery",
+      "adresse": "66 Route D Orleans",
+      "code_postal": "91310",
+      "commune": "Montlhéry",
+      "latitude": 48.64634,
+      "longitude": 2.271079,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/montlhery/66-route-d-orleans/c06ab00393",
+      "geocodage": {
+        "score": 0.967,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00370",
+      "nom": "Hyundai Montmorot",
+      "ville": "Montmorot",
+      "adresse": "15 Rue Valliere",
+      "code_postal": "39570",
+      "commune": "Montmorot",
+      "latitude": 46.675607,
+      "longitude": 5.53417,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/montmorot/15-rue-valliere/c06ab00370",
+      "geocodage": {
+        "score": 0.683,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81368",
+      "nom": "Hyundai Morigny Champigny",
+      "ville": "Morigny Champigny",
+      "adresse": "Rue Du Four A Chaux",
+      "code_postal": "91150",
+      "commune": "Morigny-Champigny",
+      "latitude": 48.451037,
+      "longitude": 2.172539,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/morigny-champigny/rue-du-four-a-chaux/c06ab81368",
+      "geocodage": {
+        "score": 0.945,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00205",
+      "nom": "Hyundai Mouilleron Le Captif",
+      "ville": "Mouilleron Le Captif",
+      "adresse": "Rue Des Charmettes",
+      "code_postal": "85000",
+      "commune": "Mouilleron-le-Captif",
+      "latitude": 46.714734,
+      "longitude": -1.426748,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/mouilleron-le-captif/rue-des-charmettes/c06ab00205",
+      "geocodage": {
+        "score": 0.952,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00430",
+      "nom": "Hyundai Mulhouse",
+      "ville": "Mulhouse",
+      "adresse": "21 Rue De Thann",
+      "code_postal": "68200",
+      "commune": "Mulhouse",
+      "latitude": 47.747993,
+      "longitude": 7.308546,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/mulhouse/21-rue-de-thann/c06ab00430",
+      "geocodage": {
+        "score": 0.976,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00508",
+      "nom": "Hyundai Muret",
+      "ville": "Muret",
+      "adresse": "11 Impasse Jacques Monod",
+      "code_postal": "31600",
+      "commune": "Muret",
+      "latitude": 43.480753,
+      "longitude": 1.335206,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/muret/11-impasse-jacques-monod/c06ab00508",
+      "geocodage": {
+        "score": 0.961,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00236",
+      "nom": "Hyundai Narbonne",
+      "ville": "Narbonne",
+      "adresse": "Rue Rene Panhard",
+      "code_postal": "11100",
+      "commune": "Narbonne",
+      "latitude": 43.158978,
+      "longitude": 2.983643,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/narbonne/rue-rene-panhard/c06ab00236",
+      "geocodage": {
+        "score": 0.969,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00472",
+      "nom": "Hyundai Neufchateau",
+      "ville": "Neufchateau",
+      "adresse": "401 Quai Jean Moulin",
+      "code_postal": "88300",
+      "commune": "Neufchâteau",
+      "latitude": 48.354143,
+      "longitude": 5.69005,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/neufchateau/401-quai-jean-moulin/c06ab00472",
+      "geocodage": {
+        "score": 0.759,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00417",
+      "nom": "Hyundai Nevers",
+      "ville": "Nevers",
+      "adresse": "33 Boulevard Du Grands Pres Des Bordes",
+      "code_postal": "58000",
+      "commune": "Nevers",
+      "latitude": 46.992822,
+      "longitude": 3.123059,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/nevers/33-boulevard-du-grands-pres-des-bordes/c06ab00417",
+      "geocodage": {
+        "score": 0.767,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00013",
+      "nom": "Hyundai Nice",
+      "ville": "Nice",
+      "adresse": "1 Boulevard De L Armee Des Alpes",
+      "code_postal": "06300",
+      "commune": "Nice",
+      "latitude": 43.705892,
+      "longitude": 7.291351,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/nice/1-boulevard-de-l-armee-des-alpes/c06ab00013",
+      "geocodage": {
+        "score": 0.977,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00456",
+      "nom": "Hyundai Nimes",
+      "ville": "Nimes",
+      "adresse": "170 Rue Du Pere Brottier",
+      "code_postal": "30900",
+      "commune": "Nîmes",
+      "latitude": 43.819494,
+      "longitude": 4.347054,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/nimes/170-rue-du-pere-brottier/c06ab00456",
+      "geocodage": {
+        "score": 0.968,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00480",
+      "nom": "Hyundai Niort",
+      "ville": "Niort",
+      "adresse": "4 Rue Vaumorin",
+      "code_postal": "79000",
+      "commune": "Niort",
+      "latitude": 46.33474,
+      "longitude": -0.415543,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/niort/4-rue-vaumorin/c06ab00480",
+      "geocodage": {
+        "score": 0.966,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00274",
+      "nom": "Hyundai Onet Le Chateau",
+      "ville": "Onet Le Chateau",
+      "adresse": "232 Avenue Des 4 Saisons",
+      "code_postal": "12850",
+      "commune": "Onet-le-Château",
+      "latitude": 44.36991,
+      "longitude": 2.583359,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/onet-le-chateau/232-avenue-des-4-saisons/c06ab00274",
+      "geocodage": {
+        "score": 0.953,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00277",
+      "nom": "Hyundai Orange",
+      "ville": "Orange",
+      "adresse": "Route De Jonquieres",
+      "code_postal": "84100",
+      "commune": "Orange",
+      "latitude": 44.125744,
+      "longitude": 4.828314,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/orange/route-de-jonquieres/c06ab00277",
+      "geocodage": {
+        "score": 0.954,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00470",
+      "nom": "Hyundai Orleans",
+      "ville": "Orleans",
+      "adresse": "12 Rue Moliere",
+      "code_postal": "45000",
+      "commune": "Orléans",
+      "latitude": 47.917379,
+      "longitude": 1.901656,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/orleans/12-rue-moliere/c06ab00470",
+      "geocodage": {
+        "score": 0.967,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00408",
+      "nom": "Hyundai Pamiers",
+      "ville": "Pamiers",
+      "adresse": "Rue Andre Citroen",
+      "code_postal": "09100",
+      "commune": "Pamiers",
+      "latitude": 43.108649,
+      "longitude": 1.627821,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/pamiers/rue-andre-citroen/c06ab00408",
+      "geocodage": {
+        "score": 0.951,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00561",
+      "nom": "Hyundai Paris",
+      "ville": "Paris",
+      "adresse": "155 Rue Nationale",
+      "code_postal": "75013",
+      "commune": "Paris",
+      "latitude": 48.831925,
+      "longitude": 2.363047,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/paris/155-rue-nationale/c06ab00561",
+      "geocodage": {
+        "score": 0.983,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab82370",
+      "nom": "Hyundai Peronnas",
+      "ville": "Peronnas",
+      "adresse": "1062 Avenue De Lyon",
+      "code_postal": "01960",
+      "commune": "Péronnas",
+      "latitude": 46.183395,
+      "longitude": 5.205898,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/peronnas/1062-avenue-de-lyon/c06ab82370",
+      "geocodage": {
+        "score": 0.967,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00033",
+      "nom": "Hyundai Perpignan",
+      "ville": "Perpignan",
+      "adresse": "113 Rue Hispano Suiza",
+      "code_postal": "66100",
+      "commune": "Perpignan",
+      "latitude": 42.661623,
+      "longitude": 2.905406,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/perpignan/113-rue-hispano-suiza/c06ab00033",
+      "geocodage": {
+        "score": 0.965,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81291",
+      "nom": "Hyundai Pertuis",
+      "ville": "Pertuis",
+      "adresse": "97 Rue Leonard De Vinci",
+      "code_postal": "84120",
+      "commune": "Pertuis",
+      "latitude": 43.682903,
+      "longitude": 5.503579,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/pertuis/97-rue-leonard-de-vinci/c06ab81291",
+      "geocodage": {
+        "score": 0.961,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00341",
+      "nom": "Hyundai Poitiers",
+      "ville": "Poitiers",
+      "adresse": "166 Avenue Du Plateau Des Glieres",
+      "code_postal": "86000",
+      "commune": "Poitiers",
+      "latitude": 46.608804,
+      "longitude": 0.319827,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/poitiers/166-avenue-du-plateau-des-glieres/c06ab00341",
+      "geocodage": {
+        "score": 0.976,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81370",
+      "nom": "Hyundai Pontarlier",
+      "ville": "Pontarlier",
+      "adresse": "22 Rue Eugene Thevenin",
+      "code_postal": "25300",
+      "commune": "Pontarlier",
+      "latitude": 46.902014,
+      "longitude": 6.337431,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/pontarlier/22-rue-eugene-thevenin/c06ab81370",
+      "geocodage": {
+        "score": 0.962,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00488",
+      "nom": "Hyundai Puget Sur Argens",
+      "ville": "Puget Sur Argens",
+      "adresse": "60 Zi Les Barrestes Meissugues",
+      "code_postal": "83480",
+      "commune": "Puget-sur-Argens",
+      "latitude": 43.450159,
+      "longitude": 6.691294,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/puget-sur-argens/60-zi-les-barrestes-meissugues/c06ab00488",
+      "geocodage": {
+        "score": 0.542,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00301",
+      "nom": "Hyundai Puilboreau",
+      "ville": "Puilboreau",
+      "adresse": "9 Impasse De Pologne",
+      "code_postal": "17138",
+      "commune": "Puilboreau",
+      "latitude": 46.179911,
+      "longitude": -1.102423,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/puilboreau/9-impasse-de-pologne/c06ab00301",
+      "geocodage": {
+        "score": 0.954,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00520",
+      "nom": "Hyundai Quimper",
+      "ville": "Quimper",
+      "adresse": "2 Rue Du Tro Breiz",
+      "code_postal": "29000",
+      "commune": "Quimper",
+      "latitude": 47.982053,
+      "longitude": -4.033616,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/quimper/2-rue-du-tro-breiz/c06ab00520",
+      "geocodage": {
+        "score": 0.966,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00364",
+      "nom": "Hyundai Reims",
+      "ville": "Reims",
+      "adresse": "13 15 Rue Lena Bernstein",
+      "code_postal": "51100",
+      "commune": "Reims",
+      "latitude": 49.236363,
+      "longitude": 4.085333,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/reims/13-15-rue-lena-bernstein/c06ab00364",
+      "geocodage": {
+        "score": 0.798,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00552",
+      "nom": "Hyundai Reze",
+      "ville": "Reze",
+      "adresse": "20 Rue Antoine Laurent De Lavoisier",
+      "code_postal": "44400",
+      "commune": "Rezé",
+      "latitude": 47.156731,
+      "longitude": -1.540945,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/reze/20-rue-antoine-laurent-de-lavoisier/c06ab00552",
+      "geocodage": {
+        "score": 0.805,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81320",
+      "nom": "Hyundai Roncq",
+      "ville": "Roncq",
+      "adresse": "Allee Des 3 Lions",
+      "code_postal": "59223",
+      "commune": "Roncq",
+      "latitude": 50.744189,
+      "longitude": 3.133523,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/roncq/allee-des-3-lions/c06ab81320",
+      "geocodage": {
+        "score": 0.63,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00565",
+      "nom": "Hyundai Rouen",
+      "ville": "Rouen",
+      "adresse": "23 Rue Amedee Dormoy",
+      "code_postal": "76000",
+      "commune": "Rouen",
+      "latitude": 49.447201,
+      "longitude": 1.06651,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/rouen/23-rue-amedee-dormoy/c06ab00565",
+      "geocodage": {
+        "score": 0.971,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00546",
+      "nom": "Hyundai Rouxmesnil Bouteilles",
+      "ville": "Rouxmesnil Bouteilles",
+      "adresse": "Zone Industrielle Verte Rue Louis Delaporte",
+      "code_postal": "76370",
+      "commune": "Rouxmesnil-Bouteilles",
+      "latitude": 49.900182,
+      "longitude": 1.116954,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/rouxmesnil-bouteilles/zone-industrielle-verte-rue-louis-delaporte/c06ab00546",
+      "geocodage": {
+        "score": 0.738,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00255",
+      "nom": "Hyundai Saint Berthevin",
+      "ville": "Saint Berthevin",
+      "adresse": "Boulevard Lucien Daniel",
+      "code_postal": "53940",
+      "commune": "Saint-Berthevin",
+      "latitude": 48.054414,
+      "longitude": -0.798351,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-berthevin/boulevard-lucien-daniel/c06ab00255",
+      "geocodage": {
+        "score": 0.951,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81404",
+      "nom": "Hyundai Saint Dizier",
+      "ville": "Saint Dizier",
+      "adresse": "Rue Charbonneau",
+      "code_postal": "06400",
+      "commune": "Cannes",
+      "latitude": 43.55111,
+      "longitude": 7.008646,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-dizier/rue-charbonneau/c06ab81404",
+      "geocodage": {
+        "score": 0.534,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00505",
+      "nom": "Hyundai Saint Doulchard",
+      "ville": "Saint Doulchard",
+      "adresse": "1190 Route D Orleans",
+      "code_postal": "18230",
+      "commune": "Saint-Doulchard",
+      "latitude": 47.115831,
+      "longitude": 2.375754,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-doulchard/1190-route-d-orleans/c06ab00505",
+      "geocodage": {
+        "score": 0.971,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00524",
+      "nom": "Hyundai Saint Etienne",
+      "ville": "Saint Etienne",
+      "adresse": "5 Rue Paul Et Pierre Guichard",
+      "code_postal": "42000",
+      "commune": "Saint-Étienne",
+      "latitude": 45.458561,
+      "longitude": 4.388562,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-etienne/5-rue-paul-et-pierre-guichard/c06ab00524",
+      "geocodage": {
+        "score": 0.967,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00476",
+      "nom": "Hyundai Saint Herblain",
+      "ville": "Saint Herblain",
+      "adresse": "365 Route De Vannes",
+      "code_postal": "44800",
+      "commune": "Saint-Herblain",
+      "latitude": 47.242815,
+      "longitude": -1.59832,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-herblain/365-route-de-vannes/c06ab00476",
+      "geocodage": {
+        "score": 0.785,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab82013",
+      "nom": "Hyundai Saint Laurent Du Var",
+      "ville": "Saint Laurent Du Var",
+      "adresse": "148 Avenue Georges Guynemer",
+      "code_postal": "06700",
+      "commune": "Saint-Laurent-du-Var",
+      "latitude": 43.661346,
+      "longitude": 7.196774,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-laurent-du-var/148-avenue-georges-guynemer/c06ab82013",
+      "geocodage": {
+        "score": 0.954,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00172",
+      "nom": "Hyundai Saint Leonard",
+      "ville": "Saint Leonard",
+      "adresse": "90 Avenue Du Docteur Croquelois",
+      "code_postal": "62360",
+      "commune": "Saint-Léonard",
+      "latitude": 50.685866,
+      "longitude": 1.627135,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-leonard/90-avenue-du-docteur-croquelois/c06ab00172",
+      "geocodage": {
+        "score": 0.962,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00414",
+      "nom": "Hyundai Saint Lo",
+      "ville": "Saint Lo",
+      "adresse": "730 Rue Joseph Cugnot",
+      "code_postal": "50000",
+      "commune": "Saint-Lô",
+      "latitude": 49.115556,
+      "longitude": -1.044089,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-lo/730-rue-joseph-cugnot/c06ab00414",
+      "geocodage": {
+        "score": 0.962,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00305",
+      "nom": "Hyundai Saint Malo",
+      "ville": "Saint Malo",
+      "adresse": "20 Allee De La Grassinais",
+      "code_postal": "35400",
+      "commune": "Saint-Malo",
+      "latitude": 48.622345,
+      "longitude": -1.987903,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-malo/20-allee-de-la-grassinais/c06ab00305",
+      "geocodage": {
+        "score": 0.965,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00483",
+      "nom": "Hyundai Saint Maximin",
+      "ville": "Saint Maximin",
+      "adresse": "179 Rue Des Droits De L Homme",
+      "code_postal": "60740",
+      "commune": "Saint-Maximin",
+      "latitude": 49.231456,
+      "longitude": 2.468062,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-maximin/179-rue-des-droits-de-l-homme/c06ab00483",
+      "geocodage": {
+        "score": 0.577,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00477",
+      "nom": "Hyundai Saint Nazaire",
+      "ville": "Saint Nazaire",
+      "adresse": "16 Route Du Petit Lerioux",
+      "code_postal": "44600",
+      "commune": "Saint-Nazaire",
+      "latitude": 47.257218,
+      "longitude": -2.27159,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-nazaire/16-route-du-petit-lerioux/c06ab00477",
+      "geocodage": {
+        "score": 0.965,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00339",
+      "nom": "Hyundai Saint Ouen L Aumone",
+      "ville": "Saint Ouen L Aumone",
+      "adresse": "11 Rue Louis Delage",
+      "code_postal": "95310",
+      "commune": "Saint-Ouen-l'Aumône",
+      "latitude": 49.034662,
+      "longitude": 2.120087,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-ouen-l-aumone/11-rue-louis-delage/c06ab00339",
+      "geocodage": {
+        "score": 0.963,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00474",
+      "nom": "Hyundai Saint Pierre Du Mont",
+      "ville": "Saint Pierre Du Mont",
+      "adresse": "226 Rue Antoine Becquerel",
+      "code_postal": "40280",
+      "commune": "Saint-Pierre-du-Mont",
+      "latitude": 43.87011,
+      "longitude": -0.482548,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-pierre-du-mont/226-rue-antoine-becquerel/c06ab00474",
+      "geocodage": {
+        "score": 0.96,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00512",
+      "nom": "Hyundai Saint Quentin",
+      "ville": "Saint Quentin",
+      "adresse": "31 Rue Alexandre Dumas",
+      "code_postal": "02100",
+      "commune": "Saint-Quentin",
+      "latitude": 49.848535,
+      "longitude": 3.270651,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-quentin/31-rue-alexandre-dumas/c06ab00512",
+      "geocodage": {
+        "score": 0.972,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81417",
+      "nom": "Hyundai Saint Remy En Rollat",
+      "ville": "Saint Remy En Rollat",
+      "adresse": "12 Zone D Activite Les Bats",
+      "code_postal": "03110",
+      "commune": "Saint-Rémy-en-Rollat",
+      "latitude": 46.175512,
+      "longitude": 3.400257,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-remy-en-rollat/12-zone-d-activite-les-bats/c06ab81417",
+      "geocodage": {
+        "score": 0.512,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81420",
+      "nom": "Hyundai Saint Victoret",
+      "ville": "Saint Victoret",
+      "adresse": "Boulevard Rene Cailloux",
+      "code_postal": "13730",
+      "commune": "Saint-Victoret",
+      "latitude": 43.422658,
+      "longitude": 5.234876,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-victoret/boulevard-rene-cailloux/c06ab81420",
+      "geocodage": {
+        "score": 0.961,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81440",
+      "nom": "Hyundai Saint Vigor Le Grand",
+      "ville": "Saint Vigor Le Grand",
+      "adresse": "Boulevard Winston Churchill",
+      "code_postal": "14400",
+      "commune": "Saint-Vigor-le-Grand",
+      "latitude": 49.284294,
+      "longitude": -0.692333,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-vigor-le-grand/boulevard-winston-churchill/c06ab81440",
+      "geocodage": {
+        "score": 0.947,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00475",
+      "nom": "Hyundai Saint Vincent De Paul",
+      "ville": "Saint Vincent De Paul",
+      "adresse": "110 Impasse La Carrere",
+      "code_postal": "40990",
+      "commune": "Saint-Vincent-de-Paul",
+      "latitude": 43.74135,
+      "longitude": -1.014649,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saint-vincent-de-paul/110-impasse-la-carrere/c06ab00475",
+      "geocodage": {
+        "score": 0.733,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81162",
+      "nom": "Hyundai Sainte Bazeille",
+      "ville": "Sainte Bazeille",
+      "adresse": "31 Morrau",
+      "code_postal": "47180",
+      "commune": "Sainte-Bazeille",
+      "latitude": 44.524466,
+      "longitude": 0.108873,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/sainte-bazeille/31-morrau/c06ab81162",
+      "geocodage": {
+        "score": 0.637,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81517",
+      "nom": "Hyundai Sainte Marguerite",
+      "ville": "Sainte Marguerite",
+      "adresse": "Rue De Colmar",
+      "code_postal": "88100",
+      "commune": "Sainte-Marguerite",
+      "latitude": 48.270728,
+      "longitude": 6.961509,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/sainte-marguerite/rue-de-colmar/c06ab81517",
+      "geocodage": {
+        "score": 0.955,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab83356",
+      "nom": "Hyundai Saintes",
+      "ville": "Saintes",
+      "adresse": "Avenue De Gemozac",
+      "code_postal": "17100",
+      "commune": "Saintes",
+      "latitude": 45.721748,
+      "longitude": -0.642075,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/saintes/avenue-de-gemozac/c06ab83356",
+      "geocodage": {
+        "score": 0.963,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab82205",
+      "nom": "Hyundai Sallertaine",
+      "ville": "Sallertaine",
+      "adresse": "Rue Charles Milcendeau",
+      "code_postal": "85300",
+      "commune": "Sallertaine",
+      "latitude": 46.85403,
+      "longitude": -1.904205,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/sallertaine/rue-charles-milcendeau/c06ab82205",
+      "geocodage": {
+        "score": 0.952,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00539",
+      "nom": "Hyundai Salon De Provence",
+      "ville": "Salon De Provence",
+      "adresse": "1230 Vielle Route De Cornillon",
+      "code_postal": "13300",
+      "commune": "Salon-de-Provence",
+      "latitude": 43.627583,
+      "longitude": 5.099199,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/salon-de-provence/1230-vielle-route-de-cornillon/c06ab00539",
+      "geocodage": {
+        "score": 0.741,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00402",
+      "nom": "Hyundai Sanilhac",
+      "ville": "Sanilhac",
+      "adresse": "Avenue De Borie Marty",
+      "code_postal": "24660",
+      "commune": "Sanilhac",
+      "latitude": 45.134667,
+      "longitude": 0.697929,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/sanilhac/avenue-de-borie-marty/c06ab00402",
+      "geocodage": {
+        "score": 0.956,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81528",
+      "nom": "Hyundai Sarreguemines",
+      "ville": "Sarreguemines",
+      "adresse": "1 Rue Joseph Cugnot",
+      "code_postal": "57200",
+      "commune": "Sarreguemines",
+      "latitude": 49.110255,
+      "longitude": 7.097784,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/sarreguemines/1-rue-joseph-cugnot/c06ab81528",
+      "geocodage": {
+        "score": 0.963,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00372",
+      "nom": "Hyundai Sens",
+      "ville": "Sens",
+      "adresse": "5 Boulevard De Verdun",
+      "code_postal": "89100",
+      "commune": "Sens",
+      "latitude": 48.204883,
+      "longitude": 3.286378,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/sens/5-boulevard-de-verdun/c06ab00372",
+      "geocodage": {
+        "score": 0.968,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00538",
+      "nom": "Hyundai Sete",
+      "ville": "Sete",
+      "adresse": "711 Avenue Des Eaux Blanches",
+      "code_postal": "34200",
+      "commune": "Sète",
+      "latitude": 43.4193,
+      "longitude": 3.714097,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/sete/711-avenue-des-eaux-blanches/c06ab00538",
+      "geocodage": {
+        "score": 0.777,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00548",
+      "nom": "Hyundai Soissons",
+      "ville": "Soissons",
+      "adresse": "Route De Reims",
+      "code_postal": "02210",
+      "commune": "Saint-Rémy-Blanzy",
+      "latitude": 49.241979,
+      "longitude": 3.309808,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/soissons/route-de-reims/c06ab00548",
+      "geocodage": {
+        "score": 0.622,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00409",
+      "nom": "Hyundai Tarbes",
+      "ville": "Tarbes",
+      "adresse": "Rue Youri Gagarine",
+      "code_postal": "65000",
+      "commune": "Tarbes",
+      "latitude": 43.218598,
+      "longitude": 0.087565,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/tarbes/rue-youri-gagarine/c06ab00409",
+      "geocodage": {
+        "score": 0.96,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00457",
+      "nom": "Hyundai Thionville",
+      "ville": "Thionville",
+      "adresse": "14 Allee Du Chateau De Gassion",
+      "code_postal": "57100",
+      "commune": "Thionville",
+      "latitude": 49.338761,
+      "longitude": 6.158106,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/thionville/14-allee-du-chateau-de-gassion/c06ab00457",
+      "geocodage": {
+        "score": 0.799,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81543",
+      "nom": "Hyundai Thonon Les Bains",
+      "ville": "Thonon Les Bains",
+      "adresse": "12 Rue De L Europe",
+      "code_postal": "74200",
+      "commune": "Thonon-les-Bains",
+      "latitude": 46.350611,
+      "longitude": 6.443068,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/thonon-les-bains/12-rue-de-l-europe/c06ab81543",
+      "geocodage": {
+        "score": 0.966,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00529",
+      "nom": "Hyundai Toulouse",
+      "ville": "Toulouse",
+      "adresse": "360 Avenue Des Etats Unis",
+      "code_postal": "31200",
+      "commune": "Toulouse",
+      "latitude": 43.660145,
+      "longitude": 1.417951,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/toulouse/360-avenue-des-etats-unis/c06ab00529",
+      "geocodage": {
+        "score": 0.988,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00455",
+      "nom": "Hyundai Tours",
+      "ville": "Tours",
+      "adresse": "78 Rue De La Pinauderie",
+      "code_postal": "37540",
+      "commune": "Saint-Cyr-sur-Loire",
+      "latitude": 47.428357,
+      "longitude": 0.662486,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/tours/78-rue-de-la-pinauderie/c06ab00455",
+      "geocodage": {
+        "score": 0.608,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00292",
+      "nom": "Hyundai Tregueux",
+      "ville": "Tregueux",
+      "adresse": "Rue Du Gue Lambert",
+      "code_postal": "22950",
+      "commune": "Trégueux",
+      "latitude": 48.491869,
+      "longitude": -2.765156,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/tregueux/rue-du-gue-lambert/c06ab00292",
+      "geocodage": {
+        "score": 0.956,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00485",
+      "nom": "Hyundai Valence",
+      "ville": "Valence",
+      "adresse": "307 Avenue De Romans",
+      "code_postal": "26000",
+      "commune": "Valence",
+      "latitude": 44.939554,
+      "longitude": 4.91448,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/valence/307-avenue-de-romans/c06ab00485",
+      "geocodage": {
+        "score": 0.978,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00282",
+      "nom": "Hyundai Vannes",
+      "ville": "Vannes",
+      "adresse": "62 Rue Marcelin Berthelot",
+      "code_postal": "56000",
+      "commune": "Vannes",
+      "latitude": 47.662765,
+      "longitude": -2.792505,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/vannes/62-rue-marcelin-berthelot/c06ab00282",
+      "geocodage": {
+        "score": 0.97,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00412",
+      "nom": "Hyundai Vert Saint Denis",
+      "ville": "Vert Saint Denis",
+      "adresse": "300 Avenue De L Europe",
+      "code_postal": "77240",
+      "commune": "Vert-Saint-Denis",
+      "latitude": 48.567304,
+      "longitude": 2.633726,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/vert-saint-denis/300-avenue-de-l-europe/c06ab00412",
+      "geocodage": {
+        "score": 0.959,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00235",
+      "nom": "Hyundai Vesoul",
+      "ville": "Vesoul",
+      "adresse": "Rue Du Petit Montmarin",
+      "code_postal": "70000",
+      "commune": "Vesoul",
+      "latitude": 47.636653,
+      "longitude": 6.151277,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/vesoul/rue-du-petit-montmarin/c06ab00235",
+      "geocodage": {
+        "score": 0.965,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab81435",
+      "nom": "Hyundai Ville La Grand",
+      "ville": "Ville La Grand",
+      "adresse": "9 Rue De La Californie",
+      "code_postal": "74100",
+      "commune": "Ville-la-Grand",
+      "latitude": 46.200446,
+      "longitude": 6.266374,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/ville-la-grand/9-rue-de-la-californie/c06ab81435",
+      "geocodage": {
+        "score": 0.957,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00492",
+      "nom": "Hyundai Villebon Sur Yvette",
+      "ville": "Villebon Sur Yvette",
+      "adresse": "15 Avenue De La Baltique",
+      "code_postal": "91140",
+      "commune": "Villebon-sur-Yvette",
+      "latitude": 48.688766,
+      "longitude": 2.206094,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/villebon-sur-yvette/15-avenue-de-la-baltique/c06ab00492",
+      "geocodage": {
+        "score": 0.963,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00452",
+      "nom": "Hyundai Villenave D Ornon",
+      "ville": "Villenave D Ornon",
+      "adresse": "114 118 Avenue Des Pyrenees",
+      "code_postal": "33140",
+      "commune": "Villenave-d'Ornon",
+      "latitude": 44.765631,
+      "longitude": -0.562072,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/villenave-d-ornon/114-118-avenue-des-pyrenees/c06ab00452",
+      "geocodage": {
+        "score": 0.81,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00550",
+      "nom": "Hyundai Villeneuve D Ascq",
+      "ville": "Villeneuve D Ascq",
+      "adresse": "11 Boulevard De L Ouest",
+      "code_postal": "59650",
+      "commune": "Villeneuve-d'Ascq",
+      "latitude": 50.63266,
+      "longitude": 3.121854,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/villeneuve-d-ascq/11-boulevard-de-l-ouest/c06ab00550",
+      "geocodage": {
+        "score": 0.811,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00454",
+      "nom": "Hyundai Villeneuve Saint Georges",
+      "ville": "Villeneuve Saint Georges",
+      "adresse": "188 Rue De Paris",
+      "code_postal": "94190",
+      "commune": "Villeneuve-Saint-Georges",
+      "latitude": 48.738614,
+      "longitude": 2.446859,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/villeneuve-saint-georges/188-rue-de-paris/c06ab00454",
+      "geocodage": {
+        "score": 0.976,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00286",
+      "nom": "Hyundai Villepinte",
+      "ville": "Villepinte",
+      "adresse": "12 Avenue Charles De Gaulle",
+      "code_postal": "93420",
+      "commune": "Villepinte",
+      "latitude": 48.958463,
+      "longitude": 2.559016,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/villepinte/12-avenue-charles-de-gaulle/c06ab00286",
+      "geocodage": {
+        "score": 0.965,
+        "approximatif": false
+      }
+    },
+    {
+      "id": "c06ab00518",
+      "nom": "Hyundai Villerest",
+      "ville": "Villerest",
+      "adresse": "142 Route De Villemontais",
+      "code_postal": "42300",
+      "commune": "Villerest",
+      "latitude": 46.019762,
+      "longitude": 4.046307,
+      "url": "https://www.hyundai.com/fr/fr/distributeurs.html/l/villerest/142-route-de-villemontais/c06ab00518",
+      "geocodage": {
+        "score": 0.962,
+        "approximatif": false
+      }
+    }
+  ]
+}
