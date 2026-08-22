@@ -15,6 +15,7 @@ import { concessionsProches } from "./concessions.mjs";
 import {
   ETAPES,
   session,
+  sessionExistante,
   redemarrer,
   consigneEtape,
   enregistrerLead,
@@ -28,6 +29,14 @@ const MODEL = env.LLM_MODEL || "google/gemini-3-flash";
 const MAX_TOURS_LLM = 4; // garde-fou : au dela, on rend ce qu'on a plutot que de boucler
 // Chaque photo coute 2 requetes API (remplissage du champ + declenchement du node).
 const MAX_PHOTOS = Number(env.PHOTOS_PAR_DEMANDE || 3);
+
+// L'horizon est stocke sous forme de code ; ces libelles sont ce que LISENT le client
+// dans le Flow et le conseiller dans le recapitulatif.
+const LIBELLE_PROJET = {
+  prochainement: "Projet immédiat",
+  plus_de_6_mois: "Projet différé, au-delà de 6 mois",
+  non_precise: "Horizon à préciser",
+};
 
 const CATALOGUE = catalogueCondense();
 
@@ -250,6 +259,25 @@ const OUTILS = [
   {
     type: "function",
     function: {
+      name: "ouvrir_prise_de_rdv",
+      description:
+        "Ouvre le formulaire de prise de rendez-vous pour un essai (le client y saisit son nom et le creneau qui l'arrange). A appeler des que le client veut prendre rendez-vous, reserver un essai ou fixer une date. La concession doit avoir ete trouvee avant, via localiser_concession.",
+      parameters: {
+        type: "object",
+        properties: {
+          vehicule: {
+            type: "string",
+            description:
+              "slug du vehicule que le client veut ESSAYER. S'il en a evoque plusieurs, retiens celui vers lequel il penche.",
+          },
+        },
+        required: ["vehicule"],
+      },
+    },
+  },
+  {
+    type: "function",
+    function: {
       name: "retour_menu_principal",
       description:
         "Ramene le client au menu principal. A appeler UNIQUEMENT apres l'avoir remercie lorsqu'il a demande a etre rappele par la concession.",
@@ -265,6 +293,101 @@ function raccourcir(texte, max = 220) {
   const coupe = t.slice(0, max);
   const fin = Math.max(coupe.lastIndexOf(". "), coupe.lastIndexOf(" ! "), coupe.lastIndexOf(" ? "));
   return (fin > 60 ? coupe.slice(0, fin + 1) : coupe).trim();
+}
+
+const LIBELLE_ENTREE = {
+  neuf: "Véhicule neuf",
+  LOA: "Location avec option d'achat (LOA)",
+  occasion: "Véhicule d'occasion",
+};
+
+/**
+ * Recapitulatif destine a la concession, au format d'un mail.
+ *
+ * La partie FACTUELLE est composee par le code, pas par le modele : le vehicule, le
+ * type de demande, l'horizon et la concession sont deja connus et verifies, les faire
+ * reformuler par un LLM ne ferait qu'ouvrir la porte a une erreur. Le modele n'ecrit
+ * que le resume narratif de l'echange, la seule partie qui demande de la redaction.
+ *
+ * @param {string} nom nom saisi par le client dans le formulaire
+ * @returns {Promise<{contenu: string, session: object}|null>} null si aucune conversation
+ */
+export async function genererRecapitulatif(userNs, nom) {
+  const s = sessionExistante(userNs);
+  if (!s) return null;
+  if (nom) s.nom_client = nom;
+
+  const v = vehiculeParSlug(s.vehicule_essai) || vehiculeParSlug(s.vehicules_proposes[0]);
+  const c = s.concession;
+
+  // Resume narratif : seule partie confiee au modele.
+  let resume = "";
+  try {
+    const echanges = s.messages
+      .filter((m) => (m.role === "user" || m.role === "assistant") && m.content)
+      .map((m) => `${m.role === "user" ? "Client" : "Conseiller"} : ${m.content}`)
+      .join("\n");
+    const completion = await client.chat.completions.create({
+      model: MODEL,
+      temperature: 0.3,
+      messages: [
+        {
+          role: "system",
+          content: `Tu rediges, pour un vendeur de concession Hyundai qui va rappeler ce client, le resume de la conversation qu'il vient d'avoir avec notre conseiller virtuel.
+
+QUATRE a SIX phrases, en francais correctement accentue, au style factuel et professionnel.
+Dis ce que le client a exprime comme besoin, ce qui a motive le choix du vehicule, les
+objections ou hesitations qu'il a eues, et ou en est sa reflexion. Le vendeur doit savoir
+en le lisant comment aborder son appel.
+
+N'invente rien qui ne soit pas dans l'echange. Ne repete pas les caracteristiques
+techniques du vehicule, elles figurent deja plus haut dans le message. Pas de formule de
+politesse, pas de titre : uniquement le paragraphe.`,
+        },
+        { role: "user", content: echanges.slice(-6000) },
+      ],
+    });
+    resume = (completion.choices[0].message.content || "").trim();
+  } catch (e) {
+    console.error(`[recap] resume indisponible : ${e.message}`);
+    resume = "Résumé automatique indisponible. Voir les éléments ci-dessus.";
+  }
+
+  const specs = v
+    ? [v.motorisation, `${v.places} places`, v.prix_a_partir_de && `à partir de ${v.prix_a_partir_de.toLocaleString("fr-FR")} EUR`]
+        .filter(Boolean)
+        .join(", ")
+    : "";
+
+  const lignes = [
+    `DEMANDE D'ESSAI — ${v ? v.nom : "véhicule à préciser"}`,
+    "",
+    "— L'ESSENTIEL —",
+    `Client : ${s.nom_client || "non communiqué"}`,
+    `Véhicule à essayer : ${v ? v.nom : "à préciser"}${specs ? ` (${specs})` : ""}`,
+    `Type de demande : ${LIBELLE_ENTREE[s.type_entree] || "non précisé"}`,
+    `Horizon du projet : ${LIBELLE_PROJET[s.horizon_projet] || "à préciser"}`,
+    c
+      ? `Concession : ${c.nom}, ${c.adresse}, ${c.code_postal} ${c.commune} (à ${c.distance_km} km du client)`
+      : "Concession : non déterminée",
+    "",
+    "— SON BESOIN, TEL QU'IL L'A EXPRIMÉ —",
+    `Foyer : ${s.foyer || "non précisé"}`,
+    `Usage : ${s.usage || "non précisé"}`,
+    `Impact carbone : ${s.sensibilite_carbone || "non précisé"}`,
+    "",
+    "— RÉSUMÉ DE L'ÉCHANGE —",
+    resume,
+    "",
+    s.vehicules_proposes.length
+      ? `Véhicules présentés : ${s.vehicules_proposes
+          .map((slug) => vehiculeParSlug(slug)?.nom || slug)
+          .join(", ")}.`
+      : null,
+    `Conversation menée sur WhatsApp, ${s.tours} échanges.`,
+  ].filter((l) => l !== null);
+
+  return { contenu: lignes.join("\n"), session: s };
 }
 
 /**
@@ -443,6 +566,31 @@ export async function traiterMessage(userNs, message) {
           sortants.push({ type: "concession", concession: c, description });
           enregistrerLead(userNs, s);
           resultat = { envoye: true, concession: c.nom, distance_km: c.distance_km };
+          break;
+        }
+
+        case "ouvrir_prise_de_rdv": {
+          const v = vehiculeParSlug(args.vehicule);
+          if (!v) {
+            resultat = { erreur: `vehicule inconnu : ${args.vehicule}` };
+            break;
+          }
+          if (!s.concession) {
+            resultat = {
+              erreur:
+                "Aucune concession connue. Demande d'abord son code postal et appelle localiser_concession.",
+            };
+            break;
+          }
+          s.vehicule_essai = v.slug;
+          sortants.push({
+            type: "flow_rdv",
+            modele: v.nom,
+            // Le gabarit du Flow est etroit : nom et ville suffisent a identifier le point de vente.
+            concession: `${s.concession.nom}, ${s.concession.ville}`,
+            projet: LIBELLE_PROJET[s.horizon_projet] || "à préciser",
+          });
+          resultat = { ouvert: true, vehicule: v.nom, concession: s.concession.nom };
           break;
         }
 

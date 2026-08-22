@@ -10,8 +10,8 @@
 // flow est encore en train d'afficher, et la conversation parait desordonnee.
 import http from "node:http";
 import { env, exigerVariables } from "./env.mjs";
-import { traiterMessage } from "./agent.mjs";
-import { envoyerSortants, mmActif, budgetMm } from "./mm.mjs";
+import { traiterMessage, genererRecapitulatif } from "./agent.mjs";
+import { envoyerSortants, pousserRecap, mmActif, budgetMm } from "./mm.mjs";
 import { purger, nombreSessions } from "./parcours.mjs";
 
 exigerVariables(["WEBHOOK_SECRET", "AI_GATEWAY_API_KEY"]);
@@ -80,6 +80,44 @@ const serveur = http.createServer(async (req, res) => {
       sessions: nombreSessions(),
       quota_mm: budgetMm(),
     });
+  }
+
+  // Retour du formulaire de rendez-vous : le flow nous transmet le nom saisi par le
+  // client. On compose alors le recapitulatif destine a la concession et on le pousse.
+  // Meme secret que /webhook.
+  if (req.method === "POST" && req.url.startsWith("/rdv")) {
+    if (req.headers["x-webhook-secret"] !== SECRET) {
+      return repondre(res, 401, { error: "unauthorized" });
+    }
+    let corpsRdv;
+    try {
+      corpsRdv = JSON.parse((await lireCorps(req)) || "{}");
+    } catch {
+      return repondre(res, 400, { error: "JSON invalide" });
+    }
+    const userNs = nettoyer(corpsRdv.user_ns || corpsRdv.external_id || corpsRdv.subscriber_id);
+    const nom = nettoyer(corpsRdv.nom || corpsRdv.name || corpsRdv.nom_client);
+    if (!userNs) return repondre(res, 400, { error: "user_ns requis" });
+
+    // ACK immediat : composer le recapitulatif demande un appel au modele.
+    repondre(res, 200, { ok: true });
+    (async () => {
+      try {
+        const r = await genererRecapitulatif(userNs, nom);
+        if (!r) {
+          console.warn(`[rdv] ${userNs} : aucune conversation en cours, recapitulatif ignore`);
+          return;
+        }
+        const envoi = await pousserRecap(userNs, r.contenu);
+        console.log(
+          `[rdv] ${userNs} nom="${nom || "-"}" -> recapitulatif ${r.contenu.length} car ` +
+            `${envoi.ok ? "envoye" : "ECHEC : " + envoi.erreur}`
+        );
+      } catch (e) {
+        console.error(`[rdv] ${userNs} : ${e.stack || e.message}`);
+      }
+    })();
+    return;
   }
 
   if (req.method !== "POST" || !req.url.startsWith("/webhook")) {

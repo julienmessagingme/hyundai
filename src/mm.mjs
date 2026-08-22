@@ -180,6 +180,29 @@ export async function pousserPhoto(userNs, url) {
   return remplirPuisEnvoyer(userNs, { [env.MM_VF_PHOTO_EXTRA]: url }, env.MM_NODE_PHOTO);
 }
 
+/**
+ * Ouvre le WhatsApp Flow de prise de rendez-vous.
+ * Les trois champs sont remplis avant : le Flow les affiche, le client n'a plus qu'a
+ * donner son nom et son creneau. La concession tient en "Nom, Ville" pour rentrer
+ * dans le gabarit du Flow.
+ */
+export async function pousserFlowRdv(userNs, { modele, concession, projet }) {
+  return remplirPuisEnvoyer(
+    userNs,
+    {
+      [env.MM_VF_RDV_MODELE]: modele,
+      [env.MM_VF_RDV_CONCESSION]: concession,
+      [env.MM_VF_RDV_PROJET]: projet,
+    },
+    env.MM_NODE_FLOW_RDV
+  );
+}
+
+/** Envoie le recapitulatif (format mail) destine a la concession. */
+export async function pousserRecap(userNs, contenu) {
+  return remplirPuisEnvoyer(userNs, { [env.MM_VF_RECAP]: contenu }, env.MM_NODE_RECAP);
+}
+
 /** Ramene le contact au menu principal. */
 export async function retourMenu(userNs) {
   return envoyerNode(userNs, env.MM_NODE_MAIN_MENU);
@@ -205,6 +228,10 @@ export async function envoyerSortants(userNs, sortants, delaiApresTexte = 0) {
       emplacement = Math.min(1, emplacement + 1);
     } else if (m.type === "photo") {
       resultats.push(await pousserPhoto(userNs, m.url));
+    } else if (m.type === "flow_rdv") {
+      resultats.push(await pousserFlowRdv(userNs, m));
+    } else if (m.type === "recap") {
+      resultats.push(await pousserRecap(userNs, m.contenu));
     } else if (m.type === "concession") {
       resultats.push(await pousserConcession(userNs, m.concession, m.description));
     } else if (m.type === "menu") {

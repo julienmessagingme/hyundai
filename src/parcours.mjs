@@ -34,6 +34,8 @@ function neuve(typeEntree) {
     photos_envoyees: new Set(),
     interesse_essai: null,
     horizon_projet: null,
+    vehicule_essai: null, // celui retenu pour l'essai, choisi a l'ouverture du formulaire
+    nom_client: null, // renseigne par le formulaire, apres coup
     code_postal: null,
     concession: null,
     messages: [], // historique envoye au modele
@@ -52,6 +54,17 @@ export function session(userNs, typeEntree) {
   const n = neuve(typeEntree);
   sessions.set(userNs, n);
   return n;
+}
+
+/**
+ * Session existante uniquement, sans en creer une neuve.
+ * Sert aux traitements declenches APRES la conversation (retour de formulaire) :
+ * creer une session vide y produirait un recapitulatif sans aucun contenu.
+ */
+export function sessionExistante(userNs) {
+  const s = sessions.get(userNs);
+  if (!s || Date.now() - s.vue_le >= TTL_MS) return null;
+  return s;
 }
 
 /** Redemarre un parcours (le client repasse par un bouton d'entree du flow). */
