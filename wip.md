@@ -1,31 +1,39 @@
 # En cours
 
-## Ce qui bloque
+## Couverture des finitions
 
-**L'entrée DNS `hyundai.messagingme.app` n'existe pas encore sur Cloudflare.**
-Tout le reste est en place et teste : le bot tourne sur le VPS, le proxy host NPM
-(id 23) route deja correctement vers lui, verifie en forcant l'en-tete Host. Il
-manque l'enregistrement DNS, puis le certificat Let's Encrypt (a demander cote NPM
-une fois le DNS resolu, sinon Cloudflare renvoie une erreur 525).
+Le correctif est en place (fenêtre autour de chaque mention du mot « finition », au
+lieu d'une plage continue qui couvrait 30 000 caractères sur l'INSTER et le TUCSON et
+se faisait tronquer avant le contenu utile). Il reste à faire aboutir une passe
+complète :
 
-## A eprouver au premier test reel sur WhatsApp
+```bash
+npm run scrape:extract
+```
 
-- **Les quatre `node_ns` ne sont pas verifiables par l'API** : aucun endpoint ne
-  liste les nodes d'un flow. Ils seront confirmes au premier envoi reel. Si un node
-  n'est pas PUBLIE dans l'editeur, l'API repond `ok` sans rien livrer.
-- **Le delai de propagation des champs** (1500 ms) est repris d'odalys. Si une carte
-  part avec la photo du vehicule precedent, l'augmenter via `MM_FIELD_PROPAGATION_MS`.
-- **L'ordre texte puis cartes** repose sur `MM_POST_REPLY_DELAY_MS` (1500 ms) : le
-  temps que le flow affiche le texte avant que les nodes n'arrivent. A ajuster en
-  conditions reelles, c'est le reglage le plus visible pour le client.
-- **Latence du tour de proposition** : 11 a 15 s, contre 3 a 5 s pour un tour normal
-  (le modele choisit deux vehicules et redige deux argumentaires). A verifier contre
-  le delai d'attente du node HTTP Request de l'editeur.
+Attendu : 6 modèles de plus (i20, inster-electric, ioniq5, santa-fe-hybrid,
+tucson-hybrid, tucson-plug-in), soit 12 sur 17. Les 5 derniers (IONIQ 3, IONIQ 5 N,
+NEXO et les deux non conseillables) ne présentent aucune finition sur leur page : il
+n'y a rien à en tirer.
 
-## Pistes ouvertes
+Le script refuse d'écrire s'il n'obtient pas les 17 modèles, donc une passe
+interrompue ne dégrade jamais le catalogue en place.
 
-- **Vidéo sur un node.** Les MP4 sont recuperables en direct (l'INSTER en a un,
-  le TUCSON aussi). Reste a choisir le moment du parcours et a verifier le poids
-  accepte par WhatsApp.
-- **Photos interieures.** Recuperees pour dix modeles sur dix-sept, pas encore
-  utilisees dans le parcours.
+## À éprouver en conditions réelles
+
+- **Ordonnancement des envois.** `MM_POST_REPLY_DELAY_MS` (1500 ms) sépare le texte
+  des cartes, `MM_FIELD_PROPAGATION_MS` (1500 ms) sépare le remplissage des champs du
+  déclenchement du node. Ce sont les deux réglages qui se voient le plus côté client :
+  si une carte part avec la photo du véhicule précédent, augmenter le second.
+- **Latence du tour de proposition** : 9 à 15 s, contre 2 à 5 s pour un tour normal
+  (le modèle choisit deux véhicules et rédige deux argumentaires). Cloudflare tient,
+  vérifié en HTTPS public ; c'est le délai d'attente du node HTTP Request de l'éditeur
+  qui doit accepter au moins 20 s.
+- **Volume de photos.** Trois par demande (`PHOTOS_PAR_DEMANDE`), soit 6 requêtes API
+  sur les 1000/heure. À ajuster selon le ressenti en démonstration.
+
+## Piste ouverte
+
+**Vidéo sur un node.** Les MP4 sont récupérables en direct sur le CDN Hyundai
+(l'INSTER et le TUCSON en ont). Reste à choisir le moment du parcours où l'envoyer et
+à vérifier le poids accepté par WhatsApp.

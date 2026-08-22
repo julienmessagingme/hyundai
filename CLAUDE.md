@@ -29,5 +29,12 @@ npm start                   # serveur webhook (port 8150)
 - **Toujours laisser le délai de propagation** entre `set-user-fields` et `send-node` :
   messagingme.app traite les deux en asynchrone, sans le délai le node part avec les
   champs de la conversation précédente.
+- **`send-node` répond `ok` même pour un node qui n'existe pas.** Vérifié avec un identifiant
+  bidon : réponse identique. Aucun log d'envoi ne prouve donc une livraison, et un node non publié
+  échoue en silence. La seule preuve est le téléphone du destinataire. Pour diagnostiquer, relire les
+  user fields du contact via `GET /subscriber/get-info` : s'ils sont remplis, le problème est dans
+  l'éditeur, pas ici.
+- **Le bot n'énonce jamais une donnée vérifiable qu'il n'a pas** (finitions, mensualité de location).
+  Il renvoie vers la concession. Un chiffre inventé se vérifie en une minute côté client.
 - **Ne jamais proposer une concession au delà de 150 km.** Le réseau ne couvre que la
   métropole, sans ce garde-fou un client des DOM se voit proposer la Corse.

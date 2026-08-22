@@ -1,24 +1,24 @@
 # Backlog
 
-## À faire ensuite
-
-- Déploiement VPS : PM2, bind `172.18.0.1:8150`, proxy NPM `hyundai.messagingme.app`.
-- Export des leads qualifiés (horizon du projet, véhicules vus, concession affectée).
-
 ## Améliorations identifiées
 
-- **Vidéo sur un node.** Les MP4 sont récupérables en direct sur certaines pages
-  (l'INSTER en a un). Reste à choisir le moment du parcours où l'envoyer, et à vérifier
-  le poids accepté par WhatsApp.
 - **Enrichir les concessions.** Téléphone et horaires ne sont pas dans le HTML : ils
   viennent du widget Uberall chargé en JavaScript. Piste si le client les demande.
-- **Photos intérieures.** Dix modèles sur dix sept ont une galerie intérieure
-  exploitable. Pour les autres, seule la photo officielle est disponible par nom.
-- **Rafraîchissement du catalogue.** Les prix et les modèles bougent. Prévoir une
-  relance périodique du scraping plutôt qu'un figeage définitif.
+- **Rafraîchissement du catalogue.** Les prix, les modèles et les offres bougent.
+  Prévoir une relance périodique du scraping plutôt qu'un figeage définitif. Les deux
+  scripts sont idempotents et le second refuse de publier un résultat partiel.
+- **Photos d'habitacle manquantes.** Trois modèles n'en ont pas (les deux KONA hors
+  électrique et les non conseillables). Leur page ne porte que le visuel officiel.
+- **Offres de location.** Hyundai n'en publie que pour deux modèles. Si le client veut
+  couvrir toute la gamme, il faudra une source interne, pas le site public.
+- **Parcours occasion.** Hors périmètre de la démonstration. Le catalogue public étant
+  du neuf uniquement, il faudrait une autre source de données.
 
 ## Connu, non bloquant
 
-- `ultime-edition` est une série spéciale et `kona-nouvelle-generation` une page
-  teaser : à écarter des véhicules recommandables.
+- `ultime-edition` (série spéciale) et `kona-nouvelle-generation` (page teaser) sont
+  marqués non conseillables : le bot peut en parler mais ne les propose jamais.
 - Deux concessions sur 188 sont géocodées au niveau de la commune et non de l'adresse.
+- Les identifiants de nodes ne sont pas vérifiables par l'API : aucun endpoint ne liste
+  les nodes d'un flow, et `send-node` répond `ok` même pour un node inexistant. Toute
+  erreur d'identifiant se constate uniquement sur le téléphone du destinataire.
