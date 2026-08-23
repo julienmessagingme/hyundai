@@ -342,7 +342,12 @@ en le lisant comment aborder son appel.
 
 N'invente rien qui ne soit pas dans l'echange. Ne repete pas les caracteristiques
 techniques du vehicule, elles figurent deja plus haut dans le message. Pas de formule de
-politesse, pas de titre : uniquement le paragraphe.`,
+politesse, pas de titre : uniquement le paragraphe.
+
+Ne raconte RIEN de ce qui se passe apres la conversation : tu ne sais pas si le client a
+rempli le formulaire, choisi un creneau ou confirme quoi que ce soit. Ecrire "l'acces a
+l'agenda lui a ete ouvert" ou "il a confirme son rendez-vous" est une invention, et le
+vendeur la lira comme un fait. Arrete-toi a ce qui a ete dit dans l'echange.`,
         },
         { role: "user", content: echanges.slice(-6000) },
       ],

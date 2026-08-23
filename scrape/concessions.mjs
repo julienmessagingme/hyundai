@@ -24,7 +24,13 @@ const SCORE_MIN = 0.4; // en dessous, le geocodage est trop incertain pour etre 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // "11-rue-robert-piddat" -> "11 rue robert piddat" ; "aix-en-provence" -> "aix en provence"
-const deslug = (s) => decodeURIComponent(s).replace(/-/g, " ").trim();
+// Un numero de voirie composé garde son tiret : "83-131-boulevard-godard" donnait
+// "83 131 Boulevard Godard", qui se lit comme deux nombres sans rapport dans un mail.
+const deslug = (s) =>
+  decodeURIComponent(s)
+    .replace(/-/g, " ")
+    .replace(/^(\d+)\s+(\d+)\b/, "$1-$2")
+    .trim();
 // "aix en provence" -> "Aix En Provence"
 const capital = (s) => s.replace(/\b[a-zà-ÿ]/g, (c) => c.toUpperCase());
 
