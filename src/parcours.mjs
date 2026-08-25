@@ -35,7 +35,10 @@ function neuve(typeEntree) {
     interesse_essai: null,
     horizon_projet: null,
     vehicule_essai: null, // celui retenu pour l'essai, choisi a l'ouverture du formulaire
-    nom_client: null, // renseigne par le formulaire, apres coup
+    // Renseignes APRES coup, par le retour du formulaire de rendez-vous.
+    nom_client: null,
+    rdv_date: null,
+    rdv_creneau: null,
     code_postal: null,
     concession: null,
     messages: [], // historique envoye au modele
@@ -153,6 +156,12 @@ Demande-lui, avec tact et en une seule phrase, ou en est son projet : est-ce qu'
       return `ETAPE : orientation vers une concession.
 Demande son code postal pour trouver la concession la plus proche. Des qu'il le donne, appelle localiser_concession. S'il refuse de le donner, n'insiste pas plus d'une fois.`;
     case ETAPES.TERMINE:
+      if (s.rdv_date || s.nom_client) {
+        return `ETAPE : rendez-vous demande. ${s.nom_client ? s.nom_client + " a" : "Le client a"} rempli le formulaire${
+          s.rdv_date ? ` pour le ${s.rdv_date}${s.rdv_creneau ? ` (${s.rdv_creneau})` : ""}` : ""
+        }, pour essayer ${s.vehicule_essai || "le vehicule retenu"} chez ${s.concession?.nom || "la concession"}.
+C'est FAIT : ne redemande ni son nom, ni une date, ni son code postal, et ne repropose pas de prendre rendez-vous. Reponds a ses questions s'il en a, sinon confirme simplement que la concession le recontacte pour confirmer le creneau.`;
+      }
       return `ETAPE : parcours termine. La concession ${s.concession?.nom || ""} a ete communiquee.
 S'il demande a etre rappele, remercie-le chaleureusement en nommant la concession qui le rappellera, puis appelle retour_menu_principal. Sinon reponds simplement a ses questions.`;
     default:

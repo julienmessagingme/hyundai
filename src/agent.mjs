@@ -308,6 +308,26 @@ function raccourcir(texte, max = 220) {
   return (fin > 60 ? coupe.slice(0, fin + 1) : coupe).trim();
 }
 
+/**
+ * Message de confirmation envoye au client des la soumission du formulaire.
+ *
+ * Compose par le CODE, pas par le modele : il ne contient que des faits deja connus,
+ * il doit partir instantanement, et c'est le dernier message que le client lit. Le
+ * faire rediger couterait une seconde et ouvrirait la porte a une promesse inventee.
+ */
+export function messageConfirmation(s) {
+  const v = vehiculeParSlug(s.vehicule_essai);
+  const civilite = s.nom_client ? ` ${s.nom_client}` : "";
+  const quand = s.rdv_date
+    ? ` pour le ${s.rdv_date}${s.rdv_creneau ? ` (${s.rdv_creneau})` : ""}`
+    : "";
+  return (
+    `Merci${civilite}, c'est enregistré. Votre demande d'essai${v ? ` du ${v.nom}` : ""}${quand} ` +
+    `vient d'être transmise à ${s.concession?.nom || "la concession la plus proche"}. ` +
+    `Un conseiller vous recontacte très vite pour confirmer le créneau. À bientôt !`
+  );
+}
+
 const LIBELLE_ENTREE = {
   neuf: "Véhicule neuf",
   LOA: "Location avec option d'achat (LOA)",
@@ -325,10 +345,12 @@ const LIBELLE_ENTREE = {
  * @param {string} nom nom saisi par le client dans le formulaire
  * @returns {Promise<{contenu: string, session: object}|null>} null si aucune conversation
  */
-export async function genererRecapitulatif(userNs, nom) {
+export async function genererRecapitulatif(userNs, nom, rdv = {}) {
   const s = sessionExistante(userNs);
   if (!s) return null;
   if (nom) s.nom_client = nom;
+  if (rdv.date) s.rdv_date = rdv.date;
+  if (rdv.creneau) s.rdv_creneau = rdv.creneau;
 
   const v = vehiculeParSlug(s.vehicule_essai) || vehiculeParSlug(s.vehicules_proposes[0]);
   const c = s.concession;
@@ -382,6 +404,9 @@ vendeur la lira comme un fait. Arrete-toi a ce qui a ete dit dans l'echange.`,
     "",
     "— L'ESSENTIEL —",
     `Client : ${s.nom_client || "non communiqué"}`,
+    s.rdv_date
+      ? `Créneau demandé : ${s.rdv_date}${s.rdv_creneau ? ` — ${s.rdv_creneau}` : ""}`
+      : null,
     `Véhicule à essayer : ${v ? v.nom : "à préciser"}${specs ? ` (${specs})` : ""}`,
     `Type de demande : ${LIBELLE_ENTREE[s.type_entree] || "non précisé"}`,
     `Horizon du projet : ${LIBELLE_PROJET[s.horizon_projet] || "à préciser"}`,

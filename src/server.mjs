@@ -10,8 +10,8 @@
 // flow est encore en train d'afficher, et la conversation parait desordonnee.
 import http from "node:http";
 import { env, exigerVariables } from "./env.mjs";
-import { traiterMessage, genererRecapitulatif } from "./agent.mjs";
-import { envoyerSortants, pousserRecap, mmActif, budgetMm } from "./mm.mjs";
+import { traiterMessage, genererRecapitulatif, messageConfirmation } from "./agent.mjs";
+import { envoyerSortants, pousserRecap, envoyerTexte, mmActif, budgetMm } from "./mm.mjs";
 import { purger, nombreSessions } from "./parcours.mjs";
 
 exigerVariables(["WEBHOOK_SECRET", "AI_GATEWAY_API_KEY"]);
@@ -97,21 +97,29 @@ const serveur = http.createServer(async (req, res) => {
     }
     const userNs = nettoyer(corpsRdv.user_ns || corpsRdv.external_id || corpsRdv.subscriber_id);
     const nom = nettoyer(corpsRdv.nom || corpsRdv.name || corpsRdv.nom_client);
+    const date = nettoyer(corpsRdv.date || corpsRdv.date_rdv || corpsRdv.jour);
+    const creneau = nettoyer(corpsRdv.creneau || corpsRdv.heure || corpsRdv.horaire);
     if (!userNs) return repondre(res, 400, { error: "user_ns requis" });
 
     // ACK immediat : composer le recapitulatif demande un appel au modele.
     repondre(res, 200, { ok: true });
     (async () => {
       try {
-        const r = await genererRecapitulatif(userNs, nom);
+        const r = await genererRecapitulatif(userNs, nom, { date, creneau });
         if (!r) {
           console.warn(`[rdv] ${userNs} : aucune conversation en cours, recapitulatif ignore`);
           return;
         }
+        // 1. Le client a soumis le formulaire et n'a plus rien recu depuis : on lui
+        //    confirme AVANT tout, c'est ce qu'il attend. Message compose par le code,
+        //    donc immediat.
+        const confirmation = await envoyerTexte(userNs, messageConfirmation(r.session));
+        // 2. Puis le recapitulatif destine a la concession.
         const envoi = await pousserRecap(userNs, r.contenu);
         console.log(
-          `[rdv] ${userNs} nom="${nom || "-"}" -> recapitulatif ${r.contenu.length} car ` +
-            `${envoi.ok ? "envoye" : "ECHEC : " + envoi.erreur}`
+          `[rdv] ${userNs} nom="${nom || "-"}" date="${date || "-"}" creneau="${creneau || "-"}" ` +
+            `-> confirmation ${confirmation.ok ? "ok" : "ECHEC"}, ` +
+            `recapitulatif ${r.contenu.length} car ${envoi.ok ? "envoye" : "ECHEC : " + envoi.erreur}`
         );
       } catch (e) {
         console.error(`[rdv] ${userNs} : ${e.stack || e.message}`);
