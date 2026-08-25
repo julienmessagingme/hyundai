@@ -114,6 +114,15 @@ CE QUE TU NE DEMANDES JAMAIS
 HONNETETE
 - Tu recommandes le MEILLEUR vehicule pour le besoin exprime, pas le plus cher.
 - Tu ne promets rien que le catalogue ne dise pas. Si tu ne sais pas, tu le dis.
+- AVANT de dire que tu n'as pas une information, RELIS le catalogue ci-dessous : il
+  donne deja, quand elles sont connues, le coffre, l'autonomie, la puissance, le
+  nombre de places, le prix et le temps de charge. Tu peux aussi appeler
+  consulter_vehicule.
+- MAIS si une caracteristique ne figure PAS au catalogue pour ce vehicule, alors nous
+  ne l'avons pas, et tu ne dois produire AUCUN chiffre. Dis simplement que tu n'as pas
+  la valeur exacte et renvoie vers la concession ou la fiche du modele. Un volume de
+  coffre invente se verifie en dix secondes sur le site Hyundai : ne cite jamais un
+  nombre que tu ne lis pas noir sur blanc ci-dessous.
 - Tu tiens compte du champ "A eviter si" : si un vehicule ne convient pas au client, tu ne le proposes pas, meme s'il est seduisant.
 - Un hybride simple ne se recharge pas sur une prise et n'a pas d'autonomie electrique annoncee. Un hybride rechargeable, si. Ne confonds jamais les deux.
 - FINITIONS : tu ne nommes une finition (Intuitive, Creative, Executive, N Line...)
@@ -458,6 +467,40 @@ export async function traiterMessage(userNs, message) {
         }
 
         case "proposer_deux_vehicules": {
+          // Verrou de sequencement. La consigne du prompt ne suffit pas : un modele
+          // rapide poussait deux vehicules des le premier "oui", sans rien savoir du
+          // client, puis en reproposait a chaque tour. On refuse donc l'appel tant que
+          // la decouverte n'a pas eu lieu, et on dit au modele ce qui manque.
+          // Le verrou se leve soit quand la decouverte est memorisee, soit apres
+          // assez d'echanges. Ne dependre que des champs memorises rendait le bot
+          // increvable en boucle de questions avec un modele qui appelle peu
+          // memoriser_besoin : le client repondait, rien n'etait enregistre, et la
+          // meme question revenait. Le nombre de tours, lui, ne ment pas.
+          const TOURS_DECOUVERTE_MIN = 4;
+          const decouverteFaite = s.foyer && s.sensibilite_carbone;
+          const manque = decouverteFaite || s.tours >= TOURS_DECOUVERTE_MIN
+            ? []
+            : [
+                !s.foyer && "la composition du foyer",
+                !s.sensibilite_carbone && "sa sensibilite a l'impact carbone",
+              ].filter(Boolean);
+          if (manque.length) {
+            resultat = {
+              refuse: true,
+              consigne: `Tu ne sais pas encore ${manque.join(" ni ")}. Pose la question qui manque, UNE seule, et n'appelle cet outil qu'ensuite. Enregistre la reponse avec memoriser_besoin.`,
+            };
+            break;
+          }
+          // Deux vehicules viennent d'etre envoyes : on ne recommence pas au tour
+          // suivant, sinon le client recoit une rafale de cartes contradictoires.
+          if (s.vehicules_proposes.length && s.tours - (s.tour_derniere_repropo || 0) < 3) {
+            resultat = {
+              refuse: true,
+              consigne:
+                "Tu viens de proposer deux vehicules. Argumente sur ceux-la, reponds aux questions, et ne repropose que si le client dit clairement qu'aucun des deux ne convient.",
+            };
+            break;
+          }
           const v1 = vehiculeParSlug(args.vehicule_1);
           const v2 = vehiculeParSlug(args.vehicule_2);
           if (!v1 || !v2) {
@@ -488,6 +531,7 @@ export async function traiterMessage(userNs, message) {
             }
           );
           s.vehicules_proposes = [...new Set([...s.vehicules_proposes, v1.slug, v2.slug])];
+          s.tour_derniere_repropo = s.tours;
           s.etape = ETAPES.PROPOSITION;
           // Le modele redecrit les vehicules dans son message d'annonce malgre la
           // consigne, alors que photo, nom et argumentaire s'affichent juste apres.

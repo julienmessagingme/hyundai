@@ -34,7 +34,7 @@
       "prix_a_partir_de": 22250,
       "autonomie_km": null,
       "batterie_kwh": null,
-      "puissance_ch": null,
+      "puissance_ch": 90,
       "coffre_l": null,
       "recharge_10_80_min": null,
       "longueur_mm": null,
@@ -183,10 +183,10 @@
       "prix_a_partir_de": 25350,
       "autonomie_km": 370,
       "batterie_kwh": 49,
-      "puissance_ch": null,
+      "puissance_ch": 115,
       "coffre_l": 238,
       "recharge_10_80_min": 30,
-      "longueur_mm": null,
+      "longueur_mm": 3825,
       "offre_loa": "à partir de 139€ /mois en LLD sur 37 mois et 45 000 km avec un 1er loyer de 0€ (aide location sociale de 6 500€ déduite)",
       "points_forts": [
         "Autonomie jusqu'à 370 km WLTP",
@@ -324,7 +324,7 @@
       "prix_a_partir_de": 36850,
       "autonomie_km": 514,
       "batterie_kwh": 65,
-      "puissance_ch": null,
+      "puissance_ch": 217,
       "coffre_l": 466,
       "recharge_10_80_min": 41,
       "longueur_mm": null,
@@ -526,7 +526,7 @@
       "prix_a_partir_de": 44800,
       "autonomie_km": 570,
       "batterie_kwh": 84,
-      "puissance_ch": null,
+      "puissance_ch": 325,
       "coffre_l": 520,
       "recharge_10_80_min": 18,
       "longueur_mm": 4655,
@@ -956,9 +956,9 @@
       "prix_a_partir_de": null,
       "autonomie_km": null,
       "batterie_kwh": null,
-      "puissance_ch": null,
+      "puissance_ch": 129,
       "coffre_l": 466,
-      "recharge_10_80_min": null,
+      "recharge_10_80_min": 41,
       "longueur_mm": null,
       "offre_loa": null,
       "points_forts": [
@@ -1142,5 +1142,6 @@
       "motorisation": "100% electrique",
       "conseillable": true
     }
-  ]
+  ],
+  "complete_le": "2026-08-25T15:26:51.373Z"
 }
