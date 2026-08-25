@@ -209,6 +209,15 @@ export async function retourMenu(userNs) {
 }
 
 /**
+ * Ramene le contact au debut du parcours, apres la confirmation de rendez-vous.
+ * Node distinct du menu principal : il cloture la prise de rendez-vous et relance
+ * une decouverte, la ou le menu principal sert de sortie en cours de route.
+ */
+export async function retourDebut(userNs) {
+  return envoyerNode(userNs, env.MM_NODE_RETOUR_DEBUT);
+}
+
+/**
  * Envoie une suite de messages sortants dans l'ordre, en espacant les envois pour
  * que WhatsApp respecte la sequence.
  * @param {number} delaiApresTexte pause supplementaire entre le message texte et la

@@ -11,7 +11,14 @@
 import http from "node:http";
 import { env, exigerVariables } from "./env.mjs";
 import { traiterMessage, genererRecapitulatif, messageConfirmation } from "./agent.mjs";
-import { envoyerSortants, pousserRecap, envoyerTexte, mmActif, budgetMm } from "./mm.mjs";
+import {
+  envoyerSortants,
+  pousserRecap,
+  envoyerTexte,
+  retourDebut,
+  mmActif,
+  budgetMm,
+} from "./mm.mjs";
 import { purger, nombreSessions } from "./parcours.mjs";
 
 exigerVariables(["WEBHOOK_SECRET", "AI_GATEWAY_API_KEY"]);
@@ -116,10 +123,16 @@ const serveur = http.createServer(async (req, res) => {
         const confirmation = await envoyerTexte(userNs, messageConfirmation(r.session));
         // 2. Puis le recapitulatif destine a la concession.
         const envoi = await pousserRecap(userNs, r.contenu);
+        // 3. Enfin le retour au debut du parcours. En DERNIER : ce node reprend la
+        //    main sur la conversation, tout ce qui partirait apres s'afficherait
+        //    par-dessus le menu.
+        await sleep(DELAI_AVANT_NODES);
+        const retour = await retourDebut(userNs);
         console.log(
           `[rdv] ${userNs} nom="${nom || "-"}" date="${date || "-"}" creneau="${creneau || "-"}" ` +
             `-> confirmation ${confirmation.ok ? "ok" : "ECHEC"}, ` +
-            `recapitulatif ${r.contenu.length} car ${envoi.ok ? "envoye" : "ECHEC : " + envoi.erreur}`
+            `recapitulatif ${r.contenu.length} car ${envoi.ok ? "envoye" : "ECHEC : " + envoi.erreur}, ` +
+            `retour debut ${retour.ok ? "ok" : "ECHEC : " + retour.erreur}`
         );
       } catch (e) {
         console.error(`[rdv] ${userNs} : ${e.stack || e.message}`);
