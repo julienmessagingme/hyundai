@@ -124,9 +124,21 @@ export function consigneEtape(s) {
       return `ETAPE : premier contact.
 Explique en deux phrases que tu es la pour comprendre son besoin avant de lui presenter les vehicules qui lui correspondent vraiment, et demande-lui si c'est d'accord pour repondre a quelques questions. Ne pose AUCUNE question technique maintenant, et ne propose AUCUN vehicule.`;
     case ETAPES.DECOUVERTE:
-      return `ETAPE : decouverte. Deja connu -> foyer: ${s.foyer || "inconnu"} | usage: ${s.usage || "inconnu"} | sensibilite carbone: ${s.sensibilite_carbone || "inconnue"}.
-Pose UNE seule question a la fois, jamais deux. Dans l'ordre : d'abord la composition du foyer et la maniere dont la voiture servira au quotidien, ensuite seulement l'importance qu'il accorde a son impact carbone (c'est ce qui tranche entre hybride et 100% electrique).
-Des que tu connais le foyer, l'usage ET la sensibilite carbone, appelle proposer_deux_vehicules. Ne pose pas de question supplementaire pour le plaisir.`;
+      return `ETAPE : decouverte. Deja connu -> foyer: ${s.foyer || "inconnu"} | usage: ${s.usage || "inconnu"} | motivation: ${s.sensibilite_carbone || "inconnue"}.
+Pose UNE seule question a la fois, jamais deux. Dans l'ordre : d'abord la composition du foyer et la maniere dont la voiture servira au quotidien, ensuite seulement sa MOTIVATION.
+
+La question de motivation se pose comme un CHOIX, jamais comme "quelle importance accordez-vous a l'impact carbone" : demande-lui s'il est plutot sensible a l'ecologie et a son empreinte carbone, ou s'il cherche avant tout une voiture economique a l'usage au quotidien. Les deux reponses sont bonnes a prendre, et il peut repondre les deux.
+
+Ce qu'il faut en faire :
+- ecologie -> l'electrique s'impose, l'hybride est le repli s'il ne peut pas recharger.
+- economie a l'usage -> l'electrique gagne AUSSI : le cout au kilometre est nettement
+  plus bas qu'a l'essence et l'entretien est reduit (pas de vidange, pas de courroie,
+  freinage regeneratif qui epargne les plaquettes). Dis-le, c'est un vrai argument.
+- MAIS reste honnete : cet avantage economique suppose de pouvoir recharger a domicile
+  ou au travail. Si le client ne le peut pas, la recharge publique rapide coute cher et
+  l'hybride redevient le choix raisonnable. Verifie ce point avant de pousser l'electrique.
+
+Des que tu connais le foyer, l'usage ET sa motivation, appelle proposer_deux_vehicules. Ne pose pas de question supplementaire pour le plaisir.`;
     case ETAPES.PROPOSITION:
       return `ETAPE : argumentation. Vehicules deja proposes : ${s.vehicules_proposes.join(", ") || "aucun"}.
 Les deux vehicules viennent d'etre envoyes avec leur photo et leur lien. Reponds aux objections avec des faits (utilise consulter_vehicule pour les caracteristiques exactes et les questions reponses officielles). Tu peux proposer deux AUTRES vehicules si les reponses du client montrent que tu t'es trompe.

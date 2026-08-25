@@ -141,7 +141,7 @@ CE QUE TU SAIS DU CLIENT
 - Type de demande : ${s.type_entree || "non precise"}
 - Foyer : ${s.foyer || "inconnu"}
 - Usage : ${s.usage || "inconnu"}
-- Sensibilite a l'impact carbone : ${s.sensibilite_carbone || "inconnue"}
+- Motivation (ecologie / economie a l'usage) : ${s.sensibilite_carbone || "inconnue"}
 - Interesse par un essai : ${s.interesse_essai === null ? "pas encore demande" : s.interesse_essai ? "oui" : "non"}
 - Horizon du projet : ${s.horizon_projet || "inconnu"}
 
@@ -225,7 +225,11 @@ const OUTILS = [
         properties: {
           foyer: { type: "string", description: "composition du foyer, ex: couple avec 3 enfants" },
           usage: { type: "string", description: "usage reel, ex: trajets quotidiens courts + longs trajets en vacances" },
-          sensibilite_carbone: { type: "string", description: "ce qu'il a dit de son rapport a l'impact carbone" },
+          sensibilite_carbone: {
+            type: "string",
+            description:
+              "sa MOTIVATION principale : plutot ecologie et empreinte carbone, plutot economie a l'usage, ou les deux. Note aussi s'il a dit pouvoir recharger a domicile ou non, c'est determinant.",
+          },
         },
       },
     },
@@ -388,7 +392,7 @@ vendeur la lira comme un fait. Arrete-toi a ce qui a ete dit dans l'echange.`,
     "— SON BESOIN, TEL QU'IL L'A EXPRIMÉ —",
     `Foyer : ${s.foyer || "non précisé"}`,
     `Usage : ${s.usage || "non précisé"}`,
-    `Impact carbone : ${s.sensibilite_carbone || "non précisé"}`,
+    `Motivation : ${s.sensibilite_carbone || "non précisé"}`,
     "",
     "— RÉSUMÉ DE L'ÉCHANGE —",
     resume,
@@ -482,7 +486,7 @@ export async function traiterMessage(userNs, message) {
             ? []
             : [
                 !s.foyer && "la composition du foyer",
-                !s.sensibilite_carbone && "sa sensibilite a l'impact carbone",
+                !s.sensibilite_carbone && "sa motivation (ecologie ou economie a l'usage)",
               ].filter(Boolean);
           if (manque.length) {
             resultat = {
