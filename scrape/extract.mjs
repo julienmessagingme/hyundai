@@ -21,15 +21,21 @@ const CONCURRENCE = 2; // 17 pages, on reste poli avec le gateway
 // si on lui en parle) mais sont exclus des propositions.
 const NON_CONSEILLABLES = new Set(["ultime-edition", "kona-nouvelle-generation"]);
 
-const env = Object.fromEntries(
-  (await fs.readFile(".env", "utf8"))
-    .split("\n")
-    .filter((l) => l.trim() && !l.trim().startsWith("#"))
-    .map((l) => {
-      const i = l.indexOf("=");
-      return [l.slice(0, i).trim(), l.slice(i + 1).trim()];
-    })
-);
+// process.env EN DERNIER, donc prioritaire : sans cela, un reglage passe en ligne de
+// commande (SOLDE_MINIMUM=..., LLM_MODEL=...) est silencieusement ignore au profit du
+// .env, et un garde-fou qu'on croit actif ne l'est pas.
+const env = {
+  ...Object.fromEntries(
+    (await fs.readFile(".env", "utf8"))
+      .split("\n")
+      .filter((l) => l.trim() && !l.trim().startsWith("#"))
+      .map((l) => {
+        const i = l.indexOf("=");
+        return [l.slice(0, i).trim(), l.slice(i + 1).trim()];
+      })
+  ),
+  ...process.env,
+};
 
 // Depuis l'ajout de la page equipements, le prompt a double et les requetes longues
 // tombent en "Connection error". On laisse donc au SDK le soin de reessayer, avec un
@@ -250,7 +256,45 @@ async function extraire(fiche) {
   return { json, usage: completion.usage };
 }
 
+/**
+ * Solde du gateway, lu AVANT puis APRES la passe.
+ *
+ * Ce script a coute une dizaine d'euros en tatonnements sans que personne ne s'en
+ * apercoive : les relances s'empilaient, plusieurs passes tournaient en parallele et
+ * s'ecrasaient, et le solde n'etait regarde nulle part. Le cout d'un traitement doit
+ * etre visible LA OU ON LE DECLENCHE, pas decouvert un mois plus tard.
+ */
+async function solde() {
+  try {
+    const r = await fetch("https://ai-gateway.vercel.sh/v1/credits", {
+      headers: { Authorization: "Bearer " + env.AI_GATEWAY_API_KEY },
+      signal: AbortSignal.timeout(10000),
+    });
+    return Number((await r.json()).balance);
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
+  // Garde-fou : ce script alimente un bot en production. Il ne doit jamais manger le
+  // credit qui sert a repondre aux clients.
+  const SEUIL = Number(env.SOLDE_MINIMUM ?? 1);
+  const avant = await solde();
+  if (avant != null) {
+    console.log(`Solde du gateway : ${avant.toFixed(2)} USD`);
+    if (avant < SEUIL) {
+      console.error(
+        `Solde sous ${SEUIL} USD : passe annulee pour preserver le credit du bot. ` +
+          `Recharger, ou forcer avec SOLDE_MINIMUM=0.`
+      );
+      // exitCode plutot que exit() : on laisse le fetch en vol se terminer, sinon
+      // Node signale une assertion interne sur la socket coupee.
+      process.exitCode = 1;
+      return;
+    }
+  }
+
   const fichiers = (await fs.readdir(RAW)).filter((f) => f.endsWith(".json"));
   const fiches = await Promise.all(
     fichiers.map(async (f) => JSON.parse(await fs.readFile(path.join(RAW, f), "utf8")))
@@ -398,9 +442,17 @@ async function main() {
     "utf8"
   );
 
-  const cout = (tokensIn * 0.5 + tokensOut * 3) / 1e6;
   console.log(`\n${vehicules.length}/${fiches.length} vehicules ecrits dans ${OUT}`);
-  console.log(`tokens : ${tokensIn} entree / ${tokensOut} sortie  ->  ~$${cout.toFixed(4)}`);
+  console.log(`tokens : ${tokensIn} entree / ${tokensOut} sortie`);
+  // Cout REEL, lu sur le solde, et non estime a partir d'un tarif ecrit en dur qui
+  // devient faux des qu'on change de modele.
+  const apres = await solde();
+  if (avant != null && apres != null) {
+    console.log(
+      `cout reel de cette passe : ${(avant - apres).toFixed(4)} USD  ` +
+        `(solde ${avant.toFixed(2)} -> ${apres.toFixed(2)})`
+    );
+  }
 }
 
 main().catch((e) => {
